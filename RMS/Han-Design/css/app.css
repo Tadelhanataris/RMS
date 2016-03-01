@@ -1,0 +1,54 @@
+.main-header{
+    text-align: left;
+    padding: 42px 0;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headh1content{
+    font-family: "微软雅黑";
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+.viceheadh3content{
+    font-family: "微软雅黑";
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.slidediv{
+    height: 600px;
+    background-color: #000000;
+}
+
+.carousel-control.left{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left{
+    left: -20%;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right{
+    right: -20%;
+}
+
+.carousel-inner.item{
+    text-align: center;
+}
