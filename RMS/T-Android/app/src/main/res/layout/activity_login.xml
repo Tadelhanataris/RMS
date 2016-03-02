@@ -29,16 +29,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/imageview"
                 android:src="@drawable/icon" />
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="科研管理系统\nThe Research Management System"
+                android:maxLines="2"
                 android:gravity="center"
-                />
+                android:id="@+id/textView3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"

@@ -12,43 +12,56 @@
         <ScrollView
             android:measureAllChildren="true"
             android:id="@+id/containerBody"
-            android:layout_weight="1"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent">
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
         </ScrollView>
 
-        <LinearLayout
-            android:background="@android:color/white"
-            android:layout_gravity="bottom"
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"/>
+
+    <RadioGroup
+                android:background="#f4f4f6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
             <!-- 功能模块按钮1 -->
-            <Button android:id="@+id/btnModule1"
-                android:text="功能1"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:layout_weight="1"
+            <RadioButton android:id="@+id/btnModule1"
+
+                android:button="@null"
+                android:paddingTop="7dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableTop="@drawable/buttonselector1"
+                android:text="通知公告"
+                android:gravity="center"
+                android:textColor="@drawable/buttonselector1" />
             <!-- 功能模块按钮2 -->
-            <Button android:id="@+id/btnModule2"
-                android:text="功能2"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:layout_weight="1"
+            <RadioButton android:id="@+id/btnModule2"
+                android:button="@null"
+                android:paddingTop="7dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/buttonselector2"
+                android:text="项目概况"
+                android:gravity="center"
+                android:textColor="@drawable/buttonselector2" />
             <!-- 功能模块按钮3 -->
-            <Button android:id="@+id/btnModule3"
-                android:text="功能3"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:layout_weight="1"
+            <RadioButton android:id="@+id/btnModule3"
+                android:button="@null"
+                android:paddingTop="7dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/buttonselector3"
+                android:text="项目记录"
+                android:gravity="center"
+                android:textColor="@drawable/buttonselector3" />
+            </RadioGroup>
 </LinearLayout>

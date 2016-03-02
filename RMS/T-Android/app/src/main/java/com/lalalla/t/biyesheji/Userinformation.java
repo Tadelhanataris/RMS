@@ -13,9 +13,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.ScrollView;
 
-public class Userinformation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Userinformation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private ScrollView container = null;
     private static final String STATES_KEY = "android:states";
 
@@ -49,17 +50,14 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        Button btnModule1 = (Button) findViewById(R.id.btnModule1);
-        btnModule1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                container.removeAllViews();
-                container.addView(
-                    getLocalActivityManager().startActivity("Module1",new Intent(Userinformation.this, Module1.class)).getDecorView());
-            }
-        });
-
+        RadioButton btnModule1 = (RadioButton) findViewById(R.id.btnModule1);
+        RadioButton btnModule2 = (RadioButton) findViewById(R.id.btnModule2);
+        RadioButton btnModule3 = (RadioButton) findViewById(R.id.btnModule3);
+        btnModule1.setOnClickListener(this);
+        btnModule2.setOnClickListener(this);
+        btnModule3.setOnClickListener(this);
+        container.addView(
+                getLocalActivityManager().startActivity("Module1", new Intent(Userinformation.this, Module1.class)).getDecorView());
 //                (v)->{container.removeAllViews();
 //        container.addView(getLocalActivityManager().startActivity(
 //                "Module1",//加载的activity名
@@ -145,4 +143,25 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         return mLocalActivityManager;
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.btnModule1:
+                container.removeAllViews();
+                container.addView(
+                        getLocalActivityManager().startActivity("Module1",new Intent(Userinformation.this, Module1.class)).getDecorView());
+                break;
+            case R.id.btnModule2:
+                container.removeAllViews();
+                container.addView(
+                        getLocalActivityManager().startActivity("Module2",new Intent(Userinformation.this, Module2.class)).getDecorView());
+                break;
+            case R.id.btnModule3:
+                container.removeAllViews();
+                container.addView(
+                        getLocalActivityManager().startActivity("Module3",new Intent(Userinformation.this, Module3.class)).getDecorView());
+                break;
+        }
+    }
 }
