@@ -9,13 +9,13 @@
     tools:context="com.lalalla.t.biyesheji.Userinformation"
     tools:showIn="@layout/app_bar_userinformation">
 
-        <ScrollView
+        <RelativeLayout
             android:measureAllChildren="true"
             android:id="@+id/containerBody"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:layout_weight="1">
-        </ScrollView>
+        </RelativeLayout>
 
     <View
         android:layout_width="match_parent"

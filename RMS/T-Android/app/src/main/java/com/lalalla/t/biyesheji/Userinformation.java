@@ -14,10 +14,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.ScrollView;
+import android.widget.RelativeLayout;
 
 public class Userinformation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
-    private ScrollView container = null;
+    private RelativeLayout container = null;
     private static final String STATES_KEY = "android:states";
 
     @Override
@@ -30,7 +30,7 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         setContentView(R.layout.activity_userinformation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        container = (ScrollView)findViewById(R.id.containerBody);
+        container = (RelativeLayout)findViewById(R.id.containerBody);
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
