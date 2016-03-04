@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lalalla.t.biyesheji">
-
+    <uses-sdk
+        android:minSdkVersion="21"/>
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -26,7 +27,9 @@
             android:name=".Userinformation"
             android:label="@string/title_activity_userinformation"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Module1"></activity>
+        <activity android:name=".Module1" />
+        <activity android:name=".Module2" />
+        <activity android:name=".Module3"></activity>
     </application>
 
 </manifest>
