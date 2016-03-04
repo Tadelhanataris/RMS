@@ -5,6 +5,7 @@
     <title>首都师范大学大学生创新创业训练计划</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/app.css">
+
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
@@ -28,7 +29,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="menu">
+                        <ul class="nav navbar-nav" style="width: 100%">
                             <li class="nav-current" role="presentation">
                                 <a href="#">首页</a>
                             </li>
@@ -47,7 +48,7 @@
                             <li role="presentation">
                                 <a href="#">文件下载</a>
                             </li>
-                            <li role="presentation">
+                            <li style="float: right" role="presentation">
                                 <a href="#">登录</a>
                             </li>
                         </ul>
@@ -58,42 +59,62 @@
     </nav>
     <!-- end navigation -->
     <!-- start slide -->
-    <div class="slidediv">
-        <div class="container" style="width: 80%">
-            <div id="photo-news" class="carousel slide" data-interval="5000" style="height: 600px">
-                <ol class="carousel-indicators" style="margin-top: 200px">
-                    <li data-target="#photo-news" data-slide="0" class="active"></li>
-                    <li data-target="#photo-news" data-slide="1"></li>
-                    <li data-target="#photo-news" data-slide="2"></li>
-                    <li data-target="#photo-news" data-slide="3"></li>
-                    <li data-target="#photo-news" data-slide="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active" style="width: 800px">
-                        <img src="images/testnews1.JPG">
-                    </div>
-                    <div class="item" style="width: 800px">
-                        <img src="images/testnews2.JPG">
-                    </div>
-                    <div class="item" style="width: 800px">
-                        <img src="images/testnews3.JPG">
-                    </div>
-                    <div class="item" style="width: 800px">
-                        <img src="images/testnews4.JPG">
-                    </div>
-                    <div class="item" style="width: 800px">
-                        <img src="images/testnews5.JPG">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#photo-news" data-slide="prev">
-                    <span class="gltphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#photo-news" data-slide="next">
-                    <span class="gltphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
+    <!--<div class="slidediv">-->
+        <!--<div class="container" style="width: 80%">-->
+            <!--<div id="photo-news" class="carousel slide" data-interval="5000" style="height: 600px">-->
+                <!--<ol class="carousel-indicators" style="margin-bottom: 5px">-->
+                    <!--<li data-target="#photo-news" data-slide="0" class="active"></li>-->
+                    <!--<li data-target="#photo-news" data-slide="1"></li>-->
+                    <!--<li data-target="#photo-news" data-slide="2"></li>-->
+                    <!--<li data-target="#photo-news" data-slide="3"></li>-->
+                    <!--<li data-target="#photo-news" data-slide="4"></li>-->
+                <!--</ol>-->
+                <!--<div class="carousel-inner">-->
+                    <!--<div class="item active" style="margin: 0 auto;width: 800px;height:600px;background-image: url(images/testnews1.JPG)">-->
+                        <!--&lt;!&ndash;<img src="images/testnews1.JPG">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="item" style="margin: 0 auto;width: 800px;height:600px;background-image: url(images/testnews2.JPG)">-->
+                        <!--&lt;!&ndash;<img src="images/testnews2.JPG">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="item" style="margin: 0 auto;width: 800px;height:600px;background-image: url(images/testnews3.JPG)">-->
+                        <!--&lt;!&ndash;<img src="images/testnews3.JPG">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="item" style="margin: 0 auto;width: 800px;height:600px;background-image: url(images/testnews4.JPG)">-->
+                        <!--&lt;!&ndash;<img src="images/testnews4.JPG">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="item" style="margin: 0 auto;width: 800px;height:600px;background-image: url(images/testnews5.JPG)">-->
+                        <!--&lt;!&ndash;<img src="images/testnews5.JPG">&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<a class="left carousel-control" href="#photo-news" data-slide="prev">-->
+                    <!--<span class="gltphicon glyphicon-chevron-left"></span>-->
+                <!--</a>-->
+                <!--<a class="right carousel-control" href="#photo-news" data-slide="next">-->
+                    <!--<span class="gltphicon glyphicon-chevron-right"></span>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="banner" id="banner">
+        <div class="banner_show" id="banner_show"> <!-- <a href="$cms.getUrl($article)" target="_blank" class="bannger_inbox">-->
+            <a class="bannger_inbox" href="#"><img src="images/testnews1.JPG" width="1440" height="550" /></a>
+            <a class="bannger_inbox" style="display:none"  href="#"><img src="images/testnews2.JPG" width="1440" height="550" /></a>
+            <a class="bannger_inbox" style="display:none"  href="#"><img src="images/testnews3.JPG" width="1440" height="550" /></a>
+            <a class="bannger_inbox" style="display:none" href="#" ><img src="images/testnews4.JPG" width="1440" height="550" /></a>
+            <a class="bannger_inbox" style="display:none"  href="#"><img src="images/testnews5.JPG" width="1440" height="550" /></a>
+
+            <!--<div class="banner_mag">-->
+
+                <!--<div class="banner_mag00">-->
+                    <!--<div class="yq_banner_list" id="yq_banner_list"> <a href="javascript:;" rel="0" class="hover">&nbsp;</a> <a href="javascript:;" rel="1">&nbsp;</a> <a href="javascript:;" rel="2">&nbsp;</a> <a href="javascript:;" rel="3">&nbsp;</a> </div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="banner_pre_next"> <a href="javascript:;" class="banner_btn_left">上一个</a> <a href="javascript:;" class="banner_btn_right">下一个</a> </div>
         </div>
     </div>
+    <script src="js/jquery.caroufredsel-6.0.4-packed.js"></script>
+    <script src="js/indexslide.js"></script>
     <!-- end slide -->
 
 
