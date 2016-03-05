@@ -9,7 +9,35 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+
+<!-- start login -->
+
+<div class="session-panel">
+
+    <h3>欢迎使用</h3>
+    <p>请登录</p>
+    <form accept-charset="UTF-8" id="login-in-form" method="post">
+        <div class="form-group">
+            <label>学工号</label>
+            <input autofocus="autofocus" class="form-control" id="username" maxlength="10" name="user[id]" tabindex="1" type="text" value="">
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input class="form-control" id="userpassword" maxlength="32" name="user[password]" tabindex="2" type="password">
+        </div>
+        <div class="form-group action">
+            <input class="btn" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
+        </div>
+    </form>
+</div>
+
+<!-- end login -->
+
+
+<div id="container">
+
 <!-- start header -->
+
 <header class="main-header" style="background-image: url(images/header-bg.jpg)">
     <div class="container">
         <div class="row">
@@ -21,8 +49,12 @@
         </div>
     </div>
 </header>
+
 <!-- end header -->
+
+
 <!-- start navigation -->
+
 <nav class="main-navigation">
     <div class="container">
         <div class="row">
@@ -48,7 +80,7 @@
                             <a href="#">表格下载</a>
                         </li>
                         <li style="float: right" role="presentation">
-                            <a href="#">登录</a>
+                            <a href="#" id="login">登录</a>
                         </li>
                     </ul>
                 </div>
@@ -56,33 +88,22 @@
         </div>
     </div>
 </nav>
+
 <!-- end navigation -->
-
-<!-- start login -->
-
-<div class="session-panel">
-
-    <h3>欢迎使用</h3>
-    <p>请登录</p>
-    <form accept-charset="UTF-8" action="/users/sign_in" class="simple_form new_user" data-remote="true" id="login-in-form" method="post" novalidate="">
-        <div class="form-group">
-            <label class="email optional" for="user_email">学工号</label>
-            <input autofocus="autofocus" class="string email optional form-control" data-attribute="email" data-parsley-required-message="Email cannot be blank" data-parsley-trigger="change" data-parsley-type-message="Email is invalid" data-parsley-type="email" id="user_email" maxlength="254" name="user[email]" size="254" tabindex="1" type="email" value="" data-parsley-id="9007"><div id="parsley-id-9007"></div>
-        </div>
-        <div class="form-group">
-            <label class="password optional" for="user_password">密码</label>
-            <input class="password optional form-control" data-attribute="password" data-parsley-length="[6,50]" data-parsley-required-message="Password cannot be blank" id="user_password" maxlength="50" name="user[password]" size="50" tabindex="2" type="password" data-parsley-id="5443"><div id="parsley-id-5443"></div>
-        </div>
-        <div class="form-group action">
-            <input class="btn btn-default btn btn-default pull-right" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
-        </div>
-    </form>
-
 
 </div>
 
-<!-- end login -->
 
+<script type="application/javascript">
+    window.onload=function()
+    {
+        $('#login').click(function()
+        {
+            $('#container').css("-webkit-filter","blur(5px)");
+            $('.session-panel').show();
+        })
+    };
+</script>
 
 
 </body>
