@@ -147,3 +147,8 @@
     position: relative;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #e95854;
+}
+
