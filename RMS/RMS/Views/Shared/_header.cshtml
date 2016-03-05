@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
+@using RMS.Models
+@model LoginViewModel
 @{
     var auth = Request.IsAuthenticated;
 }
@@ -8,20 +10,23 @@
 
     <div class="session-panel">
 
-        <h3>欢迎使用</h3>
-        <p>请登录</p>
+        <h3 style="text-align:center;width:100%;">欢迎使用</h3>
+        <p style="text-align:center;width:100%;">请登录</p>
         @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { role = "form" }))
         {
             @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
-                <label>学工号</label>
-                <input autofocus="autofocus" class="form-control" id="username" maxlength="10" name="user[id]" tabindex="1" type="text" value="">
+                @Html.LabelFor(m => m.Uid, new { })
+                @Html.TextBoxFor(m => m.Uid, new { @class = "form-control", autofocus = "autofocus", maxlength = "10", tabindex = "1", type = "tel" , onkeyup = "this.value=this.value.replace(/\\D/g,'')", onafterpaste = "this.value=this.value.replace(/\\D/g,'')" })
+                @*<input autofocus="autofocus" class="form-control inputnum" id="uid" maxlength="10" name="user[id]" tabindex="1" type="tel"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">*@
             </div>
             <div class="form-group">
                 <label>密码</label>
                 <input class="form-control" id="userpassword" maxlength="32" name="user[password]" tabindex="2" type="password">
             </div>
             <div class="form-group action">
+                <input type="checkbox" class="checkbox" style="float:left" /><span style="margin: 4px 0 0;line-height: normal;display: block;">记住我?</span>
                 <input class="btn" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
             </div>
         }
