@@ -46,7 +46,7 @@ public class AddActivity extends Activity implements OnClickListener {
                 new DatePickerDialog(AddActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                        String theDate = String.format("%d-%d-%d", year, monthOfYear + 1, dayOfMonth);
+                        String theDate = String.format("%04d-%02d-%02d", year, monthOfYear + 1, dayOfMonth);
                         System.out.println(theDate);
                         m3BtnDate.setText(theDate);
                     }
@@ -96,16 +96,14 @@ public class AddActivity extends Activity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnCancel:
-                Intent intent = new Intent();
-                intent.setClass(AddActivity.this, Module3.class);
-                startActivity(intent);
+                finish();
                 break;
             case R.id.btnEnter:
                 try {
                     testSave(v);
-                    Intent intenten = new Intent();
-                    intenten.setClass(AddActivity.this, Module3.class);
-                    startActivity(intenten);
+                    Intent intent = new Intent();
+                    intent.setClass(AddActivity.this, Module3.class);
+                    startActivity(intent);
 
                 } catch (Exception e) {
                     Log.e("database error",e.toString());
