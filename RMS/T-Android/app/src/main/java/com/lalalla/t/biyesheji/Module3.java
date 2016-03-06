@@ -14,26 +14,40 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Module3 extends Activity  {
     private List<Project> projects = new ArrayList<Project>();
     private ListView listView;
     private Button btnadd;
     private static final int REFRESH_LISTVIEW = 817;
+
     List<HashMap<String, Object>> data = new ArrayList<HashMap<String,Object>>();
-    SimpleAdapter adapter;
+    ListAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_module3);
         listView = (ListView) this.findViewById(R.id.Moudle3list);
         show();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent();
+                intent.setClass(Module3.this,EditActivity.class);
+                intent.putExtra("id", id);
+                Module3.this.startActivity(intent);
+            }
+            });
+
         btnadd = (Button) findViewById(R.id.btnadd);
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,17 +55,20 @@ public class Module3 extends Activity  {
                 Intent intent = new Intent();
                 intent.setClass(Module3.this, AddActivity.class);
                 startActivity(intent);
-
             }
         });
 
     }
+
+
+
     @Override
     public void onResume()
     {
         super.onResume();
         adapter.notifyDataSetChanged();
     }
+
     private void show()
     {
         ProjectDB project=new ProjectDB(getApplicationContext());
@@ -64,11 +81,12 @@ public class Module3 extends Activity  {
             data.add(hm);
         }
 
-        adapter = new SimpleAdapter(this,data,R.layout.moudlelistview3,
+        adapter = new ListAdapter(this,data,R.layout.moudlelistview3,
                 new String[]{"date","tittle"},
                 new int[]{R.id.list3date,R.id.list3tittle});
 
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(adapter);
     }
 
 
