@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="jwysiwyg-master/jquery.wysiwyg.js"></script>
+    <link rel="stylesheet" href="jwysiwyg-master/jquery.wysiwyg.css">
+
 </head>
 <body>
-  ceshiyong
+<textarea id="wysiwyg" style="width: 500px;height: 400px"></textarea>
+<script type="text/javascript">
+    $(function() {
+        $('#wysiwyg').wysiwyg();
+    });
+</script>
+
+
 </body>
 </html>

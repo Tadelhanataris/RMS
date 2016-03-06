@@ -224,3 +224,18 @@
     line-height: 16px;
     margin-top: 23px;
 }
+
+.index-pagefoot{
+    height: 120px;
+    padding: 21px 0;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/pagefoot-bg.jpg);
+}
+
+.pf-content{
+    text-align: center;
+    font-size: 10px;
+    color: #f0f0f0;
+}
