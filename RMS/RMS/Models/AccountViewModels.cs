@@ -49,9 +49,8 @@ namespace RMS.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "电子邮件")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "学工号")]
+        public string Uid { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -65,7 +64,6 @@ namespace RMS.Models
     public class RegisterViewModel
     {
         [Required]
-        [EmailAddress]
         [Display(Name = "电子邮件")]
         public string Email { get; set; }
 

@@ -26,6 +26,7 @@ public class Module1 extends Activity {
                 new int[] { R.id.news, R.id.time});
         //setListAdapter(adapter);
         lv1.setAdapter(adapter);
+
             }
 
 

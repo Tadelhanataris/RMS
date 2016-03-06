@@ -2,30 +2,59 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <!-- start slide -->
+
+<div class="banner" id="banner">
+    <div class="banner_show" id="banner_show">
+        <!-- <a href="$cms.getUrl($article)" target="_blank" class="bannger_inbox">-->
+        <a class="bannger_inbox" href="#"><img src="images/testnews1.JPG" width="1440" height="550" /></a>
+        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews2.JPG" width="1440" height="550" /></a>
+        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews3.JPG" width="1440" height="550" /></a>
+        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews4.JPG" width="1440" height="550" /></a>
+        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews5.JPG" width="1440" height="550" /></a>
+        <div class="banner_pre_next"> <a href="javascript:;" class="banner_btn_left">上一个</a> <a href="javascript:;" class="banner_btn_right">下一个</a> </div>
+    </div>
+</div>
+@Scripts.Render("~/bundles/home")
+
+<!-- end slide -->
+<!-- start content -->
+
+<div class="content">
+
+    <!-- start notifications -->
+    <div class="notifications">
+        <div class="content-title">
+            <a class="title-text">通知公告</a>
+        </div>
+        <div class="content-list">
+            <ul>
+                <li><span>03-03</span><a href="#" target="_blank">纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开</a></li>
+                <li><span>03-03</span><a href="#" target="_blank">我校工会工作荣获多项奖励</a></li>
+                <li><span>03-02</span><a href="#" target="_blank">我校获批首个国家级虚拟仿真实验教学中心</a></li>
+                <li><span>03-02</span><a href="#" target="_blank">我校学生赴澳大利亚参加“欢乐春节”多元文化艺术节演出</a></li>
+                <li><span>02-29</span><a href="#" target="_blank">党委召开理论学习中心组（扩大）会议 传达学习贯彻中央和北京市重要文件精神</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end nottifications -->
+    <!--start news-->
+    <div class="news">
+        <div class="content-title">
+            <a class="title-text">焦点新闻</a>
+        </div>
+        <div class="content-list">
+            <ul>
+                <li><span>03-03</span><a href="#" target="_blank">纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开</a></li>
+                <li><span>03-03</span><a href="#" target="_blank">我校工会工作荣获多项奖励</a></li>
+                <li><span>03-02</span><a href="#" target="_blank">我校获批首个国家级虚拟仿真实验教学中心</a></li>
+                <li><span>03-02</span><a href="#" target="_blank">我校学生赴澳大利亚参加“欢乐春节”多元文化艺术节演出</a></li>
+                <li><span>02-29</span><a href="#" target="_blank">党委召开理论学习中心组（扩大）会议 传达学习贯彻中央和北京市重要文件精神</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--end news-->
+
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<!-- end content -->

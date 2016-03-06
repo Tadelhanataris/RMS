@@ -1,0 +1,107 @@
+﻿@using Microsoft.AspNet.Identity
+@using RMS.Models
+@model LoginViewModel
+@{
+    var auth = Request.IsAuthenticated;
+}
+@if (!auth)
+{
+        <!-- start login -->
+
+    <div class="session-panel">
+
+        <h3 style="text-align:center;width:100%;">欢迎使用</h3>
+        <p style="text-align:center;width:100%;">请登录</p>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.Uid, new { })
+                @Html.TextBoxFor(m => m.Uid, new { @class = "form-control", autofocus = "autofocus", maxlength = "10", tabindex = "1", type = "tel" , onkeyup = "this.value=this.value.replace(/\\D/g,'')", onafterpaste = "this.value=this.value.replace(/\\D/g,'')" })
+                @*<input autofocus="autofocus" class="form-control inputnum" id="uid" maxlength="10" name="user[id]" tabindex="1" type="tel"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">*@
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input class="form-control" id="userpassword" maxlength="32" name="user[password]" tabindex="2" type="password">
+            </div>
+            <div class="form-group action">
+                <input type="checkbox" class="checkbox" style="float:left" /><span style="margin: 4px 0 0;line-height: normal;display: block;">记住我?</span>
+                <input class="btn" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
+            </div>
+        }
+    </div>
+
+        <!-- end login -->
+
+}
+<div id="container">
+    <!-- start header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="headh1content">首都师范大学</h1>
+                    <br>
+                    <h3 class="viceheadh3content">大学生创新创业训练计划</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start navigation -->
+    <nav class="main-navigation" style="background: #FF7777;border-top: solid 1px #FFbdbd;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav" style="width: 100%;font-size: 16px;font-family: 微软雅黑;">
+                            <li class="nav-current" role="presentation">
+                                @Html.ActionLink("首页", "Index", "Home", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            <li role="presentation">
+                                @Html.ActionLink("政策文件", "Index", "Policy", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            <li role="presentation">
+                                @Html.ActionLink("项目指南", "Index", "Guide", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            <li role="presentation">
+                                @Html.ActionLink("成果展示", "Index", "Gallery", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            <li role="presentation">
+                                @Html.ActionLink("俱乐部", "Index", "Club", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            <li role="presentation">
+                                @Html.ActionLink("表格下载", "Index", "Table", routeValues: null, htmlAttributes: new { style = "color: white" })
+                            </li>
+                            @if (auth)
+                            {
+                                <li style="float: right" role="presentation">
+                                    <span>@User.Identity.GetUserName()</span>
+                                </li>
+                                <li style="float: right" role="presentation">
+                                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <a href="javascript:document.getElementById('logoutForm').submit()">注销</a>
+                                    }
+                                </li>
+                            }
+                            else
+                            {
+                                <li style="float: right" role="presentation">
+                                    @Html.ActionLink("注册", "Index", "Register", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                    <script type="application/javascript" src="~/Scripts/login.js"></script>
+                                </li>
+                                <li style="float: right" role="presentation">
+                                    <a href="#" style="color: white" id="login">登录</a>
+                                </li>
+                                
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
