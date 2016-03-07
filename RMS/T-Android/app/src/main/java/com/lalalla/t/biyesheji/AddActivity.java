@@ -101,14 +101,11 @@ public class AddActivity extends Activity implements OnClickListener {
             case R.id.btnEnter:
                 try {
                     testSave(v);
-                    Intent intent = new Intent();
-                    intent.setClass(AddActivity.this, Module3.class);
-                    startActivity(intent);
-
                 } catch (Exception e) {
                     Log.e("database error",e.toString());
                     e.printStackTrace();
                 }
+                finish();
                 break;
         }
     }

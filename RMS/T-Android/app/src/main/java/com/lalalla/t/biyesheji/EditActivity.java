@@ -20,7 +20,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
     private Button editbtnsave;
     private Button editbtndelete;
     private Button editbtndate;
-    private long id;
+    private Integer id;
     private EditText editEdittittle;
     private  EditText editEdittextContent;
     private Project project;
@@ -30,14 +30,14 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_edit);
         db = new ProjectDB(getApplicationContext());
         Intent i = getIntent();
-        id = i.getLongExtra("id",0);
-        project = db.find((int) id);
+        id = i.getIntExtra("id",0);
+        project = db.find(id);
         date = project.getdate();
         tittle = project.getTittle();
         content = project.getContent();
-        editEdittittle.findViewById(R.id.editEdittextTittle);
+        editEdittittle= (EditText) findViewById(R.id.editEdittextTittle);
         editEdittittle.setText(tittle);
-        editEdittextContent.findViewById(R.id.editEdittextContent);
+        editEdittextContent= (EditText) findViewById(R.id.editEdittextContent);
         editEdittextContent.setText(content);
         editbtndate = (Button) findViewById(R.id.editbtndate);
         editbtndelete = (Button) findViewById(R.id.editbtndelete);
@@ -90,9 +90,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                Intent intent = new Intent();
-                intent.setClass(EditActivity.this, Module3.class);
-                startActivity(intent);
+                finish();
                 break;
         }
     }
