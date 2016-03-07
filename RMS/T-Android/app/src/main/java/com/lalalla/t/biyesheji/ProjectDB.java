@@ -51,7 +51,7 @@ public class ProjectDB {
     public List<Project> getScrollData(int offset,int maxResult){
         List<Project> projects= new ArrayList<Project>();
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
-        Cursor cursor=db.rawQuery("select * from project order by id asc limit ?,?",
+        Cursor cursor=db.rawQuery("select * from project order by date desc limit ?,?",
                         new String[]{String.valueOf(offset),String.valueOf(maxResult)});
         while(cursor.moveToNext())
         {
