@@ -1,0 +1,88 @@
+.news-list{
+    padding-top: 20px;
+    width: 800px;
+    margin: 0 auto;
+    font-family: 微软雅黑;
+}
+
+.col-title{
+    height: 42px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.col-list{
+    font-size: 14px;
+}
+
+ul, li{
+    list-style-type: none;
+    border-bottom: #c9c9c9 solid 1px;
+}
+
+.col-list ul li {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 35px;
+    padding-right: 30px;
+}
+
+.col-list ul li span{
+    float: right;
+}
+
+.col-list ul li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.flipover{
+    font-size: 12px;
+    width: 480px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #414141;
+    float: right;
+    overflow: hidden;
+}
+
+.flipover dl{
+    width: 650px;
+}
+
+.flipover dt.flipover-title{
+    float: left;
+    width: 190px;
+    padding-left: 20px;
+    line-height: inherit;
+}
+
+.flipover dt.flipover-title span{
+    margin: 0px 8px;
+    color: #0395e1;
+}
+
+.flipover dd a {
+    color: #414141;
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    width: 28px;
+    float: left;
+}
+
+.dt{
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    border: 0;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    font-size: 14px;
+    display: block;
+}
