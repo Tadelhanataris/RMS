@@ -46,7 +46,7 @@ public class Module3 extends Activity  {
                 new String[] { "_id","date","tittle" },
                 new int[]{R.id.list3id,R.id.list3date,R.id.list3tittle} );
 
-        
+
         listView.setAdapter(adapter);
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override

@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -39,10 +40,12 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         editEdittittle.setText(tittle);
         editEdittextContent= (EditText) findViewById(R.id.editEdittextContent);
         editEdittextContent.setText(content);
+        editbtnsave= (Button) findViewById(R.id.editbtnsave);
         editbtndate = (Button) findViewById(R.id.editbtndate);
         editbtndelete = (Button) findViewById(R.id.editbtndelete);
         editbtndate.setText(date);
         editbtndelete.setOnClickListener(this);
+        editbtnsave.setOnClickListener(this);
         editbtndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,17 +65,22 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         editEdittittle =(EditText)findViewById(R.id.editEdittextTittle);
         editEdittextContent =(EditText)findViewById(R.id.editEdittextContent);
         editbtndate= (Button) findViewById(R.id.editbtndate);
-        String Tittle=editEdittittle.getText().toString();
-        String Content=editEdittextContent.getText().toString();
-        String Date = editbtndate.getText().toString();
-        if (Tittle==null||Content==null||Date==null){
+        String newTittle=editEdittittle.getText().toString();
+        String newContent=editEdittextContent.getText().toString();
+        String newDate = editbtndate.getText().toString();
+        if (newTittle==null||newContent==null||newDate==null){
             Toast.makeText(v.getContext(), "请输入正确信息", Toast.LENGTH_SHORT).show();
             return;
         }
         else
+
         {ProjectDB projectService=new ProjectDB(v.getContext());
-            Project project=new Project(Date,Tittle,Content);
-            projectService.save(project);
+            project.setdate(newDate);
+            project.setTittle(newTittle);
+            project.setContent(newContent);
+            Project newproject = new Project(newDate,newTittle,newContent);
+            projectService.save(newproject);
+            projectService.delete(project.getId());
             Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
         }}
 
@@ -89,6 +97,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                     testSave(v);
                 } catch (Exception e) {
                     e.printStackTrace();
+                    Log.e("database error", e.toString());
                 }
                 finish();
                 break;
