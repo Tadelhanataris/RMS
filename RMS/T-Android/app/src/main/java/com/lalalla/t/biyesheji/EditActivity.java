@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -20,7 +21,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
     private Button editbtnsave;
     private Button editbtndelete;
     private Button editbtndate;
-    private long id;
+    private Integer id;
     private EditText editEdittittle;
     private  EditText editEdittextContent;
     private Project project;
@@ -30,19 +31,21 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_edit);
         db = new ProjectDB(getApplicationContext());
         Intent i = getIntent();
-        id = i.getLongExtra("id",0);
-        project = db.find((int) id);
+        id = i.getIntExtra("id",0);
+        project = db.find(id);
         date = project.getdate();
         tittle = project.getTittle();
         content = project.getContent();
-        editEdittittle.findViewById(R.id.editEdittextTittle);
+        editEdittittle= (EditText) findViewById(R.id.editEdittextTittle);
         editEdittittle.setText(tittle);
-        editEdittextContent.findViewById(R.id.editEdittextContent);
+        editEdittextContent= (EditText) findViewById(R.id.editEdittextContent);
         editEdittextContent.setText(content);
+        editbtnsave= (Button) findViewById(R.id.editbtnsave);
         editbtndate = (Button) findViewById(R.id.editbtndate);
         editbtndelete = (Button) findViewById(R.id.editbtndelete);
         editbtndate.setText(date);
         editbtndelete.setOnClickListener(this);
+        editbtnsave.setOnClickListener(this);
         editbtndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,17 +65,24 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         editEdittittle =(EditText)findViewById(R.id.editEdittextTittle);
         editEdittextContent =(EditText)findViewById(R.id.editEdittextContent);
         editbtndate= (Button) findViewById(R.id.editbtndate);
-        String Tittle=editEdittittle.getText().toString();
-        String Content=editEdittextContent.getText().toString();
-        String Date = editbtndate.getText().toString();
-        if (Tittle==null||Content==null||Date==null){
+        String newTittle=editEdittittle.getText().toString();
+        String newContent=editEdittextContent.getText().toString();
+        String newDate = editbtndate.getText().toString();
+        if (newTittle==null||newContent==null||newDate==null){
             Toast.makeText(v.getContext(), "请输入正确信息", Toast.LENGTH_SHORT).show();
             return;
         }
         else
+
         {ProjectDB projectService=new ProjectDB(v.getContext());
-            Project project=new Project(Date,Tittle,Content);
-            projectService.save(project);
+            Integer newid = project.getId();
+            project.setdate(newDate);
+            project.setTittle(newTittle);
+            project.setContent(newContent);
+            Project newproject = new Project(newid,newDate,newTittle,newContent);
+//            projectService.save(newproject);
+//            projectService.delete(project.getId());
+            projectService.update(newproject);
             Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
         }}
 
@@ -89,10 +99,9 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                     testSave(v);
                 } catch (Exception e) {
                     e.printStackTrace();
+                    Log.e("database error", e.toString());
                 }
-                Intent intent = new Intent();
-                intent.setClass(EditActivity.this, Module3.class);
-                startActivity(intent);
+                finish();
                 break;
         }
     }

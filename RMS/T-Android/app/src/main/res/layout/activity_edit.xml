@@ -100,13 +100,13 @@
             android:layout_height="wrap_content"
             android:text="保存"
             android:layout_weight="1"
+
             android:id="@+id/editbtnsave" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="删除"
             android:layout_weight="1"
-            android:onClick="testSave"
             android:id="@+id/editbtndelete"/>
     </LinearLayout>
 </LinearLayout>

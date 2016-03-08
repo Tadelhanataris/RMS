@@ -25,21 +25,21 @@ public class ProjectDB {
     }
     public void delete(Integer id){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
-        db.execSQL("delete from project where id=?",
+        db.execSQL("delete from project where _id=?",
                 new Object[]{id});
     }
     public void update(Project project){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
-        db.execSQL("update project set date=?,tittle=?,content=? where id=?",
-                new Object[]{project.getdate(),project.getTittle(),project.getContent(),project.getId()});
+        db.execSQL("update project set date=?,tittle=?,content=? where _id=?",
+                new Object[]{project.getdate(), project.getTittle(), project.getContent(), project.getId()});
     }
-    public Project find(Integer id){
+    public Project find(Integer _id){
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
-        Cursor cursor=db.rawQuery("select * from project where id=?",
-                new String[]{id.toString()});
+        Cursor cursor=db.rawQuery("select * from project where _id=?",
+                new String[]{_id.toString()});
         if(cursor.moveToFirst())
         {
-            int projectid=cursor.getInt(cursor.getColumnIndex("id"));
+            int projectid=cursor.getInt(cursor.getColumnIndex("_id"));
             String date=cursor.getString(cursor.getColumnIndex("date"));
             String tittle=cursor.getString(cursor.getColumnIndex("tittle"));
             String content=cursor.getString(cursor.getColumnIndex("content"));
@@ -55,7 +55,7 @@ public class ProjectDB {
                         new String[]{String.valueOf(offset),String.valueOf(maxResult)});
         while(cursor.moveToNext())
         {
-            int projectid=cursor.getInt(cursor.getColumnIndex("id"));
+            int projectid=cursor.getInt(cursor.getColumnIndex("_id"));
             String date=cursor.getString(cursor.getColumnIndex("date"));
             String tittle=cursor.getString(cursor.getColumnIndex("tittle"));
             String content=cursor.getString(cursor.getColumnIndex("content"));
@@ -64,6 +64,14 @@ public class ProjectDB {
         cursor.close();
         return projects;
     }
+
+    public Cursor getAllData()
+    {
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        return db.rawQuery("select * from project order by date desc limit ?,?",
+                new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
+    }
+
     public long getCount()
     {
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
