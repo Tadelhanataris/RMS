@@ -75,12 +75,14 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         else
 
         {ProjectDB projectService=new ProjectDB(v.getContext());
+            Integer newid = project.getId();
             project.setdate(newDate);
             project.setTittle(newTittle);
             project.setContent(newContent);
-            Project newproject = new Project(newDate,newTittle,newContent);
-            projectService.save(newproject);
-            projectService.delete(project.getId());
+            Project newproject = new Project(newid,newDate,newTittle,newContent);
+//            projectService.save(newproject);
+//            projectService.delete(project.getId());
+            projectService.update(newproject);
             Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
         }}
 
