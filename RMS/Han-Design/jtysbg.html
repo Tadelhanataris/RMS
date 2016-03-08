@@ -15,14 +15,14 @@
 
 <form>
     <div id="container">
-        <div class="row">
-            <div class="col-md-12 col">
-                <div class="input-group" id="no">
-                    <span class="input-group-addon" id="xmbh">项目编号</span>
-                    <input type="text" class="form-control" aria-describedby="xmbh">
-                </div>
-            </div>
-        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-12 col">-->
+                <!--<div class="input-group" id="no">-->
+                    <!--<span class="input-group-addon" id="xmbh">项目编号</span>-->
+                    <!--<input type="text" class="form-control" aria-describedby="xmbh">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="row">
             <div class="col-md-12 col section">
                 <p>一、总结报告（要求字数在1000－2000字）</p>
@@ -73,7 +73,7 @@
             <div class="col-md-12 col col2 end2" style="text-align: center">
                 <p class="p1">
                     <span>项目经费共计（</span>
-                    <span><input type="text" class="form-control" style="width: 50px;display: inline-block" id="jfzj"></span>
+                    <span><input type="text" class="form-control" style="width: 80px;display: inline-block" id="jfzj"></span>
                     <span>）元</span>
                 </p>
             </div>
@@ -171,31 +171,31 @@
                 <p>三、成员合作情况</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col col2">
+        <div class="row table-start">
+            <div class="col-md-3 col col3">
                 <p class="p3">项目负责人</p>
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <p class="p3">实际的任务分工</p>
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <p class="p4">承担的任务占总任务的百分比</p>
             </div>
-            <div class="col-md-3 col col2 end2">
+            <div class="col-md-3 col col3 end3">
                 <p class="p4">是否为项目开题后新加入人员</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="fzrxm">
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="fzrfg">
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="fzrzb">
             </div>
-            <div class="col-md-3 col col2 end2 se">
+            <div class="col-md-3 col col3 end3 se">
                 <select id="fzrzt" class="select">
                     <option value="true">是</option>
                     <option value="false">否</option>
@@ -203,30 +203,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <p class="p3">成员</p>
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <p class="p3">实际的任务分工</p>
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <p class="p4">承担的任务占总任务的百分比</p>
             </div>
-            <div class="col-md-3 col col2 end2">
+            <div class="col-md-3 col col3 end3">
                 <p class="p4">是否为项目开题后新加入人员</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="cy1xm">
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="cy1fg">
             </div>
-            <div class="col-md-3 col col2">
+            <div class="col-md-3 col col3">
                 <input type="text" class="form-control" id="cy1zb">
             </div>
-            <div class="col-md-3 col col2 end2 se">
+            <div class="col-md-3 col col3 end3 se">
                 <select id="cy1zt" class="select">
                     <option value="true">是</option>
                     <option value="false">否</option>
@@ -234,56 +234,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy2xm">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy2fg">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy2zb">
-            </div>
-            <div class="col-md-3 col col2 end2 se">
-                <select id="cy2zt" class="select">
-                    <option value="true">是</option>
-                    <option value="false">否</option>
-                </select>
+            <div class="col-md-12" style="margin-top: 10px;text-align: center">
+                <button class="btn btn-default" type="button" id="tjxjl">添加一条新记录</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy3xm">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy3fg">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy3zb">
-            </div>
-            <div class="col-md-3 col col2 end2 se">
-                <select id="cy3zt" class="select">
-                    <option value="true">是</option>
-                    <option value="false">否</option>
-                </select>
-            </div>
-        </div>
-        <div class="row end1">
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy4xm">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy4fg">
-            </div>
-            <div class="col-md-3 col col2">
-                <input type="text" class="form-control" id="cy4zb">
-            </div>
-            <div class="col-md-3 col col2 end2 se">
-                <select id="cy4zt" class="select">
-                    <option value="true">是</option>
-                    <option value="false">否</option>
-                </select>
-            </div>
-        </div>
+
     </div>
 
     <div id="btn-container" style="text-align: center">
@@ -302,6 +257,19 @@
     <!--导师所在单位自动获取-->
     <!--填表日期自动获取-->
 </form>
+
+<script>
+    $(window).load(function(){
+        var i=2;
+        $('#tjxjl').click(function(){
+            $('#tjxjl').parent().before("<div class='row'><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"xm'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"fg'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"zb'></div><div class='col-md-3 col col3 end3 se'><select id='cy"+i+"zt' class='select'><option value='true'>是</option><option value='false'>否</option></select></div></div>"
+            );
+            i++;
+            if(i>4)
+                $('#tjxjl').attr("disabled","true");
+        })
+    });
+</script>
 
 </body>
 </html>
