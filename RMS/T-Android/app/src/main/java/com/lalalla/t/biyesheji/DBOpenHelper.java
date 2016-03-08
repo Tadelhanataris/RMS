@@ -21,6 +21,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table project(_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000))");
+
         Log.v(tag, "数据库创建执行一次");
     }
 
