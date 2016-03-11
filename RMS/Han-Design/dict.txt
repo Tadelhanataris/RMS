@@ -1,0 +1,16 @@
+测试         ceshi.html
+成果统计      cgtj.html
+创新俱乐部    cxjlb.html
+发布通知      fbtz.html
+首页         index.html
+经费使用记录   jfsyjl.html
+结题验收报告   jtysbg.html
+登录          login.html
+学生界面       stu.html
+项目成员列表    xmcylb.html
+项目概览       xmgl.html
+项目进度       xmjd.html
+新闻列表       xwlb.html
+新闻通知       xwtz.html
+新项目申请      xxmsq.html
+中期检查报告    zqjcbg.html
