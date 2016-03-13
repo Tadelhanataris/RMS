@@ -1,0 +1,19 @@
+#container{
+    width: 450px;
+    margin: 20px auto;
+}
+
+.col-md-6{
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.op{
+    width: 100%;
+}
+
+#btn-container{
+    width: 450px;
+    margin: 20px auto;
+}
