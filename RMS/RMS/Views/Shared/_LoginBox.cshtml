@@ -1,0 +1,34 @@
+﻿@model RMS.Models.LoginViewModel
+
+@if (!Request.IsAuthenticated)
+{
+        <!-- start login -->
+
+    <div class="session-panel">
+
+        <h3 style="text-align:center;width:100%;">欢迎使用</h3>
+        <p style="text-align:center;width:100%;">请登录</p>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.Uid, new { })
+                @Html.TextBoxFor(m => m.Uid, new { @class = "form-control", autofocus = "autofocus", maxlength = "10", tabindex = "1", type = "tel", onkeyup = "this.value=this.value.replace(/\\D/g,'')", onafterpaste = "this.value=this.value.replace(/\\D/g,'')" })
+                @Html.ValidationMessageFor(m => m.Uid, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { })
+                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", maxlength = "32", tabindex = "2", type = "password" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group action">
+                @Html.CheckBoxFor(m => m.RememberMe, new { style = "float:left" })
+                @Html.LabelFor(m => m.RememberMe, new { style = "margin: 4px 0 0;line-height: normal;display: block;" })
+                <input class="btn" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
+            </div>
+        }
+    </div>
+
+        <!-- end login -->
+}
