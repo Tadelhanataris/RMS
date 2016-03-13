@@ -14,3 +14,4 @@
 新闻通知       xwtz.html
 新项目申请      xxmsq.html
 中期检查报告    zqjcbg.html
+新用户注册      signup.html
