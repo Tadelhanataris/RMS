@@ -28,11 +28,11 @@ namespace RMS
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/header").Include(
-                      "~/Content/bootstrap.css",
                       "~/Content/header.css"));
             bundles.Add(new ScriptBundle("~/bundles/home").Include(
                       "~/Scripts/jquery.caroufredsel-6.0.4-packed.js",
                       "~/Scripts/indexslide.js"));
+            bundles.Add(new ScriptBundle("~/bundles/login").Include("~/Scripts/login.js"));
         }
     }
 }

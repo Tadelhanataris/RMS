@@ -58,7 +58,9 @@
 .none{display:none;}
 .banner_show{width:1440px; margin:0 auto;text-align:center;height:515px;overflow:hidden;}
 .banner_show a img{ width: 1440px; height:550px;}
-.bannger_inbox{position:absolute;left:0;top:0;}
+.bannger_inbox{position:absolute;left:0;top:0;display:none}
+    .bannger_inbox:first-child {display:block;
+    }
 
 .banner_pre_next{position:relative;z-index:1005;top:45%;width:1100px;left:0;height:30px; margin:0 auto;}
 .banner_pre_next a{width:30px;height:30px;background:url(../images/arrows.png) no-repeat;text-indent:-999em;}

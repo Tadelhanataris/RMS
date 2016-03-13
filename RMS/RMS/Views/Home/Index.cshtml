@@ -1,21 +1,19 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+@using RMS.Models
     <!-- start slide -->
 
 <div class="banner" id="banner">
     <div class="banner_show" id="banner_show">
-        <!-- <a href="$cms.getUrl($article)" target="_blank" class="bannger_inbox">-->
-        <a class="bannger_inbox" href="#"><img src="images/testnews1.JPG" width="1440" height="550" /></a>
-        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews2.JPG" width="1440" height="550" /></a>
-        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews3.JPG" width="1440" height="550" /></a>
-        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews4.JPG" width="1440" height="550" /></a>
-        <a class="bannger_inbox" style="display:none" href="#"><img src="~/images/testnews5.JPG" width="1440" height="550" /></a>
+        @foreach (var banner in DBHelper.instence.Banners.ToList())
+        {
+            <a class="bannger_inbox"><img src="@Html.DisplayFor(x=> banner.src)" width="1440" height="550" /></a>
+        }
         <div class="banner_pre_next"> <a href="javascript:;" class="banner_btn_left">上一个</a> <a href="javascript:;" class="banner_btn_right">下一个</a> </div>
     </div>
 </div>
-@Scripts.Render("~/bundles/home")
+
 
 <!-- end slide -->
 <!-- start content -->
@@ -25,15 +23,13 @@
     <!-- start notifications -->
     <div class="notifications">
         <div class="content-title">
-            <a class="title-text">通知公告</a>
+            @Html.ActionLink("通知公告", "Index", "Notices", routeValues: null, htmlAttributes: new { @class = "title-text" })
         </div>
         <div class="content-list">
             <ul>
-                <li><span>03-03</span><a href="#" target="_blank">纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开</a></li>
-                <li><span>03-03</span><a href="#" target="_blank">我校工会工作荣获多项奖励</a></li>
-                <li><span>03-02</span><a href="#" target="_blank">我校获批首个国家级虚拟仿真实验教学中心</a></li>
-                <li><span>03-02</span><a href="#" target="_blank">我校学生赴澳大利亚参加“欢乐春节”多元文化艺术节演出</a></li>
-                <li><span>02-29</span><a href="#" target="_blank">党委召开理论学习中心组（扩大）会议 传达学习贯彻中央和北京市重要文件精神</a></li>
+                @foreach(var notice in DBHelper.instence.Notices.OrderByDescending(p => p.ID).Take(5).ToList()){
+                    <li><span>@notice.date.ToString("MM-dd")</span>@Html.ActionLink(notice.title, notice.ID.ToString(), "Notices", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+                }
             </ul>
         </div>
     </div>
@@ -41,15 +37,14 @@
     <!--start news-->
     <div class="news">
         <div class="content-title">
-            <a class="title-text">焦点新闻</a>
+            @Html.ActionLink("焦点新闻", "Index", "News", routeValues: null, htmlAttributes: new { @class = "title-text" })
         </div>
         <div class="content-list">
             <ul>
-                <li><span>03-03</span><a href="#" target="_blank">纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开</a></li>
-                <li><span>03-03</span><a href="#" target="_blank">我校工会工作荣获多项奖励</a></li>
-                <li><span>03-02</span><a href="#" target="_blank">我校获批首个国家级虚拟仿真实验教学中心</a></li>
-                <li><span>03-02</span><a href="#" target="_blank">我校学生赴澳大利亚参加“欢乐春节”多元文化艺术节演出</a></li>
-                <li><span>02-29</span><a href="#" target="_blank">党委召开理论学习中心组（扩大）会议 传达学习贯彻中央和北京市重要文件精神</a></li>
+                @foreach (var news in DBHelper.instence.News.OrderByDescending(p => p.ID).Take(5).ToList())
+                {
+                    <li><span>@news.date.ToString("MM-dd")</span>@Html.ActionLink(news.title, news.ID.ToString(), "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+                }
             </ul>
         </div>
     </div>
@@ -58,3 +53,6 @@
 </div>
 
 <!-- end content -->
+@section Scripts {
+    @Scripts.Render("~/bundles/home")
+}

@@ -1,41 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 @using RMS.Models
 @model LoginViewModel
-@{
-    var auth = Request.IsAuthenticated;
-}
-@if (!auth)
-{
-        <!-- start login -->
-
-    <div class="session-panel">
-
-        <h3 style="text-align:center;width:100%;">欢迎使用</h3>
-        <p style="text-align:center;width:100%;">请登录</p>
-        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { role = "form" }))
-        {
-            @Html.AntiForgeryToken()
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(m => m.Uid, new { })
-                @Html.TextBoxFor(m => m.Uid, new { @class = "form-control", autofocus = "autofocus", maxlength = "10", tabindex = "1", type = "tel" , onkeyup = "this.value=this.value.replace(/\\D/g,'')", onafterpaste = "this.value=this.value.replace(/\\D/g,'')" })
-                @*<input autofocus="autofocus" class="form-control inputnum" id="uid" maxlength="10" name="user[id]" tabindex="1" type="tel"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">*@
-            </div>
-            <div class="form-group">
-                <label>密码</label>
-                <input class="form-control" id="userpassword" maxlength="32" name="user[password]" tabindex="2" type="password">
-            </div>
-            <div class="form-group action">
-                <input type="checkbox" class="checkbox" style="float:left" /><span style="margin: 4px 0 0;line-height: normal;display: block;">记住我?</span>
-                <input class="btn" id="modalLogInSubmit" name="commit" tabindex="3" type="submit" value="登录">
-            </div>
-        }
-    </div>
-
-        <!-- end login -->
-
-}
-<div id="container">
     <!-- start header -->
     <header class="main-header">
         <div class="container">
@@ -74,7 +39,7 @@
                             <li role="presentation">
                                 @Html.ActionLink("表格下载", "Index", "Table", routeValues: null, htmlAttributes: new { style = "color: white" })
                             </li>
-                            @if (auth)
+                            @if (Request.IsAuthenticated)
                             {
                                 <li style="float: right" role="presentation">
                                     <span>@User.Identity.GetUserName()</span>
@@ -90,13 +55,12 @@
                             else
                             {
                                 <li style="float: right" role="presentation">
-                                    @Html.ActionLink("注册", "Index", "Register", routeValues: null, htmlAttributes: new { style = "color: white" })
-                                    <script type="application/javascript" src="~/Scripts/login.js"></script>
+                                    @Html.ActionLink("注册", "Register", "Account", routeValues: null, htmlAttributes: new { style = "color: white" })
                                 </li>
                                 <li style="float: right" role="presentation">
                                     <a href="#" style="color: white" id="login">登录</a>
+                                    @Scripts.Render("~/bundles/login")
                                 </li>
-                                
                             }
                         </ul>
                     </div>
