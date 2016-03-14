@@ -1,47 +1,47 @@
-#container{
+.container #jtysbg{
     width: 550px;
     margin: 20px auto;
 }
 
-#no{
+.container #no{
     width: 300px;
 }
 
-.row{
+.container .row{
     width: 100%;
     margin: 0px;
 }
 
-.col{
+.container .col{
     padding: 5px;
 }
 
-.section{
+.container .section{
     font-family: 微软雅黑;
     font-size: 18px;
     padding-top: 20px;
 }
 
-.col1{
+.container .col1{
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-bottom: hidden;
 }
 
-.end1{
+.container .end1{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: black;
 }
 
-.content1{
+.container .content1{
     width: 100%;
     padding-top: 0px;
     resize: none;
 }
 
-.col2{
+.container .col2{
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -50,40 +50,40 @@
     height: 45px;
 }
 
-.end2{
+.container .end2{
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: black;
 }
 
-.p1{
+.container .p1{
     margin: 0px;
 }
 
-.p2{
+.container .p2{
     margin: 7px;
 }
 
-.p3{
+.container .p3{
     margin: 7px;
     text-align: center;
 }
 
-.p4{
+.container .p4{
     margin: -2px;
 }
 
-.se{
+.container .se{
     text-align: center;
 }
 
-.table-start{
+.container .table-start{
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: black;
 }
 
-.col3{
+.container .col3{
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -92,7 +92,7 @@
     height: 45px;
 }
 
-.end3{
+.container .end3{
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: black;

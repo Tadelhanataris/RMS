@@ -1,19 +1,19 @@
-#container{
+.container #signup{
     width: 450px;
     margin: 20px auto;
 }
 
-.col-md-6{
+.container .col-md-6{
     margin-top: 5px;
     padding-left: 0px;
     padding-right: 5px;
 }
 
-.op{
+.container .op{
     width: 100%;
 }
 
-#btn-container{
+.container #btn-container{
     width: 450px;
     margin: 20px auto;
 }

@@ -1,29 +1,29 @@
-#container{
+.container #cxjlb{
     width: 930px;
     margin: 0 auto;
     font-family: 微软雅黑;
 }
 
-#container img{
+.container #cxjlb img{
     width: 270px;
     height: 200px;
 }
 
-#container h3{
+.container #cxjlb h3{
     text-align: center;
 }
 
-#container p{
+.container #cxjlb p{
     text-align: center;
 }
 
-.input-group{
+.container .input-group{
     width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#search{
+.container #search{
     margin: 0 auto;
     width: 930px;
     display: inline-block;

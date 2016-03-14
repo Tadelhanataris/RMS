@@ -1,28 +1,21 @@
-#container{
+.container #psxm{
     width: 800px;
     margin: 20px auto;
 }
 
-.row{
-    /*border-top-color: grey;*/
-    /*border-top-width: 1px;*/
-    /*border-top-style: solid;*/
-    /*margin-top: 5px;*/
-}
-
-.single{
+.container .single{
     background-color: #f8f8f8;
 }
 
-p{
+.container p{
     margin: 10px 0;
 }
 
-.btn{
+.container .btn{
     margin: 4px auto;
 }
 
-#flipover{
+.container #flipover{
     width: 800px;
     margin: 10px auto;
 }

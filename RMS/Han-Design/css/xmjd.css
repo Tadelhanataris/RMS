@@ -1,14 +1,14 @@
-#container{
+.container .xmjd{
     width: 550px;
     margin: 20px auto;
 }
 
-#content{
+.container #content{
     margin-top: 10px;
     height: 300px;
 }
 
-#btn-container{
+.container #btn-container{
     text-align: center;
     margin-top: 10px;
 }

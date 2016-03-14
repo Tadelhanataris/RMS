@@ -1,25 +1,25 @@
-.news-list{
+.container .news-list{
     padding-top: 20px;
     width: 800px;
     margin: 0 auto;
     font-family: 微软雅黑;
 }
 
-.col-title{
+.container .col-title{
     height: 42px;
     border-bottom: 1px solid #e4e4e4;
 }
 
-.col-list{
+.container .col-list{
     font-size: 14px;
 }
 
-ul, li{
+.container ul, li{
     list-style-type: none;
     border-bottom: #c9c9c9 solid 1px;
 }
 
-.col-list ul li {
+.container .col-list ul li {
     height: 36px;
     line-height: 36px;
     border-bottom: 1px solid #e4e4e4;
@@ -27,17 +27,17 @@ ul, li{
     padding-right: 30px;
 }
 
-.col-list ul li span{
+.container .col-list ul li span{
     float: right;
 }
 
-.col-list ul li a{
+.container .col-list ul li a{
     color: black;
     font-size: 14px;
     text-decoration: none;
 }
 
-.flipover{
+.container .flipover{
     font-size: 12px;
     width: 480px;
     height: 30px;
@@ -50,24 +50,24 @@ ul, li{
     overflow: hidden;
 }
 
-.flipover dl{
+.container .flipover dl{
     width: 650px;
     height: 100%;
 }
 
-.flipover dt.flipover-title{
+.container .flipover dt.flipover-title{
     float: left;
     width: 190px;
     padding-left: 20px;
     line-height: inherit;
 }
 
-.flipover dt.flipover-title span{
+.container .flipover dt.flipover-title span{
     margin: 0px 8px;
     color: #0395e1;
 }
 
-.flipover dd a {
+.container .flipover dd a {
     color: #414141;
     display: block;
     line-height: 30px;
@@ -76,7 +76,7 @@ ul, li{
     float: left;
 }
 
-.dt{
+.container .dt{
     margin: 0px;
     padding: 0px;
     font-style: normal;
