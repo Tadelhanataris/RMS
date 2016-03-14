@@ -17,22 +17,48 @@ public class ProjectDB {
     public ProjectDB(Context context) {
         this.dbOpenHelper = new DBOpenHelper(context);
     }
+
     public void save(Project project){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
         db.execSQL("insert into project(date,tittle,content) values (?,?,?)",
                 new Object[]{project.getdate(),project.getTittle(),project.getContent()});
 
     }
+    public void save(Person person)
+    {
+        SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
+        db.execSQL("insert into person(number,password) values (?,?)",
+                new Object[]{person.getNumber(),person.getPassword()});
+    }
+
+
+    public long personcount()
+    {
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=db.rawQuery("SELECT COUNT(person_id) FROM person",null);
+        cursor.moveToFirst();
+        long result=cursor.getLong(0);
+        return result;
+    }
+
+
+
     public void delete(Integer id){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
         db.execSQL("delete from project where _id=?",
                 new Object[]{id});
     }
+    public void personupdate(Person person){
+        SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
+        db.execSQL("update person set number=?,password=? where person_id=?",
+                new Object[]{person.getNumber(), person.getPassword(), person.getId()});
+    }
     public void update(Project project){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
-        db.execSQL("update project set date=?,tittle=?,content=? where _id=?",
+        db.execSQL("update project set date=?,tittle=?,content=? where_id=?",
                 new Object[]{project.getdate(), project.getTittle(), project.getContent(), project.getId()});
     }
+
     public Project find(Integer _id){
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
         Cursor cursor=db.rawQuery("select * from project where _id=?",
@@ -71,6 +97,13 @@ public class ProjectDB {
         return db.rawQuery("select * from project order by date desc limit ?,?",
                 new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
     }
+    public Cursor getsummaryAllData()
+    {
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        return db.rawQuery("select * from summary order by _id desc limit ?,?",
+                new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
+    }
+
 
     public long getCount()
     {

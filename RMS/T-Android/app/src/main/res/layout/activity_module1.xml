@@ -77,7 +77,9 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/Moudle1List1"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/boder"
+           >
         </ListView>
     </RelativeLayout>
         <View

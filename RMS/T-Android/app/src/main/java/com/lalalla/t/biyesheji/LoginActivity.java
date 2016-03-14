@@ -35,10 +35,12 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Scroller;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.Manifest.permission.INTERNET;
 import static android.Manifest.permission.READ_CONTACTS;
 
 /**
@@ -69,6 +71,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
     private ImageView imageview;
+    private ProjectDB projectDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,6 +99,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+
+
+
+                try {
+                    personsave(view);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 startActivity(new Intent(LoginActivity.this, Userinformation.class));
             }
         });
@@ -103,6 +114,29 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+    }
+
+    public void personsave(View v) throws Exception{
+        projectDB = new ProjectDB(this);
+        mEmailView = (AutoCompleteTextView) findViewById(R.id.StudentId);
+        mPasswordView = (EditText) findViewById(R.id.password);
+
+        Long Number=Long.parseLong(mEmailView.getText().toString());
+        String Password=mPasswordView.getText().toString();
+
+            ProjectDB projectService=new ProjectDB(v.getContext());
+            Person person=new Person(Number,Password);
+            Person person1=new Person(1,Number,Password);
+        long a =projectDB.personcount();
+        if (a==0) {
+            projectService.save(person);
+            Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
+        }
+        else {
+            projectService.personupdate(person1);
+            Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private void populateAutoComplete() {
