@@ -35,7 +35,7 @@
                         <p class="p1">（一）项目研究计划要点、执行情况、主要进展：</p>
                     </div>
                     <div>
-                        <textarea id="jhyd" class="content1"></textarea>
+                        <textarea id="jhyd" class="form-control content1" style="height: 300px"></textarea>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         <p class="p1">（二）主要成果、创新特色：</p>
                     </div>
                     <div>
-                        <textarea id="zycg" class="content1"></textarea>
+                        <textarea id="zycg" class="form-control content1" style="height: 300px"></textarea>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                         <p class="p1">（三）成果形式</p>
                     </div>
                     <div>
-                        <textarea id="cgxs" class="content1"></textarea>
+                        <textarea id="cgxs" class="form-control content1" style="height: 300px"></textarea>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                 <input type="text" class="form-control" id="fzrzb">
             </div>
             <div class="col-md-3 col col3 end3 se">
-                <select id="fzrzt" class="select">
+                <select id="fzrzt" class="form-control">
                     <option value="true">是</option>
                     <option value="false">否</option>
                 </select>
@@ -227,7 +227,7 @@
                 <input type="text" class="form-control" id="cy1zb">
             </div>
             <div class="col-md-3 col col3 end3 se">
-                <select id="cy1zt" class="select">
+                <select id="cy1zt" class="form-control">
                     <option value="true">是</option>
                     <option value="false">否</option>
                 </select>
@@ -262,8 +262,7 @@
     $(window).load(function(){
         var i=2;
         $('#tjxjl').click(function(){
-            $('#tjxjl').parent().before("<div class='row'><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"xm'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"fg'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"zb'></div><div class='col-md-3 col col3 end3 se'><select id='cy"+i+"zt' class='select'><option value='true'>是</option><option value='false'>否</option></select></div></div>"
-            );
+            $('#tjxjl').parent().before("<div class='row'><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"xm'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"fg'></div><div class='col-md-3 col col3'><input type='text' class='form-control' id='cy"+i+"zb'></div><div class='col-md-3 col col3 end3 se'><select id='cy"+i+"zt' class='form-control'><option value='true'>是</option><option value='false'>否</option></select></div></div>");
             i++;
             if(i>4)
                 $('#tjxjl').attr("disabled","true");

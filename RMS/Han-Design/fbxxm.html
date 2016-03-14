@@ -16,25 +16,25 @@
 
 <form>
     <div id="container">
-        <div class="row">
-            <div class="col-md-2">
+        <div class="row table-start">
+            <div class="col-md-2 col col-start">
                 <div class="title">
-                    <p>项目名称：</p>
+                    <p>项目名称</p>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col">
                 <div class="content">
                     <input type="text" class="form-control" id="xmmc">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col col-start">
                 <div class="title">
-                    <p>项目类别：</p>
+                    <p>项目类别</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col">
                 <div>
                     <select class="form-control">
                         <option>基础</option>
@@ -43,36 +43,38 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col">
                 <div class="title">
-                    <p>学科专业：</p>
+                    <p>学科专业</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col">
                 <div class="content">
                     <input class="form-control" id="xkzy">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input type="checkbox" autocomplete="off">师范
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" autocomplete="off">非师范
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col col-start">
                 <div class="title">
-                    <p>需求人数：</p>
+                    <p>师范/非师范</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col">
+                <div>
+                    <select class="form-control">
+                        <option>师范</option>
+                        <option>非师范</option>
+                        <option>师范/非师范</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 col">
+                <div class="title">
+                    <p>需求人数</p>
+                </div>
+            </div>
+            <div class="col-md-4 col">
                 <div>
                     <select class="form-control">
                         <option>1</option>
@@ -84,7 +86,38 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 col col-start">
+                <div>
+                    <div>
+                        <p>项目描述</p>
+                    </div>
+                    <div class="content">
+                        <textarea class="form-control content1" style="height: 200px"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col-start">
+                <div>
+                    <div>
+                        <p>要求</p>
+                    </div>
+                    <div class="content">
+                        <textarea class="form-control content1" style="height: 200px"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div style="text-align: center">
+        <button class="btn btn-default" type="submit">提交</button>
+        <button class="btn btn-danger" type="reset">重置</button>
+        <button class="btn btn-primary" type="button">打印</button>
+    </div>
+
 </form>
 
 </body>

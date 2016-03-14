@@ -2,3 +2,41 @@
     width: 550px;
     margin: 20px auto;
 }
+
+.row{
+    width: 100%;
+    margin: 0px;
+}
+
+.col{
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top: hidden;
+    border-left: hidden;
+}
+
+.title{
+    text-align: center;
+    margin: 4px auto;
+}
+
+.content1{
+    width: 100%;
+    padding-top: 0px;
+    resize: none;
+}
+
+.table-start{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.col-start{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
