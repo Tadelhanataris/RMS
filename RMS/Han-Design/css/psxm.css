@@ -1,0 +1,28 @@
+#container{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.row{
+    /*border-top-color: grey;*/
+    /*border-top-width: 1px;*/
+    /*border-top-style: solid;*/
+    /*margin-top: 5px;*/
+}
+
+.single{
+    background-color: #f8f8f8;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.btn{
+    margin: 4px auto;
+}
+
+#flipover{
+    width: 800px;
+    margin: 10px auto;
+}
