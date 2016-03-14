@@ -58,7 +58,7 @@
             android:layout_weight="5"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="内容概要\n(更改请选择项目)"
+            android:text="内容概要\n(更改请点击项目)"
             />
 
 
