@@ -47,12 +47,12 @@ ul, li{
     margin-top: 40px;
     margin-bottom: 10px;
     color: #414141;
-    float: right;
     overflow: hidden;
 }
 
 .flipover dl{
     width: 650px;
+    height: 100%;
 }
 
 .flipover dt.flipover-title{
