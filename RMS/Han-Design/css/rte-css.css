@@ -1,33 +1,33 @@
-body {
+.container textarea, input {
+  font-family: Helvetica, Arial, Verdana;
+}
+
+.container #fbtz{
   width: 810px;
   min-height: 100%;
   margin: 0 auto;
 }
 
-body, textarea, input {
-  font-family: Helvetica, Arial, Verdana;
-}
-
-strong {
+.container strong {
   font-weight: bold;
 }
 
-.get-started {
+.container .get-started {
   margin: 20px 0;
   color: #666;
   font-size: 11px;
   text-align: center;
 }
 
-.get-started a {
+.container .get-started a {
   color: #666;
 }
 
-#wysihtml5-editor-toolbar {
+.container #wysihtml5-editor-toolbar {
   position: relative;
 }
 
-header {
+.container header {
   display: block;
   border-radius: 4px;
   width: 810px;
@@ -45,12 +45,12 @@ header {
   font-size: 0;
 }
 
-.commands {
+.container .commands {
   border-left: 1px solid #ddd;
   display: inline-block;
 }
 
-[data-wysihtml5-command],
+.container [data-wysihtml5-command],
 [data-wysihtml5-action],
 .fore-color {
   position: relative;
@@ -64,7 +64,7 @@ header {
   width: 68px;
 }
 
-[data-wysihtml5-command]:after,
+.container [data-wysihtml5-command]:after,
 [data-wysihtml5-action]:after,
 .fore-color:after {
   content: "";
@@ -77,7 +77,7 @@ header {
   bottom: 0;
 }
 
-[data-wysihtml5-command]:hover,
+.container [data-wysihtml5-command]:hover,
 [data-wysihtml5-action]:hover,
 .fore-color:hover {
   background-image: linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
@@ -87,51 +87,51 @@ header {
   background-image: -ms-linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
 }
 
-[data-wysihtml5-command="bold"]:after {
+.container [data-wysihtml5-command="bold"]:after {
   background-position: 24px center;
 }
 
-[data-wysihtml5-command="italic"]:after {
+.container [data-wysihtml5-command="italic"]:after {
   background-position: -48px center;
 }
 
-[data-wysihtml5-command="insertUnorderedList"]:after {
+.container [data-wysihtml5-command="insertUnorderedList"]:after {
   background-position: -115px center;
 }
 
-[data-wysihtml5-command="insertOrderedList"]:after {
+.container [data-wysihtml5-command="insertOrderedList"]:after {
   background-position: -197px center;
 }
 
-[data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h1"]:after {
+.container [data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h1"]:after {
   background-position: -344px center;
 }
 
-[data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h2"]:after {
+.container [data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h2"]:after {
   background-position: -428px center;
 }
 
-[data-wysihtml5-command="createLink"]:after {
+.container [data-wysihtml5-command="createLink"]:after {
   background-position: -271px center;
 }
 
-[data-wysihtml5-command="insertImage"]:after {
+.container [data-wysihtml5-command="insertImage"]:after {
   background-position: -513px center;
 }
 
-.fore-color:after {
+.container .fore-color:after {
   background-position: -741px center;
 }
 
-[data-wysihtml5-command="insertSpeech"]:after {
+.container [data-wysihtml5-command="insertSpeech"]:after {
   background-position: -596px center;
 }
 
-[data-wysihtml5-action="change_view"]:after {
+.container [data-wysihtml5-action="change_view"]:after {
   background-position: -670px center;
 }
 
-.fore-color ul {
+.container .fore-color ul {
   display: none;
   position: absolute;
   z-index: 2;
@@ -144,7 +144,7 @@ header {
   overflow: hidden;
 }
 
-.fore-color li {
+.container .fore-color li {
   display: block;
   margin: 3px;
   width: auto;
@@ -152,74 +152,74 @@ header {
   height: 15px;
 }
 
-.fore-color li:after {
+.container .fore-color li:after {
   display: none;
 }
 
-.fore-color:hover ul {
+.container .fore-color:hover ul {
   display: block;
 }
 
-.fore-color [data-wysihtml5-command-value="silver"] {
+.container .fore-color [data-wysihtml5-command-value="silver"] {
   background: silver !important;
 }
 
 
-.fore-color [data-wysihtml5-command-value="gray"] {
+.container .fore-color [data-wysihtml5-command-value="gray"] {
   background: gray !important;
 }
 
-.fore-color [data-wysihtml5-command-value="maroon"] {
+.container .fore-color [data-wysihtml5-command-value="maroon"] {
   background: maroon !important;
 }
 
-.fore-color [data-wysihtml5-command-value="red"] {
+.container .fore-color [data-wysihtml5-command-value="red"] {
   background: red !important;
 }
 
-.fore-color [data-wysihtml5-command-value="purple"] {
+.container .fore-color [data-wysihtml5-command-value="purple"] {
   background: purple !important;
 }
 
-.fore-color [data-wysihtml5-command-value="green"] {
+.container .fore-color [data-wysihtml5-command-value="green"] {
   background: green !important;
 }
 
-.fore-color [data-wysihtml5-command-value="olive"] {
+.container .fore-color [data-wysihtml5-command-value="olive"] {
   background: olive !important;
 }
 
-.fore-color [data-wysihtml5-command-value="navy"] {
+.container .fore-color [data-wysihtml5-command-value="navy"] {
   background: navy !important;
 }
 
-.fore-color [data-wysihtml5-command-value="blue"] {
+.container .fore-color [data-wysihtml5-command-value="blue"] {
   background: blue !important;
 }
 
-.fore-color .wysihtml5-command-active {
+.container .fore-color .wysihtml5-command-active {
   outline: 1px solid #666;
   outline-offset: 1px;
 }
 
-.wysihtml5-commands-disabled .fore-color ul {
+.container .wysihtml5-commands-disabled .fore-color ul {
   display: none;
 }
 
-.wysihtml5-action-active,
+.container .wysihtml5-action-active,
 .wysihtml5-command-active {
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
   background: #eee !important;
 }
 
-.wysihtml5-commands-disabled [data-wysihtml5-command],
+.container .wysihtml5-commands-disabled [data-wysihtml5-command],
 .wysihtml5-commands-disabled .fore-color {
   opacity: 0.4;
   cursor: default;
   background-image: none !important;
 }
 
-[data-wysihtml5-dialog] {
+.container [data-wysihtml5-dialog] {
   color: #333;
   font-size: 14px;
   text-align: left;
@@ -237,33 +237,33 @@ header {
   top: 45px;
 }
 
-[data-wysihtml5-dialog] input {
+.container [data-wysihtml5-dialog] input {
   color: #333;
   border: 1px solid #ccc;
   padding: 3px;
   width: 300px;
 }
 
-[data-wysihtml5-dialog] input:focus {
+.container [data-wysihtml5-dialog] input:focus {
   outline: 0;
   border: 1px solid #666;
 }
 
-[data-wysihtml5-dialog-action] {
+.container [data-wysihtml5-dialog-action] {
   padding: 4px;
   color: #fff;
   cursor: pointer;
 }
 
-[data-wysihtml5-dialog-action="save"] {
+.container [data-wysihtml5-dialog-action="save"] {
   background: #007200;
 }
 
-[data-wysihtml5-dialog-action="cancel"] {
+.container [data-wysihtml5-dialog-action="cancel"] {
   background: #999;
 }
 
-a.fork {
+.container a.fork {
   position: absolute;
   top: 0;
   right: 0;

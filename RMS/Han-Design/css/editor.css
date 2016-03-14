@@ -1,12 +1,4 @@
-html {
-  background: transparent;
-}
-
-body {
-  margin-bottom: 25px;
-}
-
-h1, h2 {
+.container h1, h2 {
   line-height: 1;
   font-family: Rockwell, "Courier New", Courier, Georgia;
   border-bottom: 1px solid #999;
@@ -15,111 +7,111 @@ h1, h2 {
   padding: 0 0 8px;
 }
 
-h1 {
+.container h1 {
   font-size: 27px;
 }
 
-h2 {
+.container h2 {
   font-size: 18px;
 }
 
-p, li {
+.container p, li {
   line-height: 1.5;
 }
 
-p, ul, ol {
+.container p, ul, ol {
   padding-bottom: 25px;
 }
 
-a {
+.container a {
   color: inherit;
 }
 
-strong, b {
+.container strong, b {
   font-weight: bold;
 }
 
-i, em {
+.container i, em {
   font-style: italic;
 }
 
-li {
+.container li {
   margin-left: 30px;
 }
 
-ul li {
+.container ul li {
   list-style: disc outside;
 }
 
-ol li {
+.container ol li {
   list-style: decimal outside;
 }
 
-li img {
+.container li img {
   vertical-align: middle;
   margin: 2px 5px 5px 0;
 }
 
-.wysiwyg-color-black {
+.container .wysiwyg-color-black {
   color: black;
 }
 
-.wysiwyg-color-silver {
+.container .wysiwyg-color-silver {
   color: silver;
 }
 
-.wysiwyg-color-gray {
+.container .wysiwyg-color-gray {
   color: gray;
 }
 
-.wysiwyg-color-white {
+.container .wysiwyg-color-white {
   color: white;
 }
 
-.wysiwyg-color-maroon {
+.container .wysiwyg-color-maroon {
   color: maroon;
 }
 
-.wysiwyg-color-red {
+.container .wysiwyg-color-red {
   color: red;
 }
 
-.wysiwyg-color-purple {
+.container .wysiwyg-color-purple {
   color: purple;
 }
 
-.wysiwyg-color-fuchsia {
+.container .wysiwyg-color-fuchsia {
   color: fuchsia;
 }
 
-.wysiwyg-color-green {
+.container .wysiwyg-color-green {
   color: green;
 }
 
-.wysiwyg-color-lime {
+.container .wysiwyg-color-lime {
   color: lime;
 }
 
-.wysiwyg-color-olive {
+.container .wysiwyg-color-olive {
   color: olive;
 }
 
-.wysiwyg-color-yellow {
+.container .wysiwyg-color-yellow {
   color: yellow;
 }
 
-.wysiwyg-color-navy {
+.container .wysiwyg-color-navy {
   color: navy;
 }
 
-.wysiwyg-color-blue {
+.container .wysiwyg-color-blue {
   color: blue;
 }
 
-.wysiwyg-color-teal {
+.container .wysiwyg-color-teal {
   color: teal;
 }
 
-.wysiwyg-color-aqua {
+.container .wysiwyg-color-aqua {
   color: aqua;
 }

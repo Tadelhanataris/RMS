@@ -17,64 +17,66 @@
 <body>
 
 <div class="container">
+    <div id="fbtz">
 
-<form id="form" action="#" method="post">
-    <div style="margin:20px auto">
-    <input type="text" class="form-control" placeholder="请输入标题" id="notification-title" autofocus>
-    </div>
-    <div id="wysihtml5-editor-toolbar" style="display: none;">
-        <header>
-            <ul class="commands">
-                <li data-wysihtml5-command="bold" title="加粗 (CTRL + B)" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="italic" title="倾斜 (CTRL + I)" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="insertUnorderedList" title="插入项目符号" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="insertOrderedList" title="插入编号" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="createLink" title="插入超链接" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="insertImage" title="插入图片" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" title="标题1" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" title="标题2" class="command" href="javascript:;" unselectable="on"></li>
-                <li data-wysihtml5-command-group="foreColor" class="fore-color" title="字体颜色">
-                    <ul>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="silver" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="gray" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="maroon" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="purple" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="olive" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="navy" href="javascript:;" unselectable="on"></li>
-                        <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue" href="javascript:;" unselectable="on"></li>
+        <form id="form" action="#" method="post">
+            <div style="margin:20px auto">
+            <input type="text" class="form-control" placeholder="请输入标题" id="notification-title" autofocus>
+            </div>
+            <div id="wysihtml5-editor-toolbar" style="display: none;">
+                <header>
+                    <ul class="commands">
+                        <li data-wysihtml5-command="bold" title="加粗 (CTRL + B)" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="italic" title="倾斜 (CTRL + I)" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="insertUnorderedList" title="插入项目符号" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="insertOrderedList" title="插入编号" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="createLink" title="插入超链接" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="insertImage" title="插入图片" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" title="标题1" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" title="标题2" class="command" href="javascript:;" unselectable="on"></li>
+                        <li data-wysihtml5-command-group="foreColor" class="fore-color" title="字体颜色">
+                            <ul>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="silver" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="gray" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="maroon" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="purple" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="olive" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="navy" href="javascript:;" unselectable="on"></li>
+                                <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue" href="javascript:;" unselectable="on"></li>
+                            </ul>
+                        </li>
+                        <li data-wysihtml5-command="insertSpeech" title="Insert speech" class="command" href="javascript:;" unselectable="on" style="display: none;"></li>
+                        <li data-wysihtml5-action="change_view" title="Show HTML" class="action" href="javascript:;" unselectable="on" style="display: none;"></li>
                     </ul>
-                </li>
-                <li data-wysihtml5-command="insertSpeech" title="Insert speech" class="command" href="javascript:;" unselectable="on" style="display: none;"></li>
-                <li data-wysihtml5-action="change_view" title="Show HTML" class="action" href="javascript:;" unselectable="on" style="display: none;"></li>
-            </ul>
-        </header>
+                </header>
 
-        <div data-wysihtml5-dialog="insertImage" style="display: none;">
-            <label>
-                Image:
-                <input data-wysihtml5-dialog-field="src" value="http://">
-            </label>
-            <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
-        </div>
+                <div data-wysihtml5-dialog="insertImage" style="display: none;">
+                    <label>
+                        Image:
+                        <input data-wysihtml5-dialog-field="src" value="http://">
+                    </label>
+                    <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+                </div>
 
+            </div>
+            <div>
+                <textarea id="content" class="form-control" placeholder="在此输入正文" style="width: 100%;height: 400px;" form="form"></textarea>
+            </div>
+
+            <div class="input-group" style="margin:10px auto;">
+                <span class="input-group-addon" id="upload">附件</span>
+                <input type="file" class="form-control" aria-describedby="upload">
+            </div>
+
+            <div style="float: right">
+                <input type="submit" class="btn btn-default">
+                <input type="reset" class="btn btn-danger">
+            </div>
+
+        </form>
     </div>
-    <div>
-        <textarea id="content" class="" placeholder="在此输入正文" style="width: 100%;height: 400px;" form="form"></textarea>
-    </div>
-
-    <div class="input-group" style="margin:10px auto;">
-        <span class="input-group-addon" id="upload">附件</span>
-        <input type="file" class="form-control" aria-describedby="upload">
-    </div>
-
-    <div style="float: right">
-        <input type="submit" class="btn btn-default">
-        <input type="reset" class="btn btn-danger">
-    </div>
-
-</form>
 
 </div>
 
