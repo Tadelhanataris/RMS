@@ -19,7 +19,7 @@
                 <p style="margin-top: 7px">成果类型</p>
             </div>
             <div class="col-md-9 col end">
-                <select id="cglx1" style="margin-top: 7px;margin-left: 10px;width: 150px">
+                <select id="cglx1" class="form-control" style="margin-left: 10px;width: 150px">
                     <option>请选择成果类型</option>
                 </select>
             </div>
@@ -31,7 +31,7 @@
                         <p style="margin-bottom: 0px">请添加描述</p>
                     </div>
                     <div class="content" style="height: 92%">
-                        <textarea id="ms1" style="width: 100%;height: 100%"></textarea>
+                        <textarea id="ms1" class="form-control" style="width: 100%;height: 100%;resize: none"></textarea>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
     $(window).load(function(){
         var i=2;
         $('#tjxjl').click(function(){
-            $('#tjxjl').parent().before("<div class='row table-start'><div class='col-md-3 col' style='text-align: center'><p style='margin-top: 7px'>成果类型</p></div><div class='col-md-9 col end'><select id='cglx"+i+"' style='margin-top: 7px;margin-left: 10px;width: 150px'><option>请选择成果类型</option></select></div></div><div class='row'><div class='col-md-12 col end' style='height: 300px'><div style='height: 100%'><div class='title'><p style='margin-bottom: 0px'>请添加描述</p></div><div class='content' style='height: 92%'><textarea id='ms"+i+"' style='width: 100%;height: 100%'></textarea></div></div></div></div><div class='row'><div class='col-md-12 col end'><div class='input-group'><span class='input-group-addon' id='upload"+i+"'>附件</span><input type='file' class='form-control' aria-describedby='upload"+i+"'></div></div></div>");
+            $('#tjxjl').parent().before("<div class='row table-start'><div class='col-md-3 col' style='text-align: center'><p style='margin-top: 7px'>成果类型</p></div><div class='col-md-9 col end'><select id='cglx"+i+"' class='form-control' style='margin-left: 10px;width: 150px'><option>请选择成果类型</option></select></div></div><div class='row'><div class='col-md-12 col end' style='height: 300px'><div style='height: 100%'><div class='title'><p style='margin-bottom: 0px'>请添加描述</p></div><div class='content' style='height: 92%'><textarea id='ms"+i+"' class='form-control' style='width: 100%;height: 100%;resize: none'></textarea></div></div></div></div><div class='row'><div class='col-md-12 col end'><div class='input-group'><span class='input-group-addon' id='upload"+i+"'>附件</span><input type='file' class='form-control' aria-describedby='upload"+i+"'></div></div></div>");
             i++;
         })
     });
