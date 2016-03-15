@@ -19,4 +19,5 @@
 发布新项目      fbxxm.html
 立项评审        lxps.html
 立项评审详情     lxpsxq.html
-教师项目管理     jsxmgl.html
+发布项目评审     fbxmps.html
+发布项目评审详情  fbxmpsxq.html
