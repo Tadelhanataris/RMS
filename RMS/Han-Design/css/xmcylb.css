@@ -50,7 +50,7 @@
 }
 
 .container .col{
-    border-color: #3a87ad;
+    border-color: grey;
     border-width: 1px;
     border-style: solid;
     border-top: hidden;
@@ -68,13 +68,13 @@
 }
 
 .container .end{
-    border-right-color: #3a87ad;
+    border-right-color: grey;
     border-right-width: 1px;
     border-right-style: solid;
 }
 
 .container .table-start{
-    border-top-color: #3a87ad;
+    border-top-color: grey;
     border-top-width: 1px;
     border-top-style: solid;
 }
