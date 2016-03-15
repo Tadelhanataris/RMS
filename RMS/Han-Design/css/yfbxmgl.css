@@ -1,6 +1,7 @@
-.container #lxps{
+.container #yfbxmgl{
     width: 800px;
     margin: 20px auto;
+    display: table;
 }
 
 .container .single{
@@ -18,4 +19,16 @@
 .container #flipover{
     width: 800px;
     margin: 10px auto;
+}
+
+.container #search{
+    width: 800px;
+    margin: 0px auto;
+    display: block;
+}
+
+.container .input-group{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
