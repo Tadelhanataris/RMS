@@ -1,0 +1,24 @@
+﻿@using RMS.Models
+@{
+    Notice context = (Notice)ViewData["context"];
+    ViewBag.Title = context.title;
+}
+@section Head {
+    @Styles.Render("~/bundles/noticescontent")
+}
+<div class="article">
+    <div class="title">
+        <h2>@context.title</h2>
+    </div>
+    <div class="date">
+        <label id="date-label">@context.date.ToString("yyyy-MM-dd")</label>
+    </div>
+    <div class="content">
+        <p>
+            @context.content
+        </p>
+    </div>
+    <div class="file">
+        <p>这里是附件</p>
+    </div>
+</div>

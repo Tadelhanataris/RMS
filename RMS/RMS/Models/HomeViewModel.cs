@@ -14,20 +14,22 @@ namespace RMS.Models
 
     public class Notice
     {
+        public Notice() { }
         public int ID { get; set; }
         public DateTime date { get; set; }
         public string title { get; set; }
         public string content { get; set; }
-        public string attachment { get; set; }
+        public Attachment[] attachment { get; set; }
     }
 
     public class News
     {
+        public News() { }
         public int ID { get; set; }
         public DateTime date { get; set; }
         public string title { get; set; }
         public string content { get; set; }
-        public string attachment { get; set; }
+        public Attachment[] attachment { get; set; }
     }
 
     public class DBHelper : DbContext
@@ -40,7 +42,7 @@ namespace RMS.Models
         public DbSet<News> News { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();  
         }
 
     }

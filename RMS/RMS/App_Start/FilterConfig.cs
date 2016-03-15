@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using RMS.Log;
+using System.Web;
 using System.Web.Mvc;
 
 namespace RMS
@@ -8,6 +9,7 @@ namespace RMS
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new StatisticsTrackerAttribute());
         }
     }
 }

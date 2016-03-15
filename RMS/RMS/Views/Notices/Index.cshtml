@@ -1,0 +1,41 @@
+﻿@using RMS.Models;
+@using PagedList;
+@{
+    IPagedList<RMS.Models.Notice> context = (IPagedList<RMS.Models.Notice>)ViewData["context"];
+    ViewBag.Title = "通知公告";
+}
+@section Head {
+    @Styles.Render("~/bundles/notices")
+}
+<div class="news-list">
+    <div class="col-title">
+        <h2>@ViewBag.Title</h2>
+    </div>
+    <div class="col-list">
+        <ul>
+            @foreach(Notice li in context)
+            {
+                <li><span>@li.date.ToString("yyyy-MM-dd")</span>@Html.ActionLink(li.title, "ViewContent/"+li.ID, "Notices", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+            }
+        </ul>
+    </div>
+    @*Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+     @Html.PagedListPager(Model, page => Url.Action("Index",
+   new {page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}))*@
+    <div class="flipover">
+        <dl>
+            <dt class="flipover-title">页数:<span>@(context.PageCount < context.PageNumber ? 1 : context.PageNumber) / @context.PageCount</span>总数：<span>@context.TotalItemCount</span></dt>
+            <dd><a href="@Url.Action("Index/1","Notices")"><img src="/images/fanye_ind.jpg"></a></dd>
+            <dd><a href="@Url.Action("Index/"+(context.PageNumber-1<1?1:context.PageNumber-1),"Notices")"><img src="/images/fanye_pg.jpg"></a></dd>
+            @for(var i=context.PageNumber;i<=context.PageCount;i++)
+            {
+                if(i!=context.PageNumber){
+                    <dd><a href="@Url.Action("Index/"+i,"Notices")"> @i </a></dd>}
+                else{
+                    <dd><a href="@Url.Action("Index/"+i,"Notices")" class="on"> @i </a></dd>}
+            }
+            <dd><a href="@Url.Action("Index/"+(context.PageNumber+1>context.PageCount?context.PageCount:context.PageNumber+1),"Notices")"><img src="/images/fanye_nt.jpg"></a></dd>
+            <dd><a href="@context.PageCount"><img src="/images/fanye_ft.jpg"></a></dd>
+        </dl>
+    </div>
+</div></div>
