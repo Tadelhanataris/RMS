@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -196,10 +200,16 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\NoticesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Log\LoggerHelper.cs" />
+    <Compile Include="Log\StatisticsTrackerAttribute.cs" />
+    <Compile Include="Log\MonitorLog.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\HomeViewModelInitializer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -211,20 +221,30 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\header.css" />
+    <Content Include="Content\home.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\xwlb.css" />
+    <Content Include="Content\xwtz.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\arrows.png" />
+    <Content Include="images\fanye_ft.jpg" />
+    <Content Include="images\fanye_ind.jpg" />
+    <Content Include="images\fanye_nt.jpg" />
+    <Content Include="images\fanye_pg.jpg" />
     <Content Include="images\header-bg.jpg" />
+    <Content Include="images\pagefoot-bg.jpg" />
     <Content Include="images\testnews1.JPG" />
     <Content Include="images\testnews2.JPG" />
     <Content Include="images\testnews3.JPG" />
     <Content Include="images\testnews4.JPG" />
     <Content Include="images\testnews5.jpg" />
+    <None Include="Log\log4net.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\indexslide.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -277,6 +297,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_header.cshtml" />
     <Content Include="Views\Shared\_LoginBox.cshtml" />
+    <Content Include="Views\Notices\Index.cshtml" />
+    <Content Include="Views\Notices\ViewContent.cshtml" />
+    <Content Include="Views\Shared\_footer.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\ViewContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

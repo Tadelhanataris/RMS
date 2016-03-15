@@ -1,0 +1,10 @@
+.article{
+    padding-top: 20px;
+    margin: 0 auto;
+    font-family: 微软雅黑;
+    width: 800px;
+}
+
+.date{
+    text-align: right;
+}

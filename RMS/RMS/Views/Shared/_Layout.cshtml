@@ -12,10 +12,13 @@
 </head>
 <body>
     @Html.Partial("_LoginBox")
+    @Html.Partial("_header")
+    
     <div id="container">
-        @Html.Partial("_header")
+        
         @RenderBody()
     </div>
+    @Html.Partial("_footer")
     @RenderSection("scripts", required: false)
 </body>
 </html>

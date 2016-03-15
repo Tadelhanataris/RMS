@@ -1,9 +1,12 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "首页";
 }
 @using RMS.Models
     <!-- start slide -->
-
+@section head
+{
+    @Styles.Render("~/Content/home")
+}
 <div class="banner" id="banner">
     <div class="banner_show" id="banner_show">
         @foreach (var banner in DBHelper.instence.Banners.ToList())
@@ -28,7 +31,7 @@
         <div class="content-list">
             <ul>
                 @foreach(var notice in DBHelper.instence.Notices.OrderByDescending(p => p.ID).Take(5).ToList()){
-                    <li><span>@notice.date.ToString("MM-dd")</span>@Html.ActionLink(notice.title, notice.ID.ToString(), "Notices", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+                    <li><span>@notice.date.ToString("MM-dd")</span>@Html.ActionLink(notice.title, "ViewContent/" + notice.ID, "Notices", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
                 }
             </ul>
         </div>
@@ -43,7 +46,7 @@
             <ul>
                 @foreach (var news in DBHelper.instence.News.OrderByDescending(p => p.ID).Take(5).ToList())
                 {
-                    <li><span>@news.date.ToString("MM-dd")</span>@Html.ActionLink(news.title, news.ID.ToString(), "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+                    <li><span>@news.date.ToString("MM-dd")</span>@Html.ActionLink(news.title, "ViewContent/" + news.ID, "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
                 }
             </ul>
         </div>
