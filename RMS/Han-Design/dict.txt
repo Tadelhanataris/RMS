@@ -17,5 +17,6 @@
 新用户注册      signup.html
 教师界面        teacher.html
 发布新项目      fbxxm.html
-项目评审        psxm.html
-项目评审详情     xmpsxq.html
+立项评审        lxps.html
+立项评审详情     lxpsxq.html
+教师项目管理     jsxmgl.html
