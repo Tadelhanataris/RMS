@@ -18,3 +18,4 @@
 教师界面        teacher.html
 发布新项目      fbxxm.html
 项目评审        psxm.html
+项目评审详情     xmpsxq.html
