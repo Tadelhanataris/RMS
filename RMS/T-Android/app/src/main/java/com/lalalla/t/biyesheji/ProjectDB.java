@@ -55,7 +55,7 @@ public class ProjectDB {
     }
     public void update(Project project){
         SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
-        db.execSQL("update project set date=?,tittle=?,content=? where_id=?",
+        db.execSQL("update project set date=?,tittle=?,content=? where _id=?",
                 new Object[]{project.getdate(), project.getTittle(), project.getContent(), project.getId()});
     }
 
@@ -95,6 +95,19 @@ public class ProjectDB {
     {
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
         return db.rawQuery("select * from project order by date desc limit ?,?",
+                new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
+    }
+
+    public Cursor getNewsAllData()
+    {
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        return db.rawQuery("select * from news order by date desc limit ?,?",
+                new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
+    }
+    public Cursor getNotificationAllData()
+    {
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        return db.rawQuery("select * from notification order by date desc limit ?,?",
                 new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
     }
     public Cursor getsummaryAllData()
