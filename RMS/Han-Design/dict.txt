@@ -28,3 +28,4 @@
 指导教师中期报告意见页面   zdjszqyj.html
 管理员页面       admin.html
 表格下载        bgxz.html
+成果列表        cglb.html
