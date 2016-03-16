@@ -1,7 +1,7 @@
 .main-header{
     text-align: left;
     padding: 42px 0;
-    background-position: center 20%;
+    background-position: center 88%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/header-bg.jpg);
@@ -92,7 +92,7 @@
 }
 
 .session-panel .form-group.action .btn:hover {
-    background: #1684EF;
+    background: #2384EF;
     color: #FFF;
 }
 
@@ -105,13 +105,13 @@
 
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #e95854;
+    background-color: #22659d;
 }
 
 .index-pagefoot{
     height: 120px;
     padding: 21px 0;
-    background-position: center 20%;
+    background-position: 0 20%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/pagefoot-bg.jpg);
@@ -121,4 +121,11 @@
     text-align: center;
     font-size: 10px;
     color: #f0f0f0;
+}
+
+.nav-bg{
+    background-image: url(../images/nav-bg.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
