@@ -1,0 +1,45 @@
+.container #zdjszqyj{
+    width: 600px;
+    margin: 20px auto;
+}
+
+.container .row{
+    width: 100%;
+    margin: 0px;
+}
+
+.container .col{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top: hidden;
+    border-left: hidden;
+    padding: 5px;
+    height: 100%;
+}
+
+.container .table-start{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.container .col-start{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+.container .p1{
+    text-align: center;
+    margin: 7px auto;
+}
+
+.container .xz{
+    margin-left: 10px;
+}
+
+.container .wbk{
+    height: 150px;
+    resize: none;
+}
