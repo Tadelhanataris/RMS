@@ -13,7 +13,7 @@
 新闻列表       xwlb.html
 新闻通知       xwtz.html
 新项目申请      xxmsq.html
-中期检查报告    zqjcbg.html     //未转换
+中期检查报告    zqjcbg.html
 新用户注册      signup.html
 教师界面        teacher.html
 发布新项目      fbxxm.html
