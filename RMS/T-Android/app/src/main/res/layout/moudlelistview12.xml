@@ -8,22 +8,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list1id"
+        android:id="@+id/list12id"
         android:visibility="gone"
 
         />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list1date"
+        android:id="@+id/list12date"
         android:textSize="10sp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list1newstittle"
+        android:id="@+id/list12notificationtittle"
         android:textSize="16sp"
         />
-
 </LinearLayout>

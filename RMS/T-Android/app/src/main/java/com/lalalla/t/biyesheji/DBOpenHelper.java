@@ -22,8 +22,8 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table project(_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000),P_ID INTEGER,FOREIGN KEY(P_ID) REFERENCES PERSON(PERSON_ID))");
         db.execSQL("create table person(person_id integer primary key autoincrement,number varchar(10),password varchar(50),Unique(number))");
-        db.execSQL("create table news(news_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000))");
-        db.execSQL("create table notification(notification_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000),P_ID INTEGER,FOREIGN KEY(P_ID) REFERENCES PERSON(PERSON_ID))");
+        db.execSQL("create table news(_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000))");
+        db.execSQL("create table notification(_id integer primary key autoincrement,date varchar(20),tittle varchar(50),content varchar(1000),P_ID INTEGER,FOREIGN KEY(P_ID) REFERENCES PERSON(PERSON_ID))");
         db.execSQL("create table summary" +
                 "(_id integer primary key autoincrement," +
                 "projectname varchar(20)," +
