@@ -34,10 +34,8 @@
         <activity android:name=".Module2" />
         <activity android:name=".Module3" />
         <activity android:name=".AddActivity" />
-        <activity android:name=".EditActivity" />
-        <activity android:name=".newss" />
-        <activity android:name=".notifications" />
-        <activity android:name=".summaryedit"></activity>
+        <activity android:name=".EditActivity"/>
+
     </application>
 
 </manifest>

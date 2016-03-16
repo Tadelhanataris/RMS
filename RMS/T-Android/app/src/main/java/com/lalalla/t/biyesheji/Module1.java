@@ -45,30 +45,30 @@ public class Module1 extends Activity {
         lv1.setAdapter(adapter1);
         lv2.setAdapter(adapter2);
 
-        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent();
-                intent.setClass(Module1.this, newss.class);
-                int sid = ((Cursor) (adapter1.getItem(position))).getInt(((Cursor) (adapter1.getItem(position))).getColumnIndex("_id"));
-                intent.putExtra("id", sid);
-                Module1.this.startActivity(intent);
-            }
-        });
-
-
-
-        lv2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent();
-                intent.setClass(Module1.this, notifications.class);
-                int sid = ((Cursor) (adapter2.getItem(position))).getInt(((Cursor) (adapter2.getItem(position))).getColumnIndex("_id"));
-                intent.putExtra("id", sid);
-                Module1.this.startActivity(intent);
-            }
-        });
-
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Intent intent = new Intent();
+//                intent.setClass(Module3.this, EditActivity.class);
+//                int sid = ((Cursor) (adapter.getItem(position))).getInt(((Cursor) (adapter.getItem(position))).getColumnIndex("_id"));
+//                intent.putExtra("id", sid);
+//                Module3.this.startActivity(intent);
+//            }
+//        });
+//
+//
+//
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Intent intent = new Intent();
+//                intent.setClass(Module3.this, EditActivity.class);
+//                int sid = ((Cursor) (adapter.getItem(position))).getInt(((Cursor) (adapter.getItem(position))).getColumnIndex("_id"));
+//                intent.putExtra("id", sid);
+//                Module3.this.startActivity(intent);
+//            }
+//        });
+//
 
             }
 
