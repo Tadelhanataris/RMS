@@ -36,7 +36,7 @@ namespace RMS
                       "~/Scripts/indexslide.js"));
             bundles.Add(new ScriptBundle("~/bundles/login").Include("~/Scripts/login.js"));
             bundles.Add(new StyleBundle("~/bundles/notices").Include("~/Content/xwlb.css"));
-            bundles.Add(new StyleBundle("~/bundles/noticescontent").Include("~/Content/xwtz.css"));
+            bundles.Add(new StyleBundle("~/bundles/noticescontent").Include("~/Content/xwtz.css", "~/Content/fileicon.css"));
             //bundles.Add(new ScriptBundle("~/bundles/notices").Include("~/Scripts/login.js"));
         }
     }

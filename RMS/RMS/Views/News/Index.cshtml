@@ -1,0 +1,24 @@
+﻿@using RMS.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    IPagedList<RMS.Models.News> context = (IPagedList<RMS.Models.News>)ViewData["context"];
+    ViewBag.Title = "焦点新闻";
+}
+@section Head {
+    @Styles.Render("~/bundles/notices")
+}
+<div class="news-list">
+    <div class="col-title">
+        <h2>@ViewBag.Title</h2>
+    </div>
+    <div class="col-list">
+        <ul>
+            @foreach(News li in context)
+            {
+                <li><span>@li.date.ToString("yyyy-MM-dd")</span>@Html.ActionLink(li.title, "ViewContent/"+li.ID, "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+            }
+        </ul>
+    </div>
+        @Html.PagedListPager(context, id => Url.Action("Index",new {id}))
+</div></div>
