@@ -14,7 +14,7 @@
     font-size: 14px;
 }
 
-#container ul{
+#container .col-list ul{
     height:290px;
 }
 
@@ -41,52 +41,7 @@
     text-decoration: none;
 }
 
-#container .flipover{
-    font-size: 12px;
-    width: 480px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: #414141;
-    overflow: hidden;
-}
-
-#container .flipover dl{
-    width: 650px;
-    height: 100%;
-}
-
-#container .flipover dt.flipover-title{
-    float: left;
-    width: 190px;
-    padding-left: 20px;
-    line-height: inherit;
-}
-
-#container .flipover dt.flipover-title span{
-    margin: 0px 8px;
-    color: #0395e1;
-}
-
-#container .flipover dd a {
-    color: #414141;
-    display: block;
-    line-height: 30px;
-    height: 30px;
-    width: 28px;
-    float: left;
-}
-
-#container .dt{
-    margin: 0px;
-    padding: 0px;
-    font-style: normal;
-    border: 0;
-    font-family: "微软雅黑";
-    font-weight: normal;
-    font-size: 14px;
-    display: block;
+.pagination-container
+{
+    text-align:center;
 }

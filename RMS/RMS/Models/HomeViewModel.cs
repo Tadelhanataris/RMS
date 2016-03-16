@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Collections.Generic;
 
 namespace RMS.Models
 {
@@ -19,7 +20,7 @@ namespace RMS.Models
         public DateTime date { get; set; }
         public string title { get; set; }
         public string content { get; set; }
-        public Attachment[] attachment { get; set; }
+        public virtual List<Attachment> attachment { get; set; }
     }
 
     public class News
@@ -29,7 +30,7 @@ namespace RMS.Models
         public DateTime date { get; set; }
         public string title { get; set; }
         public string content { get; set; }
-        public Attachment[] attachment { get; set; }
+        public virtual List<Attachment> attachment { get; set; }
     }
 
     public class DBHelper : DbContext
