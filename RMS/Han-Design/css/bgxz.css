@@ -1,0 +1,28 @@
+.container #bgxz{
+    padding-top: 20px;
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei UI";
+}
+
+.container .title{
+    height: 42px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container .list{
+    font-size: 14px;
+}
+
+.container ul, li{
+    list-style-type: none;
+    border-bottom: #c9c9c9 solid 1px;
+}
+
+.container .list ul li {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 35px;
+    padding-right: 30px;
+}

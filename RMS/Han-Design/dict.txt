@@ -27,3 +27,4 @@
 指导教师批准立项页面   zdjspzlx.html
 指导教师中期报告意见页面   zdjszqyj.html
 管理员页面       admin.html
+表格下载        bgxz.html
