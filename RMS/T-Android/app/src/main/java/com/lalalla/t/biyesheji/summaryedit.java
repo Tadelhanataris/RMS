@@ -10,19 +10,19 @@ import android.widget.TextView;
 
 public class summaryedit extends AppCompatActivity {
     ProjectDB db;
-    private String editprojectname;
-    private String editprojecttype;
-    private String editsubject;
-    private String editstarttime;
-    private String editstudentname;
-    private String editsdudentcollege;
-    private String editstudentnumber;
-    private String editsdudentemail;
-    private String editstudentphone;
-    private String editteachername;
-    private String editteachercollege;
-    private String editteacheremail;
-    private String editteacherphone;
+    private EditText editprojectname;
+    private EditText editprojecttype;
+    private EditText editsubject;
+    private EditText editstarttime;
+    private EditText editstudentname;
+    private EditText editstudentcollege;
+    private EditText editstudentnumber;
+    private EditText editstudentemail;
+    private EditText editstudentphone;
+    private EditText editteachername;
+    private EditText editteachercollege;
+    private EditText editteacheremail;
+    private EditText editteacherphone;
     private Button summarybtnback;
     private Integer id;
     private String projectname;
@@ -30,14 +30,14 @@ public class summaryedit extends AppCompatActivity {
     private String subject;
     private String starttime;
     private String studentname;
-    private String sdudentcollege;
-    private EditText studentnumber;
-    private EditText sdudentemail;
-    private EditText studentphone;
-    private EditText teachername;
-    private EditText teachercollege;
-    private EditText teacheremail;
-    private EditText teacherphone;
+    private String studentcollege;
+    private String studentnumber;
+    private String studentemail;
+    private String studentphone;
+    private String teachername;
+    private String teachercollege;
+    private String teacheremail;
+    private String teacherphone;
     Summary summary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,22 +52,46 @@ public class summaryedit extends AppCompatActivity {
         subject = summary.getSubject();
         starttime = summary.getStarttime();
         studentname = summary.getStudentname();
-        sdudentcollege = summary.getSdudentcollege();
-        date = newss.getdate();
-        tittle = newss.getTittle();
-        content = newss.getContent();
-        date = newss.getdate();
-        tittle = newss.getTittle();
-        content = newss.getContent();
-        date = newss.getdate();
-        newssdate= (TextView) findViewById(R.id.newssdate);
-        newsstittle= (TextView) findViewById(R.id.newsstittle);
-        newsscontent= (TextView) findViewById(R.id.newsscontent);
-        newssdate.setText(date);
-        newsstittle.setText(tittle);
-        newsscontent.setText(content);
-        newssbtnback= (Button) findViewById(R.id.newssbtnback);
-        newssbtnback.setOnClickListener(new View.OnClickListener() {
+        studentcollege = summary.getSdudentcollege();
+        studentnumber = summary.getStudentnumber();
+        studentemail = summary.getSdudentemail();
+        studentphone = summary.getStudentphone();
+        teachername = summary.getTeachername();
+        teachercollege = summary.getTeachercollege();
+        teacheremail = summary.getTeacheremail();
+        teacherphone = summary.getTeacherphone();
+        editprojectname = (EditText) findViewById(R.id.summaryprojectname);
+        editprojecttype = (EditText) findViewById(R.id.summaryprojecttype);
+        editsubject = (EditText) findViewById(R.id.summarysubject);
+        editstarttime = (EditText) findViewById(R.id.summarystarttime);
+        editstudentname = (EditText) findViewById(R.id.summarystudentname);
+        editstudentcollege = (EditText) findViewById(R.id.summarystudentcollege);
+        editstudentnumber = (EditText) findViewById(R.id.summarystudentnumber);
+        editstudentemail = (EditText) findViewById(R.id.summarystudentemail);
+        editstudentphone = (EditText) findViewById(R.id.summarystudentphone);
+        editteachername = (EditText) findViewById(R.id.summaryteachername);
+        editteachercollege = (EditText) findViewById(R.id.summaryteachercollege);
+        editteacheremail = (EditText) findViewById(R.id.summaryteacheremail);
+        editteacherphone = (EditText) findViewById(R.id.summaryteacherphone);
+
+        editprojectname.setText(projectname);
+        editprojecttype.setText(projecttype);
+        editsubject.setText(subject);
+        editstarttime.setText(starttime);
+        editstudentname.setText(studentname);
+        editstudentcollege.setText(studentcollege);
+        editstudentnumber.setText(studentnumber);
+        editstudentemail.setText(studentemail);
+        editstudentphone.setText(studentphone);
+        editteachername.setText(teachername);
+        editteachercollege.setText(teachercollege);
+        editteacheremail.setText(teacheremail);
+        editteacherphone.setText(teacherphone);
+
+
+
+        summarybtnback= (Button) findViewById(R.id.summarybtnback);
+        summarybtnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
