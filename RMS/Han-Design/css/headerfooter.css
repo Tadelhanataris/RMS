@@ -1,10 +1,13 @@
 .main-header{
+    height: 290px;
     text-align: left;
     padding: 42px 0;
+    padding-bottom: 0;
     background-position: center 88%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/header-bg.jpg);
+    position: relative;
 }
 
 .headh1content{
@@ -103,9 +106,15 @@
     position: relative;
 }
 
+.nav > li > a{
+    color: white;
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #22659d;
+    background-color: rgba(248,248,248,0.3);
+    font-size: 110%;
+    font-weight: bold;
 }
 
 .index-pagefoot{
@@ -123,9 +132,10 @@
     color: #f0f0f0;
 }
 
-.nav-bg{
-    background-image: url(../images/nav-bg.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-navigation{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
