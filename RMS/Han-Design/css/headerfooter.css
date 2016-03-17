@@ -112,7 +112,7 @@
 
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: rgba(248,248,248,0.3);
+    background-color: rgba(200, 200, 200, 0.15);
     font-size: 110%;
     font-weight: bold;
 }
