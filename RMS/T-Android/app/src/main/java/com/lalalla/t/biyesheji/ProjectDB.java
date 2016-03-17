@@ -74,6 +74,66 @@ public class ProjectDB {
         cursor.close();
         return null;
     }
+    public Notification findnotification(Integer _id){
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from notification where _id=?",
+                new String[]{_id.toString()});
+        if(cursor.moveToFirst())
+        {
+            int notificationid=cursor.getInt(cursor.getColumnIndex("_id"));
+            String date=cursor.getString(cursor.getColumnIndex("date"));
+            String tittle=cursor.getString(cursor.getColumnIndex("tittle"));
+            String content=cursor.getString(cursor.getColumnIndex("content"));
+            return new Notification(notificationid,date,tittle,content);
+        }
+        cursor.close();
+        return null;
+    }
+
+
+
+    public News findnews(Integer _id){
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from news where _id=?",
+                new String[]{_id.toString()});
+        if(cursor.moveToFirst())
+        {
+            int newsid=cursor.getInt(cursor.getColumnIndex("_id"));
+            String date=cursor.getString(cursor.getColumnIndex("date"));
+            String tittle=cursor.getString(cursor.getColumnIndex("tittle"));
+            String content=cursor.getString(cursor.getColumnIndex("content"));
+            return new News(newsid,date,tittle,content);
+        }
+        cursor.close();
+        return null;
+    }
+    public Summary findsummary(Integer _id){
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from summary where _id=?",
+                new String[]{_id.toString()});
+        if(cursor.moveToFirst())
+        {
+            int newsid=cursor.getInt(cursor.getColumnIndex("_id"));
+            String projectname=cursor.getString(cursor.getColumnIndex("projectname"));
+            String projecttype=cursor.getString(cursor.getColumnIndex("projecttype"));
+            String subject=cursor.getString(cursor.getColumnIndex("subject"));
+            String starttime=cursor.getString(cursor.getColumnIndex("starttime"));
+            String studentname=cursor.getString(cursor.getColumnIndex("studentname"));
+            String studentcollege=cursor.getString(cursor.getColumnIndex("studentcollege"));
+            String studentnumber=cursor.getString(cursor.getColumnIndex("studentnumber"));
+            String studentemail=cursor.getString(cursor.getColumnIndex("studentemail"));
+            String studentphone=cursor.getString(cursor.getColumnIndex("studentphone"));
+            String teachername=cursor.getString(cursor.getColumnIndex("date"));
+            String teachercollege=cursor.getString(cursor.getColumnIndex("teachercollege"));
+            String teacheremail=cursor.getString(cursor.getColumnIndex("teacheremail"));
+            String teacherphone=cursor.getString(cursor.getColumnIndex("teacherphone"));
+//            int pid=cursor.getInt(cursor.getColumnIndex("P_id"));
+            return new Summary(newsid,projectname,projecttype,subject,starttime,studentname,studentcollege,studentnumber,studentemail,studentphone,teachername,teachercollege,teacheremail,teacherphone);
+        }
+        cursor.close();
+        return null;
+    }
+
     public List<Project> getScrollData(int offset,int maxResult){
         List<Project> projects= new ArrayList<Project>();
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
