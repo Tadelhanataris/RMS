@@ -8,24 +8,48 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.lalalla.t.biyesheji.summaryedit">
+>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="项目名称:"
+        android:maxLines="1"
+        />
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/summaryprojectname"
-        android:layout_gravity="center_horizontal" />
-
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目名称:"
+            android:maxLines="1"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/summaryprojecttype"
-        android:layout_gravity="center_horizontal" />
-
+        android:id="@+id/summaryprojecttype" />
+</LinearLayout>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/summarysubject" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryteachername" />
 
     <EditText
         android:layout_width="match_parent"
@@ -65,12 +89,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/summaryteachername"
-        android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/summaryteachercollege"
         android:layout_gravity="center_horizontal" />
 
@@ -91,4 +109,6 @@
         android:text="后退"
         android:id="@+id/summarybtnback"
         android:layout_gravity="center_horizontal" />
+
+
 </LinearLayout>

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class summaryedit extends AppCompatActivity {
     ProjectDB db;
@@ -42,7 +41,7 @@ public class summaryedit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summaryedit);
+        setContentView(R.layout.activity_summaryedititem);
         db = new ProjectDB(getApplicationContext());
         Intent i = getIntent();
         id = i.getIntExtra("id", 0);

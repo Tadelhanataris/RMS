@@ -12,6 +12,13 @@ public class Person implements Serializable {
     private String password;
     private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;
@@ -55,7 +62,9 @@ public class Person implements Serializable {
     {
         super();
         this.id=id;
-        
+        this.number=number;
+        this.password=password;
+        this.name=name;
     }
 
 }

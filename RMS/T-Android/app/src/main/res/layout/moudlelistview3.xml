@@ -19,7 +19,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/list3date"
         android:textSize="22sp"
-        android:layout_weight="1"
+        android:maxLines="1"
 
 
         />
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/list3tittle"
         android:textSize="25sp"
-        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
 
 
         />
