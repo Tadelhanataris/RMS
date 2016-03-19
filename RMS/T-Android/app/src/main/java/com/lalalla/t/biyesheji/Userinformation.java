@@ -19,6 +19,9 @@ import android.widget.RelativeLayout;
 public class Userinformation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private RelativeLayout container = null;
     private static final String STATES_KEY = "android:states";
+    private Person person;
+    private DBOpenHelper db;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
