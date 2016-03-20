@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 
 public class summaryedit extends AppCompatActivity {
     ProjectDB db;
+    private ListView listview;
     private EditText editprojectname;
     private EditText editprojecttype;
     private EditText editsubject;
