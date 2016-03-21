@@ -123,7 +123,7 @@ public class ProjectDB {
             String studentnumber=cursor.getString(cursor.getColumnIndex("studentnumber"));
             String studentemail=cursor.getString(cursor.getColumnIndex("studentemail"));
             String studentphone=cursor.getString(cursor.getColumnIndex("studentphone"));
-            String teachername=cursor.getString(cursor.getColumnIndex("date"));
+            String teachername=cursor.getString(cursor.getColumnIndex("teachername"));
             String teachercollege=cursor.getString(cursor.getColumnIndex("teachercollege"));
             String teacheremail=cursor.getString(cursor.getColumnIndex("teacheremail"));
             String teacherphone=cursor.getString(cursor.getColumnIndex("teacherphone"));

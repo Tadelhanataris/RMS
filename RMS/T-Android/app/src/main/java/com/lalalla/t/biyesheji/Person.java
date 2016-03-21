@@ -10,7 +10,15 @@ public class Person implements Serializable {
     private Integer id;
     private Long number;
     private String password;
+    private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;
@@ -41,6 +49,7 @@ public class Person implements Serializable {
         this.id=id;
         this.number=number;
         this.password=password;
+
     }
     public Person(long number,String password){
         super();
@@ -49,4 +58,13 @@ public class Person implements Serializable {
 
 
     }
+    public Person(int id,long number,String password,String name)
+    {
+        super();
+        this.id=id;
+        this.number=number;
+        this.password=password;
+        this.name=name;
+    }
+
 }

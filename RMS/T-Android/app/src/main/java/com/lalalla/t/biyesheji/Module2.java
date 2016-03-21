@@ -35,7 +35,7 @@ public class Module2 extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent();
-                intent.setClass(Module2.this, EditActivity.class);
+                intent.setClass(Module2.this, summaryedit.class);
                 int sid = ((Cursor) (adapter.getItem(position))).getInt(((Cursor) (adapter.getItem(position))).getColumnIndex("_id"));
                 intent.putExtra("id", sid);
                 Module2.this.startActivity(intent);
