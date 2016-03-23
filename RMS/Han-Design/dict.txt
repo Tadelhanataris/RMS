@@ -17,8 +17,8 @@
 新用户注册      signup.html
 教师界面        teacher.html
 发布新项目      fbxxm.html
-立项评审        lxps.html
-立项评审详情     lxpsxq.html
+立项评审        lxps.html    //此页暂时不用
+立项评审详情     lxpsxq.html   //此页暂时不用
 发布项目评审     fbxmps.html
 发布项目评审详情  fbxmpsxq.html
 页头页脚        headerfooter.html
