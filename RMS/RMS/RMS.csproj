@@ -198,10 +198,16 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClubController.cs" />
+    <Compile Include="Controllers\DownloadController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\GuideController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\NoticesController.cs" />
+    <Compile Include="Controllers\PolicyController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,7 +216,8 @@
     <Compile Include="Log\MonitorLog.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attachment.cs" />
-    <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\Files.cs" />
+    <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\HomeViewModelInitializer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -218,12 +225,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bgxz.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cxjlb.css" />
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
     <Content Include="Content\home.css" />
-    <Content Include="Content\PagedList.css" />
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="favicon.ico" />
@@ -236,7 +244,6 @@
     <Content Include="images\fanye_nt.jpg" />
     <Content Include="images\fanye_pg.jpg" />
     <Content Include="images\header-bg.jpg" />
-    <Content Include="images\pagefoot-bg.jpg" />
     <Content Include="images\testnews1.JPG" />
     <Content Include="images\testnews2.JPG" />
     <Content Include="images\testnews3.JPG" />
@@ -303,9 +310,15 @@
     <Content Include="Views\Shared\_footer.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\News\ViewContent.cshtml" />
+    <Content Include="Views\Table\Index.cshtml" />
+    <Content Include="Views\Policy\Index.cshtml" />
+    <Content Include="Views\Club\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Download\" />
+    <Folder Include="Views\Gallery\" />
+    <Folder Include="Views\Guide\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

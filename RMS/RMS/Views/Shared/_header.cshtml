@@ -1,66 +1,64 @@
 ﻿@using Microsoft.AspNet.Identity
 @using RMS.Models
 @model LoginViewModel
-    <!-- start header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="headh1content">首都师范大学</h1>
-                    <br>
-                    <h3 class="viceheadh3content">大学生创新创业训练计划</h3>
-                </div>
+<!-- start header -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="headh1content">首都师范大学</h1>
+                <br>
+                <h3 class="viceheadh3content">大学生创新创业训练计划</h3>
             </div>
         </div>
-    </header>
-    <!-- end header -->
+    </div>
     <!-- start navigation -->
-    <nav class="main-navigation nav-bg">
+    <nav class="main-navigation">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="nav navbar-nav" style="width: 100%;font-size: 16px;font-family: 微软雅黑;">
                             <li class="nav-current" role="presentation">
-                                @Html.ActionLink("首页", "Index", "Home", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("首页", "Index", "Home", routeValues: null, htmlAttributes: null)
                             </li>
                             <li role="presentation">
-                                @Html.ActionLink("政策文件", "Index", "Policy", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("政策文件", "Index", "Policy", routeValues: null, htmlAttributes: null)
                             </li>
                             <li role="presentation">
-                                @Html.ActionLink("项目指南", "Index", "Guide", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("项目指南", "Index", "Guide", routeValues: null, htmlAttributes: null)
                             </li>
                             <li role="presentation">
-                                @Html.ActionLink("成果展示", "Index", "Gallery", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("成果展示", "Index", "Gallery", routeValues: null, htmlAttributes: null)
                             </li>
                             <li role="presentation">
-                                @Html.ActionLink("俱乐部", "Index", "Club", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("俱乐部", "Index", "Club", routeValues: null, htmlAttributes: null)
                             </li>
                             <li role="presentation">
-                                @Html.ActionLink("表格下载", "Index", "Table", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                @Html.ActionLink("表格下载", "Index", "Table", routeValues: null, htmlAttributes: null)
                             </li>
                             @if (Request.IsAuthenticated)
                             {
                                 <li style="float: right" role="presentation">
                                     <span>@User.Identity.GetUserName()</span>
                                 </li>
-                                <li style="float: right" role="presentation">
-                                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-                                    {
-                                        @Html.AntiForgeryToken()
-                                        <a href="javascript:document.getElementById('logoutForm').submit()">注销</a>
-                                    }
-                                </li>
+                                    <li style="float: right" role="presentation">
+                                        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <a href="javascript:document.getElementById('logoutForm').submit()">注销</a>
+                                        }
+                                    </li>
                             }
                             else
                             {
                                 <li style="float: right" role="presentation">
-                                    @Html.ActionLink("注册", "Register", "Account", routeValues: null, htmlAttributes: new { style = "color: white" })
+                                    @Html.ActionLink("注册", "Register", "Account", routeValues: null, htmlAttributes: null)
                                 </li>
-                                <li style="float: right" role="presentation">
-                                    <a href="#" style="color: white" id="login" data-toggle="modal" data-target="#loginbox">登录</a>
-                                    @Scripts.Render("~/bundles/login")
-                                </li>
+                                    <li style="float: right" role="presentation">
+                                        <a href="#" style="color: white" id="login" data-toggle="modal" data-target="#loginbox">登录</a>
+                                        @Scripts.Render("~/bundles/login")
+                                    </li>
                             }
                         </ul>
                     </div>
@@ -69,3 +67,5 @@
         </div>
     </nav>
     <!-- end navigation -->
+</header>
+<!-- end header -->
