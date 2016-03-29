@@ -10,7 +10,7 @@ namespace RMS.Models
     {
         public int ID { get; set; }
         public string href { get; set; }
-        public virtual Files src { get; set; }
+        public string src { get; set; }
     }
 
     public class Notice
@@ -51,7 +51,7 @@ namespace RMS.Models
     {
         public static readonly DBHelper instence = new DBHelper();
         private DBHelper() : base("name=DefaultConnection"){ }
-        public DbSet<Files> files { get; set; }
+        public DbSet<File> Files { get; set; }
         public DbSet<BannerImage> Banners { get; set; }
         public DbSet<Notice> Notices { get; set; }
         public DbSet<News> News { get; set; }
