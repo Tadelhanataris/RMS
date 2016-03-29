@@ -18,7 +18,7 @@
     height:290px;
 }
 
-#container ul, li{
+#container ul,#container li{
     list-style-type: none;
     border-bottom: #c9c9c9 solid 1px;
 }

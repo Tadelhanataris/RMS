@@ -1,10 +1,13 @@
 ﻿.main-header{
+    height: 290px;
     text-align: left;
     padding: 42px 0;
+    padding-bottom: 0;
     background-position: center 88%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/header-bg.jpg);
+    position: relative;
 }
 
 .headh1content{
@@ -22,28 +25,7 @@
 }
 
 .session-panel {
-    width: 360px;
-    padding: 0 24px 24px 24px;
-    position: fixed;
-    display: none;
-    left: 50%;
-    top: 30%;
-    margin-left: -180px;
-    -webkit-filter: blur(0px); /* Chrome, Opera */
-    -moz-filter: blur(0px);
-    -ms-filter: blur(0px);
-    filter: blur(0px);
-    background-color: white;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    z-index: 999;
-    opacity: 0;
-    animation: login-fadein 0.5s 0s 1 forwards;
-}
-
-@keyframes login-fadein {
-    to{opacity: 1}
+padding: 0 24px 24px 24px;
 }
 
 .form-control {
@@ -103,9 +85,17 @@
     position: relative;
 }
 
+.nav > li > a{
+    color: white;
+    border-bottom:solid 2px transparent;
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #22659d;
+    background: -webkit-linear-gradient(rgba(0,248,0,0)40%,rgba(248,248,248,0.3));
+    font-size: 110%;
+    font-weight: bold;
+    border-bottom:solid 2px orange;
 }
 
 .index-pagefoot{
@@ -114,7 +104,7 @@
     background-position: 0 20%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/header-bg.jpg);
+    background-image: url(../images/pagefoot-bg.jpg);
 }
 
 .pf-content{
@@ -123,9 +113,10 @@
     color: #f0f0f0;
 }
 
-.nav-bg{
-    background-image: url(../images/header-bg.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-navigation{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
