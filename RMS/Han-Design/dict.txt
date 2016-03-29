@@ -31,3 +31,4 @@
 成果列表        cglb.html
 新增学生        xzxs.html
 新增教师        xzjs.html
+新增管理员      xzgly.html
