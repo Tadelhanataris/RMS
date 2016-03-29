@@ -32,3 +32,4 @@
 新增学生        xzxs.html
 新增教师        xzjs.html
 新增管理员      xzgly.html
+新增创新俱乐部成员  xzcxjlb.html
