@@ -14,3 +14,13 @@
     height: 35px;
     margin: 20px auto;
 }
+
+#container #batchupload{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container #confirm{
+    margin-top: 10px;
+    text-align: center;
+}
