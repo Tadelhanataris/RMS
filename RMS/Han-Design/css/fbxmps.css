@@ -1,21 +1,21 @@
-.container #fbxmps{
+#container #fbxmps{
     width: 800px;
     margin: 20px auto;
 }
 
-.container .single{
+#container .single{
     background-color: #f8f8f8;
 }
 
-.container p{
+#container p{
     margin: 10px 0;
 }
 
-.container .btn1{
+#container .btn1{
     margin: 4px auto;
 }
 
-.container #flipover{
+#container #flipover{
     width: 800px;
     margin: 10px auto;
 }

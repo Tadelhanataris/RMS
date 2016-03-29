@@ -1,14 +1,14 @@
-.container #fbxmpsxq{
+#container #fbxmpsxq{
     width: 550px;
     margin: 20px auto;
 }
 
-.container .row{
+#container .row{
     width: 100%;
     margin: 0px;
 }
 
-.container .col{
+#container .col{
     padding: 5px;
     border-width: 1px;
     border-style: solid;
@@ -18,20 +18,20 @@
     height: 100%;
 }
 
-.container .table-start{
+#container .table-start{
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: black;
 }
 
 
-.container .col-start{
+#container .col-start{
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: black;
 }
 
-.container .p1{
+#container .p1{
     text-align: center;
     margin: 7px auto;
 }
