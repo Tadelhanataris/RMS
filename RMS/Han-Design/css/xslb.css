@@ -1,0 +1,22 @@
+#container #xslb{
+    width: 800px;
+    margin: 20px auto;
+}
+
+#container #xslb p{
+    text-align: center;
+    line-height: 34px;
+    margin: 0;
+}
+
+#container #xslb .more{
+    text-align: center;
+}
+
+#container #xslb .row{
+    margin-top: 5px;
+}
+
+#container #xslb .single{
+    background-color: #f8f8f8;
+}
