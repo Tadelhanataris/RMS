@@ -29,3 +29,4 @@
 管理员页面       admin.html
 表格下载        bgxz.html
 成果列表        cglb.html
+新增学生        xzxs.html
