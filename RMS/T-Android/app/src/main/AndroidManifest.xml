@@ -37,7 +37,8 @@
         <activity android:name=".EditActivity" />
         <activity android:name=".newss" />
         <activity android:name=".notifications" />
-        <activity android:name=".summaryedit"></activity>
+        <activity android:name=".summaryedit" />
+        <activity android:name=".Photo"></activity>
     </application>
 
 </manifest>

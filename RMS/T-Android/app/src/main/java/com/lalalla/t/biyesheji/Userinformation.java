@@ -86,7 +86,10 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent intent =new Intent();
+            intent.setClass(Userinformation.this,Photo.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_gallery) {
 
         }
