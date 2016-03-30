@@ -95,6 +95,7 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+<<<<<<< HEAD
             Log.d(LOG_TAG, "Take Picture Button Click");
             // 利用系统自带的相机应用:拍照
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -109,6 +110,13 @@ public class Userinformation extends AppCompatActivity implements NavigationView
             startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         }
         else if (id == R.id.nav_gallery) {
+=======
+            Intent intent =new Intent();
+            intent.setClass(Userinformation.this,Photo.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_gallery) {
+>>>>>>> origin/master
 
         }
 //        else if (id == R.id.nav_slideshow) {

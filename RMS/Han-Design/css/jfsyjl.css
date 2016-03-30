@@ -1,20 +1,20 @@
-.container #jfsyjl{
+#container #jfsyjl{
     width: 550px;
     margin: 20px auto;
 }
 
-.container .row{
+#container .row{
     width: 100%;
     margin: 0px;
 }
 
-.container .table-start{
+#container .table-start{
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: black;
 }
 
-.container .col{
+#container .col{
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -25,12 +25,12 @@
     text-align: center;
 }
 
-.container .end{
+#container .end{
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: black;
 }
 
-.container .col p{
+#container .col p{
     margin-top: 7px;
 }

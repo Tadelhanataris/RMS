@@ -1,7 +1,5 @@
-﻿using RMS.Log.Monitor.Models.ActionFilters;
-using RMS.Models;
+﻿using RMS.Models;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -14,17 +12,9 @@ namespace RMS.Controllers
         // GET: Download
         public FileStreamResult Index(string hash)
         {
-            try
-            {
-                return File(DBHelper.instence.files.Where(x => x.ID == Guid.Parse(hash)).First().file, "application/octet-stream"); 
-            }
-            catch(Exception e)
-            {
-                LoggerHelper.Error("down", e);
-                return null;
-            }
-            //string absoluFilePath = Server.MapPath(System.Configuration.ConfigurationManager.AppSettings["AttachmentPath"] + filePath);
-            //return File(new FileStream(absoluFilePath, FileMode.Open), "application/octet-stream", Server.UrlEncode(fileName));
+            var file = DBHelper.instence.Files.Where(x => x.MD5 == hash).ToArray()[0];
+            Stream fs = new StreamReader(file.filePath).BaseStream;
+            return File(fs, MimeMapping.GetMimeMapping(file.fileName), file.fileName);
         }
     }
 }

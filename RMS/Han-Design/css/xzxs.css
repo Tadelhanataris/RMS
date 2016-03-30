@@ -1,0 +1,26 @@
+#container #xzxs{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container .col-md-6, #container .col-md-12{
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+#container #btn-container{
+    width: 500px;
+    height: 35px;
+    margin: 20px auto;
+}
+
+#container #batchupload{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container #confirm{
+    margin-top: 10px;
+    text-align: center;
+}

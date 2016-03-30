@@ -1,10 +1,10 @@
-.container .article{
+#container .article{
     padding-top: 20px;
     margin: 0 auto;
     font-family: 微软雅黑;
     width: 800px;
 }
 
-.container .date{
+#container .date{
     text-align: right;
 }

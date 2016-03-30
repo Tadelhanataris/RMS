@@ -1,7 +1,7 @@
 测试         ceshi.html
 成果统计      cgtj.html
 创新俱乐部    cxjlb.html
-发布通知      fbtz.html
+发布通知      fbtz.html      //container问题
 首页         index.html
 经费使用记录   jfsyjl.html
 结题验收报告   jtysbg.html
@@ -29,3 +29,10 @@
 管理员页面       admin.html
 表格下载        bgxz.html
 成果列表        cglb.html
+新增学生        xzxs.html
+新增教师        xzjs.html
+新增管理员      xzgly.html
+新增创新俱乐部成员  xzcxjlb.html
+学生列表        xslb.html
+学生信息详情     xsxxxq.html
+教师列表        jslb.html

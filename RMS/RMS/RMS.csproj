@@ -208,18 +208,20 @@
     <Compile Include="Controllers\NoticesController.cs" />
     <Compile Include="Controllers\PolicyController.cs" />
     <Compile Include="Controllers\TableController.cs" />
+    <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\MD5Helper.cs" />
     <Compile Include="Log\LoggerHelper.cs" />
     <Compile Include="Log\StatisticsTrackerAttribute.cs" />
     <Compile Include="Log\MonitorLog.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attachment.cs" />
-    <Compile Include="Models\Files.cs" />
-    <Compile Include="Models\ListViewModel.cs" />
+    <Compile Include="Models\File.cs" />
     <Compile Include="Models\HomeViewModelInitializer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -232,6 +234,7 @@
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
     <Content Include="Content\home.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="favicon.ico" />
@@ -316,9 +319,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Download\" />
     <Folder Include="Views\Gallery\" />
     <Folder Include="Views\Guide\" />
+    <Folder Include="Views\Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
