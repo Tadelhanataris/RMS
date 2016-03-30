@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息详情</title>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/xsxxxq.css">
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="xq">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="xm">姓名</span>
+                        <label class="form-control" aria-describedby="xm">测试姓名</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="xh">学号</span>
+                        <label class="form-control" aria-describedby="xh">1121000134</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sfzh">身份证号</span>
+                        <label class="form-control" aria-describedby="sfzh">110120191901014141</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="xb">性别</span>
+                        <label class="form-control" aria-describedby="xb">男</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="nj">年级</span>
+                        <label class="form-control" aria-describedby="nj">2012</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="szyx">所在院系</span>
+                        <label class="form-control" aria-describedby="szyx">信息工程学院</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="zy">专业</span>
+                        <label class="form-control" aria-describedby="zy">计算机科学与技术</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="dzyx">电子邮箱</span>
+                        <label class="form-control" aria-describedby="dzyx">ceshi@ceshi.com</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="lxdh">联系电话</span>
+                        <label class="form-control" aria-describedby="lxdh">13111222211</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="btn-container">
+            <div>
+                <input type="button" class="btn btn-success" id="ckxm-btn" value="查看参与项目">
+                <input type="button" class="btn btn-default" id="xg-btn" value="修改">
+                <input type="button" class="btn btn-danger" id="sc-btn" value="删除">
+                <input type="submit" class="btn btn-default" id="bc-btn" value="保存" style="display: none">
+                <input type="reset" class="btn btn-danger" id="cz-btn" value="重置" style="display: none">
+            </div>
+        </div>
+    </div>
+
+<script>
+    $('#xg-btn').click(edit);
+    function edit(){
+        $('#ckxm-btn').css("display","none");
+        $('#sc-btn').css("display","none");
+        $('#xg-btn').css("display","none");
+        $('#bc-btn').css("display","inline-block");
+        $('#cz-btn').css("display","inline-block");
+    }
+</script>
+
+</body>
+</html>
