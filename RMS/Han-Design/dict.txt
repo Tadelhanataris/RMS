@@ -38,3 +38,4 @@
 教师列表        jslb.html
 教师信息详情     jsxxxq.html
 管理员信息详情   glyxxxq.html
+管理员列表      glylb.html
