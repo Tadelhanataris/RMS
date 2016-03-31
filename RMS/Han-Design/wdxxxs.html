@@ -118,7 +118,6 @@
     <div id="btn-container">
         <div>
             <input type="button" class="btn btn-default" id="xg-btn" value="修改">
-            <input type="button" class="btn btn-danger" id="sc-btn" value="删除">
             <input type="submit" class="btn btn-default" id="bc-btn" value="保存" style="display: none">
             <input type="reset" class="btn btn-danger" id="cz-btn" value="重置" style="display: none">
         </div>
@@ -128,7 +127,6 @@
 <script>
     $('#xg-btn').click(edit);
     function edit(){
-        $('#sc-btn').css("display","none");
         $('#xg-btn').css("display","none");
         $('#bc-btn').css("display","inline-block");
         $('#cz-btn').css("display","inline-block");
