@@ -3,23 +3,23 @@
     margin: 20px auto;
 }
 
-#container h3{
+#container #cylb h3{
     padding-left: 5px;
     font-family: 微软雅黑;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#container .row{
+#container #cylb .row{
     width: 100%;
     margin: 0;
 }
 
-#container .section{
+#container #cylb .section{
     font-size: 20px;
 }
 
-#container .section p{
+#container #cylb .section p{
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 20px;
@@ -27,54 +27,8 @@
     padding-left: 10px;
 }
 
-#container .title p{
-    font-size: 14px;
+#container #cylb .row .col-md-1,#container #cylb .row .col-md-2,#container #cylb .row .col-md-3,#container #cylb .row .col-md-4,#container #cylb .row .col-md-5,#container #cylb .row .col-md-6,#container #cylb .row .col-md-7,#container #cylb .row .col-md-8,#container #cylb .row .col-md-9,#container #cylb .row .col-md-10,#container #cylb .row .col-md-11,#container #cylb .row .col-md-12{
     margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 14px;
-}
-
-#container .content p{
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 14px;
-}
-
-#container .row-single{
-    background-color: #f0f0f0;
-}
-
-#container .row-double{
-    background-color: #dadada;
-}
-
-#container .col{
-    border-color: grey;
-    border-width: 1px;
-    border-style: solid;
-    border-top: hidden;
-    border-right: hidden;
-    padding: 0px;
-}
-
-#container .title{
-    text-align: right;
-}
-
-#container .content{
-    text-align: left;
-    padding-left: 10px;
-}
-
-#container .end{
-    border-right-color: grey;
-    border-right-width: 1px;
-    border-right-style: solid;
-}
-
-#container .table-start{
-    border-top-color: grey;
-    border-top-width: 1px;
-    border-top-style: solid;
+    padding-left: 0;
+    padding-right: 5px;
 }
