@@ -37,3 +37,4 @@
 学生信息详情     xsxxxq.html
 教师列表        jslb.html
 教师信息详情     jsxxxq.html
+管理员信息详情   glyxxxq.html
