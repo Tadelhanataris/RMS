@@ -34,7 +34,7 @@ namespace RMS.Controllers
 
         public ActionResult ViewContent(string id = null)
         {
-            if (id==null||DBHelper.instence.Notices.Count(x => x.ID.ToString() == id) == 0)
+            if (id==null||DBHelper.instence.Notices.Find(int.Parse(id)) == null)
             {
                 return HttpNotFound();
             }

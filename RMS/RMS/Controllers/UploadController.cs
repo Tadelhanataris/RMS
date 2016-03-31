@@ -22,14 +22,7 @@ namespace RMS.Controllers
             if (files.Count >= 0)
             {
                 var file = files[0];
-                byte[] buffer = new byte[file.InputStream.Length];
-                file.InputStream.Read(buffer, 0, buffer.Length);
-                var _fileName = file.FileName;
-                var _MD5 = MD5Helper.GetHash(fs);
-                var _fileExt = Path.GetExtension(Path.Combine(_fileName)).TrimStart('.');
-                var fileSavePath = Path.Combine(savepath, _MD5+"."+_fileExt);
-                file.SaveAs(fileSavePath);
-                DBHelper.instence.Files.Add(new Models.File() { filePath = fileSavePath, fileName = _fileName, fileExt = _fileExt, MD5 = _MD5 });
+                DBHelper.instence.Files.Add(Models.File.AddFile(file.InputStream, file.FileName));
                 DBHelper.instence.SaveChangesAsync();
             }
         }

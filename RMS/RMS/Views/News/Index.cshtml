@@ -14,11 +14,11 @@
     </div>
     <div class="col-list">
         <ul>
-            @foreach(News li in context)
+            @foreach (News li in context)
             {
-                <li><span>@li.date.ToString("yyyy-MM-dd")</span>@Html.ActionLink(li.title, "ViewContent/"+li.ID, "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
+                <li><span>@li.date.ToString("yyyy-MM-dd")</span>@Html.ActionLink(li.title, "ViewContent/" + li.ID, "News", routeValues: null, htmlAttributes: new { target = "_blank" })</li>
             }
         </ul>
     </div>
-        @Html.PagedListPager(context, id => Url.Action("Index",new {id}))
-</div></div>
+    @Html.PagedListPager(context, id => Url.Action("Index", new { id }))
+</div>

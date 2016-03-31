@@ -19,23 +19,43 @@ namespace RMS.Models
         public string fileName { get; set; }
         [StringLength(8)]
         public string fileExt { set; get; }
-        public File() { }
-        public File(Stream fs,string FileName)
+        private File() { }
+        private File(byte[] buffer, string FileName, string Md5)
         {
-            byte[] buffer = new byte[fs.Length];
-            fs.Read(buffer, 0, buffer.Length);
-            var _fileName = FileName;
-            var _MD5 = MD5Helper.GetHash(fs);
-            var _fileExt = Path.GetExtension(Path.Combine(_fileName)).TrimStart('.');
-            var savepath = Request.MapPath("~/savepath");
+            this.MD5 = Md5;
+            this.fileName = FileName;
+            this.fileExt = Path.GetExtension(Path.Combine(fileName)).TrimStart('.');
+            var savepath = System.AppDomain.CurrentDomain.BaseDirectory + "savepath";
             if (!Directory.Exists(savepath))
             {
                 Directory.CreateDirectory(savepath);
             }
-            var fileSavePath = Path.Combine(savepath, _MD5 + "." + _fileExt);
-            new FileStream(fileSavePath, FileMode.Create).Write(buffer, 0, buffer.Length);
-            DBHelper.instence.Files.Add(new Models.File() { filePath = fileSavePath, fileName = _fileName, fileExt = _fileExt, MD5 = _MD5 });
-            DBHelper.instence.SaveChangesAsync();
+            this.filePath = Path.Combine(savepath, this.MD5 + "." + this.fileExt);
+            new FileStream(filePath, FileMode.Create).Write(buffer, 0, buffer.Length);
+        }
+
+        public static File AddFile(Stream fs, string FileName)
+        {
+            byte[] buffer = new byte[fs.Length];
+            fs.Read(buffer, 0, buffer.Length);
+            var MD5 = MD5Helper.GetHash(fs);
+            if (DBHelper.instence.Files.Find(MD5) != null)
+                return DBHelper.instence.Files.Find(MD5);
+            return new File(buffer, FileName, MD5);
+        }
+
+        public static File AddFile(string filepath)
+        {
+            if (filepath.StartsWith("/") || filepath.StartsWith("\\"))
+                filepath = System.AppDomain.CurrentDomain.BaseDirectory + filepath;
+            var fs = new FileStream(filepath, FileMode.Open, FileAccess.Read);
+            byte[] buffer = new byte[fs.Length];
+            fs.Read(buffer, 0, buffer.Length);
+            var MD5 = MD5Helper.GetHash(fs);
+            var fileName = Path.GetFileName(filepath);
+            if (DBHelper.instence.Files.Find(MD5) != null)
+                return DBHelper.instence.Files.Find(MD5);
+            return new File(buffer, fileName, MD5);
         }
     }
 }
