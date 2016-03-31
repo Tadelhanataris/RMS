@@ -39,3 +39,4 @@
 教师信息详情     jsxxxq.html
 管理员信息详情   glyxxxq.html
 管理员列表      glylb.html
+我的信息-学生    wdxxxs.html
