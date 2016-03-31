@@ -207,6 +207,7 @@
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\NoticesController.cs" />
     <Compile Include="Controllers\PolicyController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\TableController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Global.asax.cs">
@@ -235,6 +236,7 @@
     <Content Include="Content\header.css" />
     <Content Include="Content\home.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\stu.css" />
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="favicon.ico" />
@@ -317,6 +319,10 @@
     <Content Include="Views\Policy\Index.cshtml" />
     <Content Include="Views\Club\Index.cshtml" />
     <Content Include="Views\Policy\ViewContent.cshtml" />
+    <Content Include="Views\Students\_Layout.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Students\_foot.cshtml" />
+    <Content Include="Views\Students\_header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

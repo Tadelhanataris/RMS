@@ -1,0 +1,12 @@
+.navbar-brand{
+    font-family: 微软雅黑;
+}
+
+.nav{
+    width: 75%;
+}
+
+#nav li a:hover
+{
+    font-weight:bolder;
+}
