@@ -3,6 +3,7 @@ package com.lalalla.t.biyesheji;
 import android.app.Activity;
 import android.app.LocalActivityManager;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -31,6 +32,7 @@ public class Userinformation extends AppCompatActivity implements NavigationView
     private static final String LOG_TAG = "Camera";
     private Uri fileUri;
     public static final int MEDIA_TYPE_IMAGE = 1;
+    private static final int PHOTO_REQUEST_GALLERY = 2;
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,7 +97,7 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-<<<<<<< HEAD
+
             Log.d(LOG_TAG, "Take Picture Button Click");
             // 利用系统自带的相机应用:拍照
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -110,15 +112,14 @@ public class Userinformation extends AppCompatActivity implements NavigationView
             startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         }
         else if (id == R.id.nav_gallery) {
-=======
-            Intent intent =new Intent();
-            intent.setClass(Userinformation.this,Photo.class);
-            startActivity(intent);
-
-        } else if (id == R.id.nav_gallery) {
->>>>>>> origin/master
+            Intent i = new Intent(Intent.ACTION_PICK,
+                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);//调用android的图库
+            startActivityForResult(i, PHOTO_REQUEST_GALLERY);
 
         }
+// else if (id == R.id.nav_gallery) {
+//
+//        }
 //        else if (id == R.id.nav_slideshow) {
 //
 //        }
@@ -127,6 +128,19 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+
+//           String[] email = {"3802**[email]92@qq.com[/email]"}; // 需要注意，email必须以数组形式传入");
+//
+//          Intent data=new Intent(Intent.ACTION_SENDTO);
+//          data.setData(Uri.parse("mailto:way.ping.li@gmail.com"));
+//          data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
+//          data.putExtra(Intent.EXTRA_TEXT, "这是内容");
+//          startActivity(data);
+            Intent data=new Intent(Intent.ACTION_SENDTO);
+            data.setData(Uri.parse("mailto:way.ping.li@gmail.com"));
+            data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
+            data.putExtra(Intent.EXTRA_TEXT, "这是内容");
+            startActivity(data);
 
         }
 
@@ -206,84 +220,113 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         super.onActivityResult(requestCode, resultCode, data);
         Log.d(LOG_TAG, "onActivityResult: requestCode: " + requestCode
                 + ", resultCode: " + requestCode + ", data: " + data);
-        // 如果是拍照
-        if (CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE == requestCode)
-        {
-            Log.d(LOG_TAG, "CAPTURE_IMAGE");
-
-            if (RESULT_OK == resultCode)
+        switch (requestCode) {
+            // 如果是拍照
+            case CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE :
             {
-                Log.d(LOG_TAG, "RESULT_OK");
+                Log.d(LOG_TAG, "CAPTURE_IMAGE");
 
-                // Check if the result includes a thumbnail Bitmap
-                if (data != null)
-                {
-                    // 没有指定特定存储路径的时候
-                    Log.d(LOG_TAG,
-                            "data is NOT null, file on default position.");
+                if (RESULT_OK == resultCode) {
+                    Log.d(LOG_TAG, "RESULT_OK");
 
-                    // 指定了存储路径的时候（intent.putExtra(MediaStore.EXTRA_OUTPUT,fileUri);）
-                    // Image captured and saved to fileUri specified in the
-                    // Intent
-                    Toast.makeText(this, "Image saved to:\n" + data.getData(),
-                        Toast.LENGTH_LONG).show();
+                    // Check if the result includes a thumbnail Bitmap
+                    if (data != null) {
+                        // 没有指定特定存储路径的时候
+                        Log.d(LOG_TAG,
+                                "data is NOT null, file on default position.");
 
-                    if (data.hasExtra("data"))
-                    {
-                        Bitmap thumbnail = data.getParcelableExtra("data");
+                        // 指定了存储路径的时候（intent.putExtra(MediaStore.EXTRA_OUTPUT,fileUri);）
+                        // Image captured and saved to fileUri specified in the
+                        // Intent
+                        Toast.makeText(this, "Image saved to:\n" + data.getData(),
+                                Toast.LENGTH_LONG).show();
+
+                        if (data.hasExtra("data")) {
+                            Bitmap thumbnail = data.getParcelableExtra("data");
 //                        imageView.setImageBitmap(thumbnail);
-                    }
-                }
-                else
-                {
+                        }
+                    } else {
 
-                    Log.d(LOG_TAG,
-                            "data IS null, file saved on target position.");
-                    Toast.makeText(this, "照片已保存",
-                            Toast.LENGTH_LONG).show();
+                        Log.d(LOG_TAG,
+                                "data IS null, file saved on target position.");
+                        Toast.makeText(this, "照片已保存",
+                                Toast.LENGTH_LONG).show();
 
-                    // If there is no thumbnail image data, the image
-                    // will have been stored in the target output URI.
+                        // If there is no thumbnail image data, the image
+                        // will have been stored in the target output URI.
 
-                    // Resize the full image to fit in out image view.
+                        // Resize the full image to fit in out image view.
 //                    int width = imageView.getWidth();
 //                    int height = imageView.getHeight();
 
-                    BitmapFactory.Options factoryOptions = new BitmapFactory.Options();
+                        BitmapFactory.Options factoryOptions = new BitmapFactory.Options();
 
-                    factoryOptions.inJustDecodeBounds = true;
-                    BitmapFactory.decodeFile(fileUri.getPath(), factoryOptions);
+                        factoryOptions.inJustDecodeBounds = true;
+                        BitmapFactory.decodeFile(fileUri.getPath(), factoryOptions);
 
-                    int imageWidth = factoryOptions.outWidth;
-                    int imageHeight = factoryOptions.outHeight;
+                        int imageWidth = factoryOptions.outWidth;
+                        int imageHeight = factoryOptions.outHeight;
 
-                    // Determine how much to scale down the image
+                        // Determine how much to scale down the image
 //                    int scaleFactor = Math.min(imageWidth / width, imageHeight
 //                            / height);
 
-                    // Decode the image file into a Bitmap sized to fill the
-                    // View
-                    factoryOptions.inJustDecodeBounds = false;
+                        // Decode the image file into a Bitmap sized to fill the
+                        // View
+                        factoryOptions.inJustDecodeBounds = false;
 //                    factoryOptions.inSampleSize = scaleFactor;
-                    factoryOptions.inPurgeable = true;
+                        factoryOptions.inPurgeable = true;
 
-                    Bitmap bitmap = BitmapFactory.decodeFile(fileUri.getPath(),
-                            factoryOptions);
+                        Bitmap bitmap = BitmapFactory.decodeFile(fileUri.getPath(),
+                                factoryOptions);
 
 //                    imageView.setImageBitmap(bitmap);
+                    }
+                } else if (resultCode == RESULT_CANCELED) {
+                    Toast.makeText(this, "您已关闭了相机", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Image capture failed, advise user
                 }
+                break;
             }
-            else if (resultCode == RESULT_CANCELED)
-            {
-                Toast.makeText(this,"您已关闭了相机",Toast.LENGTH_SHORT).show();
-            }
-            else
-            {
-                // Image capture failed, advise user
-            }
-        }
+            case PHOTO_REQUEST_GALLERY: {
+                switch (resultCode) {
+                case Activity.RESULT_OK: {
 
-        // 如果是录像
+                Uri uri = data.getData();
+                Cursor cursor = getContentResolver().query(uri, null,
+                        null, null, null);
+                cursor.moveToFirst();
+
+                Uri selectedImage = data.getData();
+                String[] filePathColumns = {MediaStore.Images.Media.DATA};
+                Cursor c = this.getContentResolver().query(selectedImage, filePathColumns, null, null, null);
+                c.moveToFirst();
+
+                int columnIndex = c.getColumnIndex(filePathColumns[0]);
+                String picturePath = c.getString(columnIndex);
+                c.close();
+
+
+                String imgNo = cursor.getString(0); // 图片编号
+                String imgPath = cursor.getString(1); // 图片文件路径
+                String imgSize = cursor.getString(2); // 图片大小
+                String imgName = cursor.getString(3); // 图片文件名
+                cursor.close();
+// Options options = new BitmapFactory.Options();
+// options.inJustDecodeBounds = false;
+// options.inSampleSize = 10;
+// Bitmap bitmap = BitmapFactory.decodeFile(imgPath, options);
+            }
+                           case Activity.RESULT_CANCELED:// 取消
+                           break;
+
+            }
+                break;
+
+
+
+            // 如果是录像
 //        if (requestCode == CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE)
 //        {
 //            Log.d(LOG_TAG, "CAPTURE_VIDEO");
@@ -299,5 +342,6 @@ public class Userinformation extends AppCompatActivity implements NavigationView
 //            {
 //                // Video capture failed, advise user
 //            }
+        }
     }
-}
+}}
