@@ -3,10 +3,14 @@
     margin: 20px auto;
 }
 
+#container #xzxs .row{
+    margin: 0;
+}
+
 #container .col-md-6, #container .col-md-12{
     margin-top: 5px;
-    padding-left: 5px;
-    padding-right: 0;
+    padding-left: 0;
+    padding-right: 5px;
 }
 
 #container #btn-container{

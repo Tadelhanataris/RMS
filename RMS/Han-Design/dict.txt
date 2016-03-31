@@ -36,3 +36,4 @@
 学生列表        xslb.html
 学生信息详情     xsxxxq.html
 教师列表        jslb.html
+教师信息详情     jsxxxq.html
