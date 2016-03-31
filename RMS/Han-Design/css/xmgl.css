@@ -3,73 +3,15 @@
     margin: 20px auto;
 }
 
-#container .row{
+#container #xmgl .row{
     width: 100%;
     margin: 0;
 }
 
-#container .section{
-    font-size: 20px;
-}
-
-#container .section p{
+#container #xmgl .col-md-6,#container #xmgl .col-md-12{
     margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
-    font-family: 微软雅黑;
-    padding-left: 10px;
-}
-
-#container .title p{
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 14px;
-}
-
-#container .content p{
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 14px;
-}
-
-#container .row-single{
-    background-color: #f0f0f0;
-}
-
-#container .row-double{
-    background-color: #dadada;
-}
-
-#container .col{
-    border-color: #3a87ad;
-    border-width: 1px;
-    border-style: solid;
-    border-bottom: hidden;
-    border-right: hidden;
-    padding: 0px;
-}
-
-#container .title{
-    text-align: right;
-}
-
-#container .content{
-    text-align: left;
-    padding-left: 10px;
-}
-
-#container .end{
-    border-right-color: #3a87ad;
-    border-right-width: 1px;
-    border-right-style: solid;
-}
-
-#container .table-end{
-    border-bottom-color: #3a87ad;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    padding-left: 0;
+    padding-right: 5px;
 }
 
 #container #btn-container{
