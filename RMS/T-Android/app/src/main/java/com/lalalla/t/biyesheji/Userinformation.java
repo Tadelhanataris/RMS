@@ -313,6 +313,8 @@ public class Userinformation extends AppCompatActivity implements NavigationView
                 String imgSize = cursor.getString(2); // 图片大小
                 String imgName = cursor.getString(3); // 图片文件名
                 cursor.close();
+                    Toast.makeText(this, "您已成功启动邮箱", Toast.LENGTH_SHORT).show();
+
 // Options options = new BitmapFactory.Options();
 // options.inJustDecodeBounds = false;
 // options.inSampleSize = 10;
