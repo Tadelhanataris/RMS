@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - 首都师范大学大学生创新创业训练计划</title>
+    @RenderSection("head", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/stu")
+</head>
+<body>
+    @Html.Partial("_header")
+
+    <div id="container">
+
+        @RenderBody()
+    </div>
+    @Html.Partial("_footer")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
