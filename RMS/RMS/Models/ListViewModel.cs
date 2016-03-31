@@ -10,7 +10,7 @@ namespace RMS.Models
     {
         public int ID { get; set; }
         public string href { get; set; }
-        public string src { get; set; }
+        public virtual File src { get; set; }
     }
 
     public class Notice
@@ -44,7 +44,7 @@ namespace RMS.Models
     {
         public int ID { get; set; }
         public string title { get; set; }
-        public virtual List<Attachment> attachment { get; set; }
+        public virtual File file { get; set; }
     }
 
     public class DBHelper : DbContext

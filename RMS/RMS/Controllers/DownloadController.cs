@@ -12,7 +12,7 @@ namespace RMS.Controllers
         // GET: Download
         public FileStreamResult Index(string hash)
         {
-            var file = DBHelper.instence.Files.Where(x => x.MD5 == hash).ToArray()[0];
+            var file = DBHelper.instence.Files.Find(hash);
             Stream fs = new StreamReader(file.filePath).BaseStream;
             return File(fs, MimeMapping.GetMimeMapping(file.fileName), file.fileName);
         }
