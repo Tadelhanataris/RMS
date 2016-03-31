@@ -5,3 +5,15 @@
 .nav{
     width: 75%;
 }
+
+.pagefoot{
+    height: 120px;
+    padding: 21px 0;
+    background-color: #f8f8f8;
+}
+
+.pf-content{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
