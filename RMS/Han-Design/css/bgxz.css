@@ -12,9 +12,10 @@
 
 #container .list{
     font-size: 14px;
+    height: 550px;
 }
 
-#container ul, li{
+#container ul{
     list-style-type: none;
     border-bottom: #c9c9c9 solid 1px;
 }
