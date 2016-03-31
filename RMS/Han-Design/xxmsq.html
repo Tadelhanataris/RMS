@@ -7,6 +7,7 @@
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/xxmsq.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/xxmsq.css">
@@ -215,96 +216,15 @@
                 </div>
             </div>
             <div class="row table-start">
-                <div class="col-md-2 col col1 col-start">
-                    <p class="p1">姓名</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input class="form-control" type="text" id="zdjsxm">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">性别</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <select id="zdjsxb" class="form-control">
-                        <option value="male">男</option>
-                        <option value="female">女</option>
-                    </select>
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">年龄</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input class="form-control" type="text" id="zdjsnl">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col col1 col-start">
-                    <p class="p1">所在院系</p>
-                </div>
-                <div class="col-md-2 col col1">
+                <div class="col-md-6 col col1 col-start">
                     <select id="zdjsszyx" class="form-control">
-                        <option>请选择院系</option>
+                        <option>请选择指导教师所在院系</option>
                     </select>
                 </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">最终学历</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjszzxl">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">专业</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjszy">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col col1 col-start">
-                    <p class="p1">职称</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjszc">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">职务</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjszw">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">研究方向</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjsyjfx">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col col1 col-start">
-                    <p class="p1">联系电话</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjslxdh">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">手机</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjssj">
-                </div>
-                <div class="col-md-2 col col1">
-                    <p class="p1">电子邮箱</p>
-                </div>
-                <div class="col-md-2 col col1">
-                    <input type="text" class="form-control" id="zdjsdzyx">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col col1 col-start">
-                    <p class="p1">身份证号</p>
-                </div>
-                <div class="col-md-10 col col1">
-                    <input type="text" class="form-control" id="zdjssfzh">
+                <div class="col-md-6 col col1">
+                    <select id="zdjsxm" class="form-control">
+                        <option>请选择指导教师</option>
+                    </select>
                 </div>
             </div>
 
@@ -480,40 +400,11 @@
         <div style="margin: 20px auto;text-align: center">
             <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
             <button type="reset" class="btn btn-danger" style="width: 80px;">重置</button>
-            <button type="button" class="btn btn-primary" style="width: 80px;">打印</button>
         </div>
 
     </div>
 
 </div>
-
-<script>
-    $(window).load(function() {
-        $('[name=xmlb]').change(function() {
-            if ($('#ybxm').prop('checked')) {
-                $('[name=ybxmxz]').removeAttr('disabled');
-                $('#znlxm').prop('checked', true);
-            } else {
-
-                $('[name=ybxmxz]').prop('checked', false);
-                $('[name=ybxmxz]').attr('disabled', 'true');
-            }
-            if ($('#yxzzxm').prop('checked'))
-                $('[name=yxzzxmxq]').show();
-            else
-                $('[name=yxzzxmxq]').hide();
-        });
-        var i=1;
-        $('#tjxcy').click(function()
-        {
-            $('#tjxcy').parent().parent().before("<div class='row'><div class='col-md-12 col sub-section'><p><span>成员</span><span>"+i+"</span></p></div></div><div class='row table-start'><div class='col-md-2 col col1 col-start'><p class='p1'>姓名</p></div><div class='col-md-2 col col1'><input type='text' class='form-control' id='cy"+i+"xm'></div><div class='col-md-1 col col1'><p class='p1'>性别</p></div><div class='col-md-2 col col1'><select id='cy"+i+"xb' class='form-control'><option value='male'>男</option><option value='female'>女</option></select></div><div class='col-md-2 col col1'><p class='p1'>学号</p></div><div class='col-md-3 col col1'><input type='text' class='form-control' id='cy"+i+"xh'></div></div><div class='row'><div class='col-md-2 col col1 col-start'><p class='p1' style='margin: -3px auto'>所在院（系）</p></div><div class='col-md-4 col col1'><select id='cy"+i+"yx' class='form-control'><option>请选择院系</option></select></div><div class='col-md-2 col col1'><p class='p1'>专业、班级</p></div><div class='col-md-4 col col1'><input type='text' class='form-control' id='cy"+i+"zy'></div></div><div class='row'><div class='col-md-2 col col1 col-start'><p class='p1'>分工</p></div><div class='col-md-10 col col1'><input type='text' class='form-control' id='cy"+i+"fg'></div></div><div class='row'><div class='col-md-2 col col1 col-start'><p class='p1'>电子邮箱</p></div><div class='col-md-4 col col1'><input type='text' class='form-control' id='cy"+i+"dzyx'></div><div class='col-md-2 col col1'><p class='p1'>联系电话</p></div><div class='col-md-4 col col1'><input type='text' class='form-control' id='cy"+i+"dh'></div></div><div class='row'><div class='col-md-2 col col1 col-start'><p class='p1'>手机</p></div><div class='col-md-4 col col1'><input type='text' class='form-control' id='cy"+i+"sj'></div><div class='col-md-2 col col1'><p class='p1'>身份证号</p></div><div class='col-md-4 col col1'><input type='text' class='form-control' id='cy"+i+"sfzh'></div></div>");
-            i++;
-            if(i>4)
-            $('#tjxcy').attr("disabled","true");
-        })
-    });
-
-</script>
 
 </body>
 
