@@ -42,3 +42,4 @@
 我的信息-学生    wdxxxs.html
 通知           notification.html
 成绩查询        cjcx.html
+创新俱乐部列表    cxjlbcylb.html
