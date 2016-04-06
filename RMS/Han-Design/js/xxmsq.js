@@ -4,7 +4,6 @@ $(window).load(function() {
             $('[name=ybxmxz]').removeAttr('disabled');
             $('#znlxm').prop('checked', true);
         } else {
-
             $('[name=ybxmxz]').prop('checked', false);
             $('[name=ybxmxz]').attr('disabled', 'true');
         }
