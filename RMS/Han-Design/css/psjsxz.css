@@ -1,0 +1,16 @@
+#container #jslb{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container #jslb .col-md-3, #container #jslb .col-md-12{
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+#container #btn-container{
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
