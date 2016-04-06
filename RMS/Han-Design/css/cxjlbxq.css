@@ -1,0 +1,20 @@
+#container #cxjlb{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container #cxjlb .row{
+    margin: 0;
+}
+
+#container #cxjlb .col-md-1,#container #cxjlb .col-md-2,#container #cxjlb .col-md-3,#container #cxjlb .col-md-4,#container #cxjlb .col-md-5,#container #cxjlb .col-md-6,#container #cxjlb .col-md-7,#container #cxjlb .col-md-8,#container #cxjlb .col-md-9,#container #cxjlb .col-md-10,#container #cxjlb .col-md-11,#container #cxjlb .col-md-12{
+    padding-left: 0;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+#container #btn-container{
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
