@@ -13,15 +13,30 @@
     text-align: center;
     line-height: 34px;
     margin: 0;
+    flex: 1;
 }
 
 #container #fbxmshlb .more{
     text-align: center;
+    flex: 1;
 }
 
 #container #fbxmshlb .row{
     margin: 0;
     margin-top: 5px;
+    display: flex;
+}
+
+#container #fbxmshlb [class*=col-]
+{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+#container #fbxmshlb [class*=col-]:last-child{
+    padding-right: 0;
 }
 
 #container #fbxmshlb .row:hover{
