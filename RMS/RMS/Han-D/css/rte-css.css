@@ -1,0 +1,271 @@
+.container textarea, input {
+  font-family: Helvetica, Arial, Verdana;
+}
+
+.container #fbtz{
+  width: 810px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.container strong {
+  font-weight: bold;
+}
+
+.container .get-started {
+  margin: 20px 0;
+  color: #666;
+  font-size: 11px;
+  text-align: center;
+}
+
+.container .get-started a {
+  color: #666;
+}
+
+.container #wysihtml5-editor-toolbar {
+  position: relative;
+}
+
+.container header {
+  display: block;
+  border-radius: 4px;
+  width: 810px;
+  background: #f6f6f6;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid #ddd\9; /* IE 8 and below */
+  background-image: linear-gradient(bottom, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  font-size: 0;
+}
+
+.container .commands {
+  border-left: 1px solid #ddd;
+  display: inline-block;
+}
+
+.container [data-wysihtml5-command],
+[data-wysihtml5-action],
+.fore-color {
+  position: relative;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #fff;
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  cursor: pointer;
+  height: 40px;
+  width: 68px;
+}
+
+.container [data-wysihtml5-command]:after,
+[data-wysihtml5-action]:after,
+.fore-color:after {
+  content: "";
+  background-image: url(../images/spr_toolbar_icons_r1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container [data-wysihtml5-command]:hover,
+[data-wysihtml5-action]:hover,
+.fore-color:hover {
+  background-image: linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(229,240,226) 0%, rgb(255,255,255) 100%);
+}
+
+.container [data-wysihtml5-command="bold"]:after {
+  background-position: 24px center;
+}
+
+.container [data-wysihtml5-command="italic"]:after {
+  background-position: -48px center;
+}
+
+.container [data-wysihtml5-command="insertUnorderedList"]:after {
+  background-position: -115px center;
+}
+
+.container [data-wysihtml5-command="insertOrderedList"]:after {
+  background-position: -197px center;
+}
+
+.container [data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h1"]:after {
+  background-position: -344px center;
+}
+
+.container [data-wysihtml5-command="formatBlock"][data-wysihtml5-command-value="h2"]:after {
+  background-position: -428px center;
+}
+
+.container [data-wysihtml5-command="createLink"]:after {
+  background-position: -271px center;
+}
+
+.container [data-wysihtml5-command="insertImage"]:after {
+  background-position: -513px center;
+}
+
+.container .fore-color:after {
+  background-position: -741px center;
+}
+
+.container [data-wysihtml5-command="insertSpeech"]:after {
+  background-position: -596px center;
+}
+
+.container [data-wysihtml5-action="change_view"]:after {
+  background-position: -670px center;
+}
+
+.container .fore-color ul {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  right: -1px;
+  left: -2px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.container .fore-color li {
+  display: block;
+  margin: 3px;
+  width: auto;
+  border: 0;
+  height: 15px;
+}
+
+.container .fore-color li:after {
+  display: none;
+}
+
+.container .fore-color:hover ul {
+  display: block;
+}
+
+.container .fore-color [data-wysihtml5-command-value="silver"] {
+  background: silver !important;
+}
+
+
+.container .fore-color [data-wysihtml5-command-value="gray"] {
+  background: gray !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="maroon"] {
+  background: maroon !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="red"] {
+  background: red !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="purple"] {
+  background: purple !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="green"] {
+  background: green !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="olive"] {
+  background: olive !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="navy"] {
+  background: navy !important;
+}
+
+.container .fore-color [data-wysihtml5-command-value="blue"] {
+  background: blue !important;
+}
+
+.container .fore-color .wysihtml5-command-active {
+  outline: 1px solid #666;
+  outline-offset: 1px;
+}
+
+.container .wysihtml5-commands-disabled .fore-color ul {
+  display: none;
+}
+
+.container .wysihtml5-action-active,
+.wysihtml5-command-active {
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+  background: #eee !important;
+}
+
+.container .wysihtml5-commands-disabled [data-wysihtml5-command],
+.wysihtml5-commands-disabled .fore-color {
+  opacity: 0.4;
+  cursor: default;
+  background-image: none !important;
+}
+
+.container [data-wysihtml5-dialog] {
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 4px;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background: #FFFBE0;
+  position: absolute;
+  width: 810px;
+  text-align: center;
+  top: 45px;
+}
+
+.container [data-wysihtml5-dialog] input {
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 3px;
+  width: 300px;
+}
+
+.container [data-wysihtml5-dialog] input:focus {
+  outline: 0;
+  border: 1px solid #666;
+}
+
+.container [data-wysihtml5-dialog-action] {
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container [data-wysihtml5-dialog-action="save"] {
+  background: #007200;
+}
+
+.container [data-wysihtml5-dialog-action="cancel"] {
+  background: #999;
+}
+
+.container a.fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}

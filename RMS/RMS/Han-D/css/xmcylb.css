@@ -1,0 +1,34 @@
+#container #cylb{
+    width: 550px;
+    margin: 20px auto;
+}
+
+#container #cylb h3{
+    padding-left: 5px;
+    font-family: 微软雅黑;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#container #cylb .row{
+    width: 100%;
+    margin: 0;
+}
+
+#container #cylb .section{
+    font-size: 20px;
+}
+
+#container #cylb .section p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-family: 微软雅黑 light;
+    padding-left: 10px;
+}
+
+#container #cylb .row .col-md-1,#container #cylb .row .col-md-2,#container #cylb .row .col-md-3,#container #cylb .row .col-md-4,#container #cylb .row .col-md-5,#container #cylb .row .col-md-6,#container #cylb .row .col-md-7,#container #cylb .row .col-md-8,#container #cylb .row .col-md-9,#container #cylb .row .col-md-10,#container #cylb .row .col-md-11,#container #cylb .row .col-md-12{
+    margin-top: 5px;
+    padding-left: 0;
+    padding-right: 5px;
+}
