@@ -11,13 +11,14 @@ namespace RMS
 
 
             #region css
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css","~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css"));
             bundles.Add(new StyleBundle("~/Content/header").Include("~/Content/header.css"));//header footer的css
             bundles.Add(new StyleBundle("~/Content/home").Include("~/Content/home.css"));//首页的css
             bundles.Add(new StyleBundle("~/Content/table").Include("~/Content/bgxz.css", "~/Content/fileicon.css"));
             bundles.Add(new StyleBundle("~/Content/club").Include("~/Content/cxjlb.css"));
             bundles.Add(new StyleBundle("~/Content/stu").Include("~/Content/stu.css"));
             bundles.Add(new StyleBundle("~/Content/notices").Include("~/Content/xwlb.css"));
+            bundles.Add(new StyleBundle("~/Content/progress").Include("~/Content/xmjd.css"));
             #endregion
 
 

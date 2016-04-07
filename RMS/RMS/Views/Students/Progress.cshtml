@@ -1,0 +1,60 @@
+﻿@model RMS.Models.Project_Progress
+@{
+    ViewBag.Title = "项目进度";
+    Layout = "~/Views/Students/_Layout.cshtml";
+}
+
+@section Head {
+    @Styles.Render("~/Content/progress")
+}
+<div class="xmjd">
+    <div class="row">
+        <div class="col-md-12">
+            <div style="float: right">
+                <nav>
+                    <ul class="pagination">
+                        @for (var i = 1; i <= (int)ViewData["record_num"]; i++)
+                        {
+                            <li>@Html.ActionLink(i.ToString(),"Progress",new {id=i })</li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm("Progress", "Students"))
+    {
+        @Html.HiddenFor(x => x.sequence, new { value = ViewData["current_num"] })
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group" id="title">
+                <span class="input-group-addon" id="t">标题</span>
+                @Html.TextAreaFor(x=>x.title,new { type = "text",@class="form-control",ariaDescribedby="t",placeholder="请在此填写进度详情",maxlength="30",style="resize: none; height: 2.5em;overflow:hidden" })
+                @*<textarea type="text" class="form-control" aria-describedby="t" placeholder="请在此填写进度详情" maxlength="30" style="resize: none; height: 2.5em;overflow:hidden"></textarea>*@
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.TextAreaFor(x=>x.content,new { style = "resize: none",@class="form-control",placeholder="请在此填写进度详情",id="content"})
+            @*<textarea style="resize: none" class="form-control" placeholder="请在此填写进度详情" id="content"></textarea>*@
+        </div>
+    </div>
+
+    <div id="btn-container">
+        <span style="float:left;line-height:34px;">*当您离开本页时请先提交</span>
+        <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
+        <button type="reset" class="btn btn-danger" style="width: 80px;">重置</button>
+    </div>
+    }
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form").submit(function () {
+            $.post($(this).attr("action"), $(this).serialize(), function (response) {
+                alert(response.message);
+            });
+            return false;
+        });
+    });
+</script>

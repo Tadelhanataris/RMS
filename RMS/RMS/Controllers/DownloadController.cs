@@ -10,9 +10,9 @@ namespace RMS.Controllers
     public class DownloadController : Controller
     {
         // GET: Download
-        public FileStreamResult Index(string hash)
+        public async System.Threading.Tasks.Task<FileStreamResult> Index(string hash)
         {
-            var file = DBHelper.instence.Files.Find(hash);
+            var file = await DBHelper.instence.Files.FindAsync(hash);
             Stream fs = new StreamReader(file.filePath).BaseStream;
             return File(fs, MimeMapping.GetMimeMapping(file.fileName), file.fileName);
         }

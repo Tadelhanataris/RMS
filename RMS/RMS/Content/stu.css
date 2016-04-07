@@ -2,11 +2,34 @@
     font-family: 微软雅黑;
 }
 
+#nav
+{
+    height:55px;
+    overflow:hidden;
+}
+
 .nav{
     width: 75%;
+}
+
+body>#container {
+    width: 100%;
+    min-height: calc(100vh - 175px);
 }
 
 #nav li a:hover
 {
     font-weight:bolder;
+}
+
+.pf-content{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+.pagefoot{
+    height: 120px;
+    padding: 21px 0;
+    background-color: #f8f8f8;
 }

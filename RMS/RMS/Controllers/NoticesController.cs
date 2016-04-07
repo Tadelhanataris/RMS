@@ -38,7 +38,7 @@ namespace RMS.Controllers
             {
                 return HttpNotFound();
             }
-            ViewData.Add("context", DBHelper.instence.Notices.Where(x=>x.ID.ToString()==id).ToList()[0]);
+            ViewData.Add("context", DBHelper.instence.Notices.Find(int.Parse(id)));
             return View();
         }
     }
