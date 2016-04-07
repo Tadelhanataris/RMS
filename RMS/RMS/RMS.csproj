@@ -237,8 +237,10 @@
     <Content Include="Content\home.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\stu.css" />
+    <Content Include="Content\xmjd.css" />
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
+    <Content Include="Content\xxmsq.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -321,8 +323,10 @@
     <Content Include="Views\Policy\ViewContent.cshtml" />
     <Content Include="Views\Students\_Layout.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
-    <Content Include="Views\Students\_foot.cshtml" />
+    <Content Include="Views\Students\_footer.cshtml" />
     <Content Include="Views\Students\_header.cshtml" />
+    <Content Include="Views\Students\NewProject.cshtml" />
+    <Content Include="Views\Students\Progress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

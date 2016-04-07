@@ -120,3 +120,8 @@ padding: 0 24px 24px 24px;
     right: 0;
     margin: auto;
 }
+
+body>#container {
+    width: 100%;
+    min-height: calc(100vh - 410px);
+}

@@ -47,6 +47,16 @@ namespace RMS.Models
         public virtual File file { get; set; }
     }
 
+    public class Project_Progress
+    {
+        
+        public int ID { get; set; }
+        public int sequence { get; set; }
+        public string title { get; set; }
+        public string content { get; set; }
+        //public virtual Project project { get; set; }
+    }
+
     public class DBHelper : DbContext
     {
         public static readonly DBHelper instence = new DBHelper();
@@ -57,10 +67,10 @@ namespace RMS.Models
         public DbSet<News> News { get; set; }
         public DbSet<Policy> Policy { get; set; }
         public DbSet<Table> Table { get; set; }
+        public DbSet<Project_Progress> Project_progress { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();  
         }
-
     }
 }
