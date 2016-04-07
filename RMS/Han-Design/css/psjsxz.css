@@ -3,10 +3,8 @@
     margin: 20px auto;
 }
 
-#container #jslb .col-md-3, #container #jslb .col-md-12{
-    margin-top: 5px;
-    padding-left: 0px;
-    padding-right: 5px;
+#container #jslb [class*=col-]{
+    padding: 2.5px;
 }
 
 #container #btn-container{
