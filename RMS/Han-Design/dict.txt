@@ -46,3 +46,4 @@
 创新俱乐部成员信息详情   cxjlbxq.html
 教师发布项目审核列表     jsfbxmshlb.html
 评审教师选择            psjsxz.html
+学生申请项目列表       xssqxmshlb.html
