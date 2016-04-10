@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布新项目</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fbxxm.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+
+<div id="container">
+
+    <!--项目院系根据教师院系自动获取-->
+
+<form>
+    <div id="fbxxm">
+        <div class="row table-start">
+            <div class="col-md-2 col col-start">
+                <div class="title">
+                    <p>项目名称</p>
+                </div>
+            </div>
+            <div class="col-md-10 col">
+                <div class="content">
+                    <input type="text" class="form-control" id="xmmc">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col-start">
+                <div class="title">
+                    <p>项目类别</p>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div>
+                    <select id="xmlb" class="form-control">
+                        <option>基础</option>
+                        <option>应用</option>
+                        <option>创业</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 col">
+                <div class="title">
+                    <p>学科专业</p>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div class="content">
+                    <input class="form-control" id="xkzy">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col-start">
+                <div class="title">
+                    <p>师范/非师范</p>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div>
+                    <select id="sffsf" class="form-control">
+                        <option>师范</option>
+                        <option>非师范</option>
+                        <option>师范/非师范</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 col">
+                <div class="title">
+                    <p>需求人数</p>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div>
+                    <select id="xqrs" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col-start">
+                <div>
+                    <div>
+                        <p>项目描述</p>
+                    </div>
+                    <div class="content">
+                        <textarea class="form-control content1" style="height: 200px" id="xmms"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col-start">
+                <div>
+                    <div>
+                        <p>要求</p>
+                    </div>
+                    <div class="content">
+                        <textarea class="form-control content1" style="height: 200px" id="yq"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center">
+        <button class="btn btn-default" type="submit">提交</button>
+        <button class="btn btn-danger" type="reset">重置</button>
+        <button class="btn btn-primary" type="button">打印</button>
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>

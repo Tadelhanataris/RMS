@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立项申请书</title>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/zdjspzlx.css">
+
+</head>
+<body>
+
+<div id="container">
+
+    <div id="zdjspzlx">
+
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>一、项目信息</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">项目名称</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="xmmc">这里是项目名称</p>
+            </div>
+        </div>
+        <div class="row" style="height: 65px">
+            <div class="col-md-2 col col1 col-start" style="height: 100%">
+                <p class="p1">项目类别及属性</p>
+            </div>
+            <div class="col-md-6 col col1" style="height: 100%;padding: 0;text-align: center">
+                <div style="width: 100%;height: 100%">
+                    <div class="row" style="height: 50%">
+                        <div class="col-md-12 col2" style="border-bottom-color: black;border-bottom-style: solid;border-bottom-width: 1px;height: 100%">
+                            <input type="radio" name="xmlb" id="ybxm" class="xx" disabled>一般项目
+                        </div>
+                    </div>
+                    <div class="row" style="height: 50%">
+                        <div class="col-md-4 col2" style="border-right-color: black;border-right-style: solid;border-right-width: 1px;height: 100%">
+                            <input type="radio" name="ybxmxz" id="znlxm" class="xx" disabled>指南类项目
+                        </div>
+                        <div class="col-md-4 col2" style="border-right-color: black;border-right-style: solid;border-right-width: 1px;height: 100%">
+                            <input type="radio" name="ybxmxz" id="zxxm" class="xx" disabled>自选项目
+                        </div>
+                        <div class="col-md-4 col2" style="height: 100%">
+                            <input type="radio" name="ybxmxz" id="cyxm" class="xx" disabled>创业项目
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col col1" style="height: 100%;text-align: center">
+                <input type="radio" name="xmlb" id="dxzzxm" class="xx" disabled>定向资助项目
+            </div>
+            <div class="col-md-2 col col1" style="height: 100%;text-align: center">
+                <input type="radio" name="xmlb" id="yxzzxm" class="xx" disabled>延续资助项目
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col1 col-start">
+                <p class="p1">项目所属一级学科</p>
+            </div>
+            <div class="col-md-8 col col1">
+                <p class="p1" id="xmssyjxk">这里是项目所属一级学科</p>
+            </div>
+        </div>
+        <div class="row" name="yxzzxmxq">
+            <div class="col-md-12 col col1 col-start">
+                <p class="p1">以往项目信息（延续资助项目必填）</p>
+            </div>
+        </div>
+        <div class="row" name="yxzzxmxq">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">项目名称</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" id="yxzzxmmc">这里是项目名称</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">项目级别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmjb">校级</p>
+            </div>
+        </div>
+        <div class="row" name="yxzzxmxq">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1">项目负责人姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmfzrxm">这里是姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系方式</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmfzrdh">13011000011</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmfzrxh">1121000134</p>
+            </div>
+        </div>
+        <div class="row" name="yxzzxmxq">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1">项目指导教师姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmzdjsxm">这里是姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系方式</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmzdjsdh">13813881388</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">职称</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="yxzzxmzdjszc">教授</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>二、项目申请人情况</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col sub-section">
+                <p>项目负责人</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="fzrxm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="fzrxb">这里是性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="fzrxh">1121000134</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1" style="margin: -3px auto">所在院（系）</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="fzryx">这里是所在院（系）</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业、班级</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="fzrzy">这里是专业、班级</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="fzrsfzh">这里是身份证号</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="fzrdzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1">联系电话及手机</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="fzrdh">13111001100</p>
+            </div>
+        </div>
+
+        <div class="row" name="cy1">
+            <div class="col-md-12 col sub-section">
+                <p><span>成员1</span></p>
+            </div>
+        </div>
+        <div class="row table-start" name="cy1">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy1xm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy1xb">这里是性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="cy1xh">1121000134</p>
+            </div>
+        </div>
+        <div class="row" name="cy1">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1" style="margin: -3px auto">所在院（系）</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1yx">这里是所在院（系）</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业、班级</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1zy">这里是专业、班级</p>
+            </div>
+        </div>
+        <div class="row" name="cy1">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">分工</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="cy1fg">这里是分工</p>
+            </div>
+        </div>
+        <div class="row" name="cy1">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1dzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系电话</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1dh">010-12345678</p>
+            </div>
+        </div>
+        <div class="row" name="cy1">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">手机</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1sj">13012345678</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy1sfzh">500381199308081234</p>
+            </div>
+        </div>
+
+        <div class="row" name="cy2">
+            <div class="col-md-12 col sub-section">
+                <p><span>成员2</span></p>
+            </div>
+        </div>
+        <div class="row table-start" name="cy2">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy2xm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy2xb">这里是性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="cy2xh">1121000134</p>
+            </div>
+        </div>
+        <div class="row" name="cy2">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1" style="margin: -3px auto">所在院（系）</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2yx">这里是所在院（系）</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业、班级</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2zy">这里是专业、班级</p>
+            </div>
+        </div>
+        <div class="row" name="cy2">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">分工</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="cy2fg">这里是分工</p>
+            </div>
+        </div>
+        <div class="row" name="cy2">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2dzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系电话</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2dh">010-12345678</p>
+            </div>
+        </div>
+        <div class="row" name="cy2">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">手机</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2sj">13012345678</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy2sfzh">500381199308081234</p>
+            </div>
+        </div>
+
+        <div class="row" name="cy3">
+            <div class="col-md-12 col sub-section">
+                <p><span>成员3</span></p>
+            </div>
+        </div>
+        <div class="row table-start" name="cy3">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy3xm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy3xb">这里是性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="cy3xh">1121000134</p>
+            </div>
+        </div>
+        <div class="row" name="cy3">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1" style="margin: -3px auto">所在院（系）</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3yx">这里是所在院（系）</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业、班级</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3zy">这里是专业、班级</p>
+            </div>
+        </div>
+        <div class="row" name="cy3">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">分工</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="cy3fg">这里是分工</p>
+            </div>
+        </div>
+        <div class="row" name="cy3">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3dzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系电话</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3dh">010-12345678</p>
+            </div>
+        </div>
+        <div class="row" name="cy3">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">手机</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3sj">13012345678</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy3sfzh">500381199308081234</p>
+            </div>
+        </div>
+
+        <div class="row" name="cy4">
+            <div class="col-md-12 col sub-section">
+                <p><span>成员4</span></p>
+            </div>
+        </div>
+        <div class="row table-start" name="cy4">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy4xm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="cy4xb">这里是性别</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">学号</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="cy4xh">1121000134</p>
+            </div>
+        </div>
+        <div class="row" name="cy4">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1" style="margin: -3px auto">所在院（系）</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4yx">这里是所在院（系）</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业、班级</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4zy">这里是专业、班级</p>
+            </div>
+        </div>
+        <div class="row" name="cy4">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">分工</p>
+            </div>
+            <div class="col-md-10 col col1">
+                <p class="p1" id="cy4fg">这里是分工</p>
+            </div>
+        </div>
+        <div class="row" name="cy4">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4dzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">联系电话</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4dh">010-12345678</p>
+            </div>
+        </div>
+        <div class="row" name="cy4">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">手机</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4sj">13012345678</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="cy4sfzh">500381199308081234</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col sub-section">
+                <p>指导教师</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">姓名</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="zdjsxm">这里是姓名</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">性别</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1" id="zdjsxb">男</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1">年龄</p>
+            </div>
+            <div class="col-md-1 col col1">
+                <p class="p1" id="zdjsnl">33</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">最终学历</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="zdjszzxl">博士</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">所在院系</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjsszyx">这里是所在院系</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">专业</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjszy">这里是专业</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">职称</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="zdjszc">教授</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">职务</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="zdjszw">系主任</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">研究方向</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1" id="zdjsyjfx">嵌入式</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">联系电话</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjslxdh">010-12345678</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">手机</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjssj">13808080808</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col col1 col-start">
+                <p class="p1">电子邮箱</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjsdzyx">这里是电子邮箱</p>
+            </div>
+            <div class="col-md-2 col col1">
+                <p class="p1">身份证号</p>
+            </div>
+            <div class="col-md-4 col col1">
+                <p class="p1" id="zdjssfzh">510225191908084242</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>三、申请人对研究项目简要说明</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>（一）立项依据（项目的背景、理论与实际意义、国内外现状分析）</p>
+                    </div>
+                    <div>
+                        <p id="lxyj">立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据立项依据</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>（二）研究目标、内容、拟解决的关键问题（包括实验方案的设计、技术路线等）</p>
+                    </div>
+                    <div>
+                        <p id="yjmb">研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题研究目标、内容、拟解决的关键问题</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>（三）研究的进度安排</p>
+                    </div>
+                    <div>
+                        <p id="jdap">研究的进度安排研究的进度安排研究的进度安排研究的进度安排研究的进度安排研究的进度安排研究的进度安排研究的进度安排</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>（四）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）</p>
+                    </div>
+                    <div>
+                        <p id="cgxs">成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>(五)项目创新特色概述（50字以内）</p>
+                    </div>
+                    <div>
+                        <p id="cxts">项目创新特色概述项目创新特色概述项目创新特色概述项目创新特色概述项目创新特色概述项目创新特色概述</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 col-start">
+                <div>
+                    <div>
+                        <p>（六）申请人参加科研的经历</p>
+                    </div>
+                    <div>
+                        <p id="cyjl">申请人参加科研的经历申请人参加科研的经历申请人参加科研的经历申请人参加科研的经历申请人参加科研的经历</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>四、申请资助金额和经费预算</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-12 col col1 col-start">
+                <p class="p1" id="jfzj">项目经费共计 5000 元</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1">预算支出科目</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1">支出金额（元）</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1">预算根据及理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1" style="text-align: left">1．图书资料费</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="tszlf">1000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" style="text-align: left" id="tszlfly">图书资料费理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1" style="text-align: left">2．实验材料费</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="syclf">1000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" style="text-align: left" id="syclfly">实验材料费理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1" style="text-align: left">3．调研费</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="dyf">1000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" style="text-align: left" id="dyfly">调研费理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1" style="text-align: left">4．印刷费</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="ysf">1000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" style="text-align: left" id="ysfly">印刷费理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1" style="text-align: left">5．成果转化费</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="cgzhf">1000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1" style="text-align: left" id="cgzhfly">成果转化费理由</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col1 col-start">
+                <p class="p1">合计</p>
+            </div>
+            <div class="col-md-3 col col1">
+                <p class="p1" id="hj">5000</p>
+            </div>
+            <div class="col-md-6 col col1">
+                <p class="p1">&nbsp;</p>
+            </div>
+        </div>
+
+        <form>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-12" style="height: 150px">
+                    <div style="height: 100%">
+                        <div class="title">
+                            <p style="margin-bottom: 0px">指导教师承诺</p>
+                        </div>
+                        <div class="content" style="height: 92%">
+                            <textarea id="psyj" class="form-control" style="width: 100%;height: 100%;resize: none">同意担当本项目指导教师并严格遵照相关管理办法，认真履行指导教师职责。</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div style="margin: 20px auto;text-align: center">
+            <button type="submit" class="btn btn-default" style="width: 80px;">同意</button>
+            <button type="button" class="btn btn-danger" style="width: 80px;">不同意</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

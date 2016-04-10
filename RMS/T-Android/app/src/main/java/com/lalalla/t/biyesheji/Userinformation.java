@@ -96,7 +96,8 @@ public class Userinformation extends AppCompatActivity implements NavigationView
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_camera) //调用系统照相机
+        {
 
             Log.d(LOG_TAG, "Take Picture Button Click");
             // 利用系统自带的相机应用:拍照
@@ -111,11 +112,11 @@ public class Userinformation extends AppCompatActivity implements NavigationView
 
             startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         }
-        else if (id == R.id.nav_gallery) {
-            Intent i = new Intent(Intent.ACTION_PICK,
-                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);//调用android的图库
-            startActivityForResult(i, PHOTO_REQUEST_GALLERY);
-
+        else if (id == R.id.nav_gallery) //recyclerview图册
+        {
+            Intent i = new Intent();
+            i.setClass(Userinformation.this,Gallery.class);
+            startActivity(i);
         }
 // else if (id == R.id.nav_gallery) {
 //
@@ -123,11 +124,19 @@ public class Userinformation extends AppCompatActivity implements NavigationView
 //        else if (id == R.id.nav_slideshow) {
 //
 //        }
-        else if (id == R.id.nav_manage) {
+        else if (id == R.id.nav_manage) //个人信息
+        {
+                Intent i = new Intent();
+                i.setClass(Userinformation.this,Selfinformation.class);
+                startActivity(i);
+        } else if (id == R.id.nav_share) //创新俱乐部
+        {
+            Intent i = new Intent();
+            i.setClass(Userinformation.this,InnovativeClub.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_send) //调用系统邮箱但是还没有做发件人的的信息
+        {
 
 //           String[] email = {"3802**[email]92@qq.com[/email]"}; // 需要注意，email必须以数组形式传入");
 //

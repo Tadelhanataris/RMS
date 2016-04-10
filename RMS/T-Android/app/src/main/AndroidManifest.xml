@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.PERSONAL_INFO"/>
+    <uses-permission android:name="android.permission.PERSONAL_INFO" />
 
     <application
         android:allowBackup="true"
@@ -41,6 +41,10 @@
         <activity android:name=".newss" />
         <activity android:name=".notifications" />
         <activity android:name=".summaryedit" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".Selfinformation" />
+        <activity android:name=".InnovativeClub" />
+        <activity android:name=".Add2Activity"></activity>
     </application>
 
 </manifest>

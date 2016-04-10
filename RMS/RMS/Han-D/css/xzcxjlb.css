@@ -1,0 +1,20 @@
+#container #xzcxjlb{
+    width: 500px;
+    margin: 20px auto;
+}
+
+#container #xzcxjlb .row{
+    margin: 0;
+}
+
+#container .col-md-6, #container .col-md-12{
+    margin-top: 5px;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+#container #btn-container{
+    width: 500px;
+    height: 35px;
+    margin: 20px auto;
+}
