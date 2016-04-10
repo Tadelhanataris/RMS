@@ -23,7 +23,7 @@ namespace RMS.Controllers
             var context = DBHelper.instence.Project_progress.Where(x=>x.sequence.ToString()==id).ToArray();
             ViewData.Add("context", context);
             ViewData.Add("record_num", 5);
-            ViewData.Add("current_num", id);
+            ViewData.Add("current_num", int.Parse(id));
             return View();
         }
 

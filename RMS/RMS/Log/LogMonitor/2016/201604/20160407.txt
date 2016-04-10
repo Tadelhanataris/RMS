@@ -1,0 +1,2499 @@
+
+ 
+记录时间：2016-04-07 15:07:56,486 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:07:45
+      结束时间：2016/4/7 15:07:56
+      总 时 间：10.5123766秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:09:31,802 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:07:56
+      结束时间：2016/4/7 15:09:31
+      总 时 间：95.3075896秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:10,555 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:10
+      结束时间：2016/4/7 15:10:10
+      总 时 间：0.0135802秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,408 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:10
+      结束时间：2016/4/7 15:10:34
+      总 时 间：23.8428527秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,802 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0175583秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,803 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0180583秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,803 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0140574秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,804 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0175583秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,805 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0180581秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,809 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0060053秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,814 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0100031秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,816 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0120075秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,842 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0370301秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:10:34,853 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:10:34
+      结束时间：2016/4/7 15:10:34
+      总 时 间：0.0505347秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:01,227 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:11:01
+      结束时间：2016/4/7 15:11:01
+      总 时 间：0.0310907秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:04,386 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:11:01
+      结束时间：2016/4/7 15:11:04
+      总 时 间：3.1597091秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:44,924 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:44
+      结束时间：2016/4/7 15:11:44
+      总 时 间：4.04E-05秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:44,934 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:44
+      结束时间：2016/4/7 15:11:44
+      总 时 间：0.0100044秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,691 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0010034秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,691 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：3.4E-06秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,696 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.005004秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,696 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.005004秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,751 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0545475秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,762 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0725577秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,765 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0010595秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,768 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0030022秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:45,778 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:45
+      结束时间：2016/4/7 15:11:45
+      总 时 间：0.0270208秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,357 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0005775秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,360 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0035019秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,422 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0010244秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,427 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0050031秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,967 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0010907秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:46,978 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:46
+      结束时间：2016/4/7 15:11:46
+      总 时 间：0.0110066秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:48,429 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：PolicyController
+      ActionName:Index
+      开始时间：2016/4/7 15:11:48
+      结束时间：2016/4/7 15:11:48
+      总 时 间：0.0789459秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:11:51,744 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：PolicyController
+      ViewName:Index
+      开始时间：2016/4/7 15:11:48
+      结束时间：2016/4/7 15:11:51
+      总 时 间：3.3158297秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:13:59,626 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:13:59
+      结束时间：2016/4/7 15:13:59
+      总 时 间：0.0010913秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:14:00,697 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:13:59
+      结束时间：2016/4/7 15:14:00
+      总 时 间：1.070606秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:14:27,768 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:14:27
+      结束时间：2016/4/7 15:14:27
+      总 时 间：0.0010395秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:14:28,781 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:14:27
+      结束时间：2016/4/7 15:14:28
+      总 时 间：1.0127019秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,061 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：2.78E-05秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,115 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0548484秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,184 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0005245秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,191 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0065065秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,262 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0010798秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,262 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0010798秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,262 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0010798秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,262 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：7.98E-05秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,263 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0010009秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,275 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0135105秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,275 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0130102秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:46,285 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:46
+      结束时间：2016/4/7 15:22:46
+      总 时 间：0.0230169秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:48,296 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：PolicyController
+      ActionName:Index
+      开始时间：2016/4/7 15:22:48
+      结束时间：2016/4/7 15:22:48
+      总 时 间：0.0030938秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:22:48,301 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：PolicyController
+      ViewName:Index
+      开始时间：2016/4/7 15:22:48
+      结束时间：2016/4/7 15:22:48
+      总 时 间：0.0050044秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:45,806 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:45
+      结束时间：2016/4/7 15:23:45
+      总 时 间：1.12E-05秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:45,812 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:45
+      结束时间：2016/4/7 15:23:45
+      总 时 间：0.0060031秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,315 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0010782秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,315 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0010782秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,315 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：7.82E-05秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,316 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：7.82E-05秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,319 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0030818秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,320 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.005004秒
+      Form表单数据：
+      URL参数：hash=14A0780A6EB931603F1A002D22D52B2D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,321 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0050039秒
+      Form表单数据：
+      URL参数：hash=1653A95C0D365D9887F24D8616F07A3D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,336 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.021016秒
+      Form表单数据：
+      URL参数：hash=DEE45CA6E4340311868949A68071C78D
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,343 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0275255秒
+      Form表单数据：
+      URL参数：hash=482446758034D01F0AF5A164C0C51061
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,427 
+线程ID:[41] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：DownloadController
+      ActionName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0.0010678秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:46,428 
+线程ID:[41] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：DownloadController
+      ViewName:Index
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:46
+      总 时 间：0秒
+      Form表单数据：
+      URL参数：hash=EE84A4C7D586D5FF42FABB4FFED17657
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:23:50,102 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:23:46
+      结束时间：2016/4/7 15:23:50
+      总 时 间：3.7832162秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:24:05,308 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:24:05
+      结束时间：2016/4/7 15:24:05
+      总 时 间：0.0010257秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:24:08,244 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:24:05
+      结束时间：2016/4/7 15:24:08
+      总 时 间：2.9359294秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:24:18,603 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:24:18
+      结束时间：2016/4/7 15:24:18
+      总 时 间：0.0010742秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:24:22,129 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:24:18
+      结束时间：2016/4/7 15:24:22
+      总 时 间：3.5260713秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:27:41,710 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:27:41
+      结束时间：2016/4/7 15:27:41
+      总 时 间：0.0020958秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:27:45,328 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:27:41
+      结束时间：2016/4/7 15:27:45
+      总 时 间：3.6172105秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:27:57,394 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:27:57
+      结束时间：2016/4/7 15:27:57
+      总 时 间：0.0010958秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:00,930 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:27:57
+      结束时间：2016/4/7 15:28:00
+      总 时 间：3.5357709秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:03,502 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:28:03
+      结束时间：2016/4/7 15:28:03
+      总 时 间：0.0010248秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:03,504 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:28:03
+      结束时间：2016/4/7 15:28:03
+      总 时 间：0.0020014秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:05,456 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:28:05
+      结束时间：2016/4/7 15:28:05
+      总 时 间：0.0010269秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:05,458 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:28:05
+      结束时间：2016/4/7 15:28:05
+      总 时 间：0.0020013秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:06,498 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:28:06
+      结束时间：2016/4/7 15:28:06
+      总 时 间：0.001538秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:06,500 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:28:06
+      结束时间：2016/4/7 15:28:06
+      总 时 间：0.0020013秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:59,045 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:28:59
+      结束时间：2016/4/7 15:28:59
+      总 时 间：0.0010009秒
+      Form表单数据：sequence=&title=asdas&content=asdas
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:28:59,050 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:28:59
+      结束时间：2016/4/7 15:28:59
+      总 时 间：0.0050031秒
+      Form表单数据：sequence=&title=asdas&content=asdas
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:29:02,940 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:29:02
+      结束时间：2016/4/7 15:29:02
+      总 时 间：0.0020689秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:29:02,942 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:29:02
+      结束时间：2016/4/7 15:29:02
+      总 时 间：0.0020018秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:29:06,758 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:29:06
+      结束时间：2016/4/7 15:29:06
+      总 时 间：8.26E-05秒
+      Form表单数据：sequence=&title=asdasd&content=asdasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:29:06,759 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:29:06
+      结束时间：2016/4/7 15:29:06
+      总 时 间：0.0010005秒
+      Form表单数据：sequence=&title=asdasd&content=asdasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:04,018 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:30:04
+      结束时间：2016/4/7 15:30:04
+      总 时 间：0.001021秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:04,023 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:30:04
+      结束时间：2016/4/7 15:30:04
+      总 时 间：0.0050071秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:36,212 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:30:36
+      结束时间：2016/4/7 15:30:36
+      总 时 间：0.0020098秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:39,838 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:30:36
+      结束时间：2016/4/7 15:30:39
+      总 时 间：3.6254723秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:39,848 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:30:39
+      结束时间：2016/4/7 15:30:39
+      总 时 间：0.0010888秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:30:39,850 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:30:39
+      结束时间：2016/4/7 15:30:39
+      总 时 间：0.0020013秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:00,337 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:00
+      结束时间：2016/4/7 15:32:00
+      总 时 间：0.0015938秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:03,967 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:00
+      结束时间：2016/4/7 15:32:03
+      总 时 间：3.629761秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:03,977 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:03
+      结束时间：2016/4/7 15:32:03
+      总 时 间：0.0010601秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:03,979 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:03
+      结束时间：2016/4/7 15:32:03
+      总 时 间：0.0020022秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:17,286 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:17
+      结束时间：2016/4/7 15:32:17
+      总 时 间：0.0010334秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:19,704 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:19
+      结束时间：2016/4/7 15:32:19
+      总 时 间：0.0015933秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:20,983 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:17
+      结束时间：2016/4/7 15:32:20
+      总 时 间：3.696476秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:20,983 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:19
+      结束时间：2016/4/7 15:32:20
+      总 时 间：1.2781163秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:51,886 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:51
+      结束时间：2016/4/7 15:32:51
+      总 时 间：0.0010331秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:55,547 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:51
+      结束时间：2016/4/7 15:32:55
+      总 时 间：3.6615806秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:55,558 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:32:55
+      结束时间：2016/4/7 15:32:55
+      总 时 间：0.0010212秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:32:55,560 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:32:55
+      结束时间：2016/4/7 15:32:55
+      总 时 间：0.0020026秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:00,100 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:33:00
+      结束时间：2016/4/7 15:33:00
+      总 时 间：6.73E-05秒
+      Form表单数据：sequence=1&title=asdasd&content=asdasdsa
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:00,100 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:33:00
+      结束时间：2016/4/7 15:33:00
+      总 时 间：0秒
+      Form表单数据：sequence=1&title=asdasd&content=asdasdsa
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:18,071 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:33:18
+      结束时间：2016/4/7 15:33:18
+      总 时 间：0.001063秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:18,073 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:33:18
+      结束时间：2016/4/7 15:33:18
+      总 时 间：0.0020013秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:21,434 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:33:21
+      结束时间：2016/4/7 15:33:21
+      总 时 间：2.18E-05秒
+      Form表单数据：sequence=4&title=wq&content=dasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:33:21,435 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:33:21
+      结束时间：2016/4/7 15:33:21
+      总 时 间：0秒
+      Form表单数据：sequence=4&title=wq&content=dasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:34:25,398 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:34:25
+      结束时间：2016/4/7 15:34:25
+      总 时 间：0.0010911秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:34:26,542 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:34:26
+      结束时间：2016/4/7 15:34:26
+      总 时 间：0.0025593秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:34:29,154 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:34:26
+      结束时间：2016/4/7 15:34:29
+      总 时 间：2.6118535秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:34:29,154 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:34:25
+      结束时间：2016/4/7 15:34:29
+      总 时 间：3.7563217秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:35:53,436 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:35:53
+      结束时间：2016/4/7 15:35:53
+      总 时 间：5.88E-05秒
+      Form表单数据：sequence=4&title=asdasd&content=asdasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:35:53,436 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:35:53
+      结束时间：2016/4/7 15:35:53
+      总 时 间：0秒
+      Form表单数据：sequence=4&title=asdasd&content=asdasd
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:36:04,243 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:36:04
+      结束时间：2016/4/7 15:36:04
+      总 时 间：0.0025113秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:36:07,824 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:36:04
+      结束时间：2016/4/7 15:36:07
+      总 时 间：3.58083秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:01,091 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:39:01
+      结束时间：2016/4/7 15:39:01
+      总 时 间：0.00104秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:01,096 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:39:01
+      结束时间：2016/4/7 15:39:01
+      总 时 间：0.0050053秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:13,791 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:39:13
+      结束时间：2016/4/7 15:39:13
+      总 时 间：0.0020483秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:13,793 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:39:13
+      结束时间：2016/4/7 15:39:13
+      总 时 间：0.0020022秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:14,728 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:39:14
+      结束时间：2016/4/7 15:39:14
+      总 时 间：0.0010125秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:14,730 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:39:14
+      结束时间：2016/4/7 15:39:14
+      总 时 间：0.0020008秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:15,592 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:39:15
+      结束时间：2016/4/7 15:39:15
+      总 时 间：0.0010392秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:15,594 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:39:15
+      结束时间：2016/4/7 15:39:15
+      总 时 间：0.0015006秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:16,825 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:39:16
+      结束时间：2016/4/7 15:39:16
+      总 时 间：0.0010714秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:39:16,827 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:39:16
+      结束时间：2016/4/7 15:39:16
+      总 时 间：0.0020031秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:11,996 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:43:46
+      结束时间：2016/4/7 15:44:11
+      总 时 间：25.0269768秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:17,058 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:44:12
+      结束时间：2016/4/7 15:44:17
+      总 时 间：5.0507391秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:20,535 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:44:20
+      结束时间：2016/4/7 15:44:20
+      总 时 间：0.0010184秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:20,537 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:44:20
+      结束时间：2016/4/7 15:44:20
+      总 时 间：0.0020009秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:21,745 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:44:21
+      结束时间：2016/4/7 15:44:21
+      总 时 间：0.0015335秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:21,747 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:44:21
+      结束时间：2016/4/7 15:44:21
+      总 时 间：0.0020014秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:22,569 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:44:22
+      结束时间：2016/4/7 15:44:22
+      总 时 间：0.0010714秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:22,570 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:44:22
+      结束时间：2016/4/7 15:44:22
+      总 时 间：0.0011397秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:24,695 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:44:24
+      结束时间：2016/4/7 15:44:24
+      总 时 间：0.0010184秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:44:24,698 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:44:24
+      结束时间：2016/4/7 15:44:24
+      总 时 间：0.0020013秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:47:23,890 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:47:16
+      结束时间：2016/4/7 15:47:23
+      总 时 间：7.5357488秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:47:24,788 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:47:23
+      结束时间：2016/4/7 15:47:24
+      总 时 间：0.8830899秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:50:20,444 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:50:20
+      结束时间：2016/4/7 15:50:20
+      总 时 间：0.00151秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:50:20,451 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:50:20
+      结束时间：2016/4/7 15:50:20
+      总 时 间：0.007004秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:51:21,778 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:51:21
+      结束时间：2016/4/7 15:51:21
+      总 时 间：0.0015575秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:51:21,785 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:51:21
+      结束时间：2016/4/7 15:51:21
+      总 时 间：0.0070057秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:53:26,732 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：StudentsController
+      ActionName:Progress
+      开始时间：2016/4/7 15:53:26
+      结束时间：2016/4/7 15:53:26
+      总 时 间：0.0010925秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
+
+ 
+记录时间：2016-04-07 15:53:26,737 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：StudentsController
+      ViewName:Progress
+      开始时间：2016/4/7 15:53:26
+      结束时间：2016/4/7 15:53:26
+      总 时 间：0.0050022秒
+      Form表单数据：
+      URL参数：
+      访问来自：::1
+          
+ 
