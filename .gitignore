@@ -231,8 +231,8 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-/RMS/RMS/Log/LogError/2016/201603
-/RMS/RMS/Log/LogInfo/2016/201603
-/RMS/RMS/Log/LogMonitor/2016/201603/20160316.txt
-/RMS/RMS/Log/LogMonitor/2016/201603
+/RMS/RMS/Log/LogError
+/RMS/RMS/Log/LogInfo
+/RMS/RMS/Log/LogMonitor
+/RMS/RMS/Log/LogMonitor
 /RMS/RMS/savepath
