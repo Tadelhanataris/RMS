@@ -13,13 +13,25 @@
         android:visibility="gone"
 
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="项目名称:"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:layout_weight="3" />
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/projectname"
+        android:id="@+id/projectaddname"
         android:textSize="30dp"
         android:gravity="center"
         android:layout_weight="3" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="项目负责人"
-        android:textSize="30dp"
+        android:textSize="22dp"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_weight="3" />
@@ -181,7 +193,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="指导教师"
-        android:textSize="30dp"
+        android:textSize="22dp"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_weight="3" />
@@ -254,10 +266,6 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/teacherphone"/>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#d0d0d0"/>
 
     </LinearLayout>
 </LinearLayout>

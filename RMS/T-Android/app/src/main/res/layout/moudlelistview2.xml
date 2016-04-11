@@ -73,17 +73,12 @@
             android:id="@+id/starttime"/>
     </LinearLayout>
 </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="#d0d0d0"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="项目负责人"
-        android:textSize="30dp"
+        android:textSize="22dp"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_weight="3" />
@@ -173,17 +168,12 @@
     </LinearLayout>
 
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="#d0d0d0"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="指导教师"
-        android:textSize="30dp"
+        android:textSize="22dp"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_weight="3" />

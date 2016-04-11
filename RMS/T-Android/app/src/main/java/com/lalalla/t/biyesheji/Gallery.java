@@ -1,12 +1,15 @@
 package com.lalalla.t.biyesheji;
 
+import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView.LayoutManager;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
 import android.view.Window;
 
 import java.util.ArrayList;
@@ -36,7 +39,9 @@ public class Gallery extends AppCompatActivity {
 
         mAdapter = new GalleryAdapter(this, mDatas);//设置适配器
         mRecyclerView.setAdapter(mAdapter);
-
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        SpacesItemDecoration decoration=new SpacesItemDecoration(16);
+        mRecyclerView.addItemDecoration(decoration);
 
     }
 
@@ -46,4 +51,30 @@ public class Gallery extends AppCompatActivity {
                 R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e,
                 R.drawable.f, R.drawable.g, R.drawable.h, R.drawable.l));
     }
+
+
+    public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
+
+        private int space;
+
+        public SpacesItemDecoration(int space) {
+            this.space=space;
+        }
+
+        @Override
+        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+            int spanCount = -1;
+            LayoutManager layoutManager = parent.getLayoutManager();
+            if (layoutManager instanceof GridLayoutManager)
+            {spanCount = ((GridLayoutManager) layoutManager).getSpanCount();
+            } else if (layoutManager instanceof StaggeredGridLayoutManager)
+            {spanCount = ((StaggeredGridLayoutManager) layoutManager).getSpanCount();
+            }
+            if(parent.getChildAdapterPosition(view) % spanCount != 0)
+                outRect.left=space;
+            outRect.bottom=space;
+        }
+    }
 }
+
+

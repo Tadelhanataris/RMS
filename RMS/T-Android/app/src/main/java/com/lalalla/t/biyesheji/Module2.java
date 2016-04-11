@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import java.util.List;
 public class Module2 extends Activity {
     private ListView listView;
     ProjectDB summary;
+    private Button add;
     public static SimpleCursorAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,17 @@ public class Module2 extends Activity {
                 new String[] { "_id","projectname","projecttype","subject" ,"starttime" ,"studentname" ,"studentcollege" ,"studentnumber" ,"studentemail" ,"studentphone" ,"teachername" ,"teachercollege" ,"teacheremail" ,"teacherphone" },
                 new int[]{R.id.list2id,R.id.projectname,R.id.projecttype,R.id.subject,R.id.starttime,R.id.studentname,R.id.studentcollege,R.id.studentnumber,R.id.studentemail,R.id.studentphone,R.id.teachername,R.id.teachercollege,R.id.teacheremail,R.id.teacherphone} );
         listView.setAdapter(adapter);
+        add = (Button) findViewById(R.id.btnmodule2add);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent();
+                i.setClass(Module2.this,Add2Activity.class);
+                startActivity(i);
+            }
+        });
+
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

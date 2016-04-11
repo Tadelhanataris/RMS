@@ -79,12 +79,10 @@ public class GalleryAdapter extends
     public void onBindViewHolder(final ViewHolder viewHolder, final int i)
     {
         viewHolder.mImg.setImageResource(mDatas.get(i));
-        LayoutParams lp = viewHolder.mImg.getLayoutParams();
-        int h = viewHolder.mImg.getHeight();
-        int w = viewHolder.mImg.getWidth();
-
-        lp.height = lp.width / w * h;
-        viewHolder.mImg.setLayoutParams(lp);
+//        LayoutParams lp = viewHolder.mImg.getLayoutParams();
+//        int h = viewHolder.mImg.getHeight();
+//        int w = viewHolder.mImg.getWidth();
+//        viewHolder.mImg.setLayoutParams(lp);
 //        viewHolder.mImg.setText(mDatas.get(i));
     }
 
