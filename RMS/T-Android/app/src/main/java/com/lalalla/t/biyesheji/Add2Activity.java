@@ -27,6 +27,12 @@ private RadioButton yibanxiangmu;
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+if(yibanxiangmu.isChecked()){
+    yibanxiangmuzu.setVisibility(yibanxiangmuzu.VISIBLE);
+}
+        else {
+            yibanxiangmuzu.setVisibility(yibanxiangmuzu.GONE);
+        }
 
     }
 }
