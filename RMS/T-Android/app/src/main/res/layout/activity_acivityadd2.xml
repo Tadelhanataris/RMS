@@ -51,11 +51,70 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="项目类别："/>
-            <TextView
-                android:layout_width="wrap_content"
+
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/projecttype"/>
+                android:id="@+id/projectaddtype"/>
         </LinearLayout>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一般项目"
+        android:id="@+id/yibanxiangmu"
+        android:layout_weight="1"/>
+
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定向资助项目"
+            android:id="@+id/dingxiangzizhuxiangmu"
+        android:layout_weight="1"/>
+
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="延续资助项目"
+            android:id="@+id/yanxuzizhuxiangmu"
+        android:layout_weight="1"/>
+
+</RadioGroup>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:id="@+id/yibanxiangmuzu"
+    android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指南类项目"
+            android:id="@+id/zhinanleixiangmu"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自选项目"
+            android:id="@+id/zixuanxiangmu"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创业项目"
+            android:id="@+id/chuangyexiangmu"
+
+            android:layout_weight="1"/>
+
+</RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,26 +125,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="所属一级学科："/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/subject"/>
+                android:id="@+id/subjectadd"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="开始时间："/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/starttime"/>
-        </LinearLayout>
+
     </LinearLayout>
     <View
         android:layout_width="match_parent"
