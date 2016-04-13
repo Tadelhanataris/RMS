@@ -44,7 +44,8 @@
         <activity android:name=".Gallery" />
         <activity android:name=".Selfinformation" />
         <activity android:name=".InnovativeClub" />
-        <activity android:name=".Add2Activity"></activity>
+        <activity android:name=".Add2Activity" />
+        <activity android:name=".Selfinformationedit"></activity>
     </application>
 
 </manifest>
