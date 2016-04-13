@@ -41,6 +41,21 @@ public class DBOpenHelper extends SQLiteOpenHelper {
                 "teacherphone varchar(20)," +
                 "P_ID INTEGER,FOREIGN KEY(P_ID) REFERENCES PERSON(PERSON_ID)" +
                 ")");
+        db.execSQL("create table selfinformation" +
+                "(_id integer primary key autoincrement," +
+                "studentname varchar(20)," +
+                "studentnumber varchar(20)," +
+                "identifynumber varchar(20)," +
+//                "password varchar(20)," +
+//                "confirmpassword varchar(20)," +
+                "gender varchar(20)," +
+                "grade varchar(20)," +
+                "college varchar(20)," +
+                "subject varchar(20)," +
+                "email varchar(20)," +
+                "phone varchar(20)," +
+                "P_ID INTEGER,FOREIGN KEY(P_ID) REFERENCES PERSON(PERSON_ID)" +
+                ")");
         Log.v(tag, "数据库创建执行一次");
     }
 

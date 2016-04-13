@@ -28,7 +28,7 @@ public class Module2 extends Activity {
         summary = new ProjectDB(getApplicationContext());
         adapter = new SimpleCursorAdapter(this,
                 R.layout.moudlelistview2, summary.getsummaryAllData(),
-                new String[] { "_id","projectname","projecttype","subject" ,"starttime" ,"studentname" ,"studentcollege" ,"studentnumber" ,"studentemail" ,"studentphone" ,"teachername" ,"teachercollege" ,"teacheremail" ,"teacherphone" },
+                new String[] { "_id","projectname","projecttype","subject" ,"starttime" ,"studentname" ,"studentcollege" ,"studentnumber" ,"studentemail" ,"studentphone" ,"teachername" ,"teachercollege","teacheremail","teacherphone" },
                 new int[]{R.id.list2id,R.id.projectname,R.id.projecttype,R.id.subject,R.id.starttime,R.id.studentname,R.id.studentcollege,R.id.studentnumber,R.id.studentemail,R.id.studentphone,R.id.teachername,R.id.teachercollege,R.id.teacheremail,R.id.teacherphone} );
         listView.setAdapter(adapter);
         add = (Button) findViewById(R.id.btnmodule2add);

@@ -12,8 +12,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/selfinformationlist"
+        android:id="@+id/selfinformationlistid"
         android:visibility="gone"
+
 
         />
     <TextView
@@ -53,6 +54,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/selfinformationstudentname"
                 android:text="测试名字"
                 android:textSize="20dp"
                 android:layout_weight="1"
@@ -80,6 +82,7 @@
             android:layout_height="wrap_content"
             android:text="1121000217"
             android:textSize="20dp"
+            android:id="@+id/selfinformationstudentnumber"
             android:layout_weight="1"
             android:gravity="left"/>
     </LinearLayout>
@@ -106,35 +109,11 @@
             android:layout_height="wrap_content"
             android:text="110102199401312713"
             android:textSize="20dp"
+            android:id="@+id/selfinformaitonidentifynumber"
             android:layout_weight="1"
             android:gravity="left"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:orientation="horizontal"
-        >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="密码:"
-            android:textSize="20dp"
-            android:layout_weight="2"
-            android:gravity="center_horizontal"
-            android:maxLines="1" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1223"
-            android:textSize="20dp"
-            android:layout_weight="1"
-            android:gravity="left"/>
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -161,7 +140,7 @@
             android:layout_weight="1"
             android:gravity="left"
             android:clickable="true"
-            android:id="@+id/gender"
+            android:id="@+id/selfinformationgender"
             />
     </LinearLayout>
     <LinearLayout
@@ -186,6 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1"
+            android:id="@+id/selfinformationgrade"
             android:textSize="20dp"
             android:layout_weight="1"
             android:gravity="left"/>
@@ -213,6 +193,7 @@
             android:layout_height="wrap_content"
             android:text="信息工程学院"
             android:textSize="20dp"
+            android:id="@+id/selfinformationcollege"
             android:layout_weight="1"
             android:gravity="left"/>
     </LinearLayout>
@@ -239,6 +220,7 @@
             android:layout_height="wrap_content"
             android:text="日狗"
             android:textSize="20dp"
+            android:id="@+id/selfinformationsubject"
             android:layout_weight="1"
             android:gravity="left"/>
     </LinearLayout>
@@ -274,6 +256,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="L.wang7@vwfsag.com"
+            android:id="@+id/selfinformationemail"
             android:textSize="20dp"
 
             android:gravity="center" />
@@ -310,16 +293,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="13601185649"
+            android:id="@+id/selfinformationphone"
             android:textSize="20dp"
 
             android:gravity="center" />
     </LinearLayout>
 </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="修    改"
-        android:textSize="14dp"/>
+
 
 </LinearLayout>

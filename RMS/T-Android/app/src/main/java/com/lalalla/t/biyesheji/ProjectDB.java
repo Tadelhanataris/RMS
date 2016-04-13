@@ -134,6 +134,35 @@ public class ProjectDB {
         return null;
     }
 
+    public Selfinformations findselfinformation(Integer _id){
+        SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from selfinformation where _id=?",
+                new String[]{_id.toString()});
+        if(cursor.moveToFirst())
+        {
+            int newsid=cursor.getInt(cursor.getColumnIndex("_id"));
+            String studentname=cursor.getString(cursor.getColumnIndex("studentname"));
+            String studentnumber=cursor.getString(cursor.getColumnIndex("studentnumber"));
+            String identifynumber=cursor.getString(cursor.getColumnIndex("identifynumber"));
+//            String password=cursor.getString(cursor.getColumnIndex("password"));
+//            String confirmpassword=cursor.getString(cursor.getColumnIndex("confirmpassword"));
+            String gender=cursor.getString(cursor.getColumnIndex("gender"));
+            String grade=cursor.getString(cursor.getColumnIndex("grade"));
+            String college=cursor.getString(cursor.getColumnIndex("college"));
+            String subject=cursor.getString(cursor.getColumnIndex("subject"));
+            String email=cursor.getString(cursor.getColumnIndex("email"));
+            String phone=cursor.getString(cursor.getColumnIndex("phone"));
+//            String teacheremail=cursor.getString(cursor.getColumnIndex("teacheremail"));
+//            String teacherphone=cursor.getString(cursor.getColumnIndex("teacherphone"));
+//            int pid=cursor.getInt(cursor.getColumnIndex("P_id"));
+            return new Selfinformations(newsid,studentname,studentnumber,identifynumber,gender,grade,college,subject,email,phone);
+        }
+        cursor.close();
+        return null;
+    }
+
+
+
     public List<Project> getScrollData(int offset,int maxResult){
         List<Project> projects= new ArrayList<Project>();
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
@@ -177,7 +206,11 @@ public class ProjectDB {
                 new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
     }
 
-
+public Cursor getselfinformaitonAllData(){
+    SQLiteDatabase db= dbOpenHelper.getReadableDatabase();
+    return db.rawQuery("select * from selfinformation order by _id desc limit ?,?",
+            new String[]{"0",String.valueOf(Integer.MAX_VALUE)});
+}
     public long getCount()
     {
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();
