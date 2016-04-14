@@ -9,17 +9,19 @@
 }
 
 #container .col{
-    padding: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
+    padding: 2.5px;
+    border: 1px solid black;
     border-top: hidden;
     border-left: hidden;
 }
 
 #container .title{
     text-align: center;
-    margin: 4px auto;
+}
+
+#container .title p{
+    line-height: 34px;
+    margin: 0;
 }
 
 #container .content1{
@@ -29,14 +31,10 @@
 }
 
 #container .table-start{
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: black;
+    border-top: 1px solid black;
 }
 
 #container .col-start{
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: black;
+    border-left: 1px solid black;
 }
 
