@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace RMS.Models
 {
+    public enum ProjectClass { 院级,校级,市级,国家级};
     public class BannerImage
     {
         public int ID { get; set; }
@@ -92,7 +93,21 @@ namespace RMS.Models
         public string format { get; set; }
         public string special { get; set; }
         public string experience { get; set; }
-        public Fund[5] fund { get; set; }
+        public virtual Fund[] fund { get; set; }
+
+
+
+
+        #region 以下部分未定
+        public string passProject { get; set; }
+        public ProjectClass passProjectClass { get; set; }
+        public string passLeaderName { get; set; }
+        public long passLeaderPhone { get; set; }
+        public long paaLeaderSno { get; set; }
+        public string passTeacherName { get; set; }
+        public long passTeacherPhone { get; set; }
+        public string passTeacherTitle { get; set; }
+        #endregion
     }
 
 

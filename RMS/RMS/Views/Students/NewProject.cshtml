@@ -1,4 +1,5 @@
-﻿@{
+﻿@model RMS.Models.Project
+@{
     ViewBag.Title = "View";
     Layout = "~/Views/Students/_Layout.cshtml";
 }
@@ -6,8 +7,8 @@
     @Styles.Render("~/Content/newproject")
 }
 <div id="xxmsq">
-@using (Html.BeginForm("NewProject", "Students"))
-{
+    @using (Html.BeginForm("NewProject", "Students"))
+    {
         <div class="row">
             <div class="col-md-12 col section">
                 <p>一、项目信息</p>
@@ -18,7 +19,7 @@
                 <p class="p1">项目名称</p>
             </div>
             <div class="col-md-10 col col1">
-                <input type="text" class="form-control" id="xmmc">
+                @Html.TextBoxFor(x => x.projectName, new { @class = "form-control", type = "text" })
             </div>
         </div>
         <div class="row" style="height: 65px">
@@ -28,28 +29,28 @@
             <div class="col-md-6 col col1" style="height: 100%;padding: 0;text-align: center">
                 <div style="width: 100%;height: 100%">
                     <div class="row" style="height: 50%">
-                        <div class="col-md-12 col2" style="border-bottom:solid 1px black;height: 100%">
-                            <input type="radio" name="xmlb" id="ybxm" class="xx" checked>一般项目
+                        <div class="col-md-12 col2" style="border-bottom:solid 1px black;height: 100%;">
+                            <p style="height: 100%;line-height:31px;margin:0">一般项目</p>
                         </div>
                     </div>
                     <div class="row" style="height: 50%">
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
-                            <input type="radio" name="ybxmxz" id="znlxm" class="xx" checked>指南类项目
+                            @Html.RadioButtonFor(x => x.projectType, 0, new { @class = "xx",@checked="" })<label for="projectType" style="margin-bottom: inherit;font-weight: inherit;">指南类项目</label>
                         </div>
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
-                            <input type="radio" name="ybxmxz" id="zxxm" class="xx">自选项目
+                            @Html.RadioButtonFor(x => x.projectType, 1, new { @class = "xx" })自选项目
                         </div>
                         <div class="col-md-4 col2" style="height: 100%">
-                            <input type="radio" name="ybxmxz" id="cyxm" class="xx">创业项目
+                            @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })创业项目
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                <input type="radio" name="xmlb" id="dxzzxm" class="xx">定向资助项目
+                @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })定向资助项目
             </div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                <input type="radio" name="xmlb" id="yxzzxm" class="xx">延续资助项目
+                @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })延续资助项目
             </div>
         </div>
         <div class="row">
@@ -57,7 +58,7 @@
                 <p class="p1">项目所属一级学科</p>
             </div>
             <div class="col-md-8 col col1">
-                <input type="text" class="form-control" id="xmssyjxk">
+                @Html.TextBoxFor(x => x.projectSubject, new { @class="form-control"})
             </div>
         </div>
         <div class="row" name="yxzzxmxq" style="display: none">
@@ -70,13 +71,13 @@
                 <p class="p1">项目名称</p>
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="yxzzxmmc">
+                @Html.TextBoxFor(x=>x.passProject,new { @class="form-control"})
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">项目级别</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmjb">
+                @Html.TextBoxFor(x => x.passProjectClass, new { @class = "form-control" })
             </div>
         </div>
         <div class="row" name="yxzzxmxq" style="display: none">
@@ -84,19 +85,19 @@
                 <p class="p1">项目负责人姓名</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmfzrxm">
+               @Html.TextBoxFor(x => x.passLeaderName, new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">联系方式</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmfzrdh">
+                @Html.TextBoxFor(x => x.passLeaderPhone, new { @class = "form-control" })
             </div>
             <div class="col-md-1 col col1">
                 <p class="p1">学号</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmfzrxh">
+                @Html.TextBoxFor(x => x.paaLeaderSno, new { @class = "form-control" })
             </div>
         </div>
         <div class="row" name="yxzzxmxq" style="display: none">
@@ -104,19 +105,19 @@
                 <p class="p1">项目指导教师姓名</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmzdjsxm">
+                @Html.TextBoxFor(x => x.passTeacherName, new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">联系方式</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmzdjsdh">
+                @Html.TextBoxFor(x => x.passTeacherPhone, new { @class = "form-control" })
             </div>
             <div class="col-md-1 col col1">
                 <p class="p1">职称</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="yxzzxmzdjszc">
+                @Html.TextBoxFor(x => x.passTeacherTitle, new { @class = "form-control" })
             </div>
         </div>
 
@@ -135,22 +136,19 @@
                 <p class="p1">姓名</p>
             </div>
             <div class="col-md-2 col col1">
-                <input type="text" class="form-control" id="fzrxm">
+                @Html.TextBoxFor(x => x.leader.name, new { @class = "form-control" })
             </div>
             <div class="col-md-1 col col1">
                 <p class="p1">性别</p>
             </div>
             <div class="col-md-2 col col1">
-                <select id="fzrxb" class="form-control">
-                    <option value="male">男</option>
-                    <option value="female">女</option>
-                </select>
+               @Html.DropDownListFor(x=> x.leader.sex,new List<SelectListItem>() { new SelectListItem (){ Text="男",Value="true"}, new SelectListItem() { Text="女",Value="false"} },new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">学号</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="fzrxh">
+                @Html.TextBoxFor(x=>x.leader.sno, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -158,15 +156,13 @@
                 <p class="p1" style="margin: -3px auto">所在院（系）</p>
             </div>
             <div class="col-md-4 col col1">
-                <select id="fzryx" class="form-control">
-                    <option>请选择院系</option>
-                </select>
+                @Html.DropDownListFor(x => x.leader.academy, RMS.Models.DBHelper.instence.Academy.Select(x => new SelectListItem() { Text = x.academy, Value = x.ID.ToString() }),new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">专业、班级</p>
             </div>
             <div class="col-md-4 col col1">
-                <input type="text" class="form-control" id="fzrzy">
+                @Html.TextBoxFor(x=>x.leader.subject, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -174,7 +170,7 @@
                 <p class="p1">身份证号</p>
             </div>
             <div class="col-md-10 col col1">
-                <input type="text" class="form-control" id="fzrsfzh">
+                @Html.TextBoxFor(x => x.leader.identity, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -182,13 +178,13 @@
                 <p class="p1">电子邮箱</p>
             </div>
             <div class="col-md-4 col col1">
-                <input type="text" class="form-control" id="fzrdzyx">
+                @Html.TextBoxFor(x => x.leader.email, new { @class = "form-control" })
             </div>
             <div class="col-md-3 col col1">
                 <p class="p1">联系电话及手机</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="fzrdh">
+                @Html.TextBoxFor(x => x.leader.phone, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -227,7 +223,7 @@
                         <p>（一）立项依据（项目的背景、理论与实际意义、国内外现状分析）</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="lxyj"></textarea>
+                        @Html.TextAreaFor(x=>x.baseon,new {@class="form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -239,7 +235,7 @@
                         <p>（二）研究目标、内容、拟解决的关键问题（包括实验方案的设计、技术路线等）</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="yjmb"></textarea>
+                        @Html.TextAreaFor(x => x.purpose, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -251,7 +247,7 @@
                         <p>（三）研究的进度安排</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="jdap"></textarea>
+                        @Html.TextAreaFor(x => x.schedule, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -263,7 +259,7 @@
                         <p>（四）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="cgxs"></textarea>
+                        @Html.TextAreaFor(x => x.format, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -275,7 +271,7 @@
                         <p>(五)项目创新特色概述（50字以内）</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="cxts"></textarea>
+                        @Html.TextAreaFor(x => x.special, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -287,7 +283,7 @@
                         <p>（六）申请人参加科研的经历</p>
                     </div>
                     <div>
-                        <textarea class="form-control wbk" id="cyjl"></textarea>
+                        @Html.TextAreaFor(x => x.experience, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -322,10 +318,11 @@
                 <p class="p1" style="text-align: left">1．图书资料费</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="tszlf">
+                @Html.HiddenFor(x=>x.fund[0].fundType,new {value="0" })
+                @Html.TextBoxFor(x=>x.fund[0].money,new { type = "number",@class="form-control" })
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="tszlfly">
+                @Html.TextBoxFor(x => x.fund[0].reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -333,10 +330,11 @@
                 <p class="p1" style="text-align: left">2．实验材料费</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="syclf">
+                @Html.HiddenFor(x => x.fund[1].fundType, new { value = "1" })
+                @Html.TextBoxFor(x => x.fund[1].money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="syclfly">
+                @Html.TextBoxFor(x => x.fund[1].reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -344,10 +342,11 @@
                 <p class="p1" style="text-align: left">3．调研费</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="dyf">
+                @Html.HiddenFor(x => x.fund[2].fundType, new { value = "2" })
+                @Html.TextBoxFor(x => x.fund[2].money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="dyfly">
+                @Html.TextBoxFor(x => x.fund[2].reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -355,10 +354,11 @@
                 <p class="p1" style="text-align: left">4．印刷费</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="ysf">
+                @Html.HiddenFor(x => x.fund[3].fundType, new { value = "3" })
+                @Html.TextBoxFor(x => x.fund[3].money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="ysfly">
+                @Html.TextBoxFor(x => x.fund[3].reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -366,10 +366,11 @@
                 <p class="p1" style="text-align: left">5．成果转化费</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="cgzhf">
+                @Html.HiddenFor(x => x.fund[4].fundType, new { value = "4" })
+                @Html.TextBoxFor(x => x.fund[4].money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                <input type="text" class="form-control" id="cgzhfly">
+                @Html.TextBoxFor(x => x.fund[4].reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -384,7 +385,7 @@
             </div>
         </div>
 
-}
+    }
 
     <div style="margin: 20px auto;text-align: center">
         <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
@@ -393,3 +394,14 @@
     </div>
 
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form").submit(function () {
+            $.post($(this).attr("action"), $(this).serialize(), function (response) {
+                alert(response.message);
+            });
+            return false;
+        });
+    });
+</script>

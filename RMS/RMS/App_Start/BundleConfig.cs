@@ -19,7 +19,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/stu").Include("~/Content/stu.css"));
             bundles.Add(new StyleBundle("~/Content/notices").Include("~/Content/xwlb.css"));
             bundles.Add(new StyleBundle("~/Content/progress").Include("~/Content/xmjd.css"));
-            bundles.Add(new StyleBundle("~/Content/newproject").Include("~/Content/xsxxxq.css"))
+            bundles.Add(new StyleBundle("~/Content/newproject").Include("~/Content/xxmsq.css"));
             #endregion
 
 
