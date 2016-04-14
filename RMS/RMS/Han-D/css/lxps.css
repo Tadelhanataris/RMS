@@ -3,15 +3,33 @@
     margin: 20px auto;
 }
 
-#container .single{
+#container #lxps.row{
+    margin: 0;
+}
+
+#container #lxps .row:hover{
+    background-color: #e1e1e1;
+}
+
+#container #lxps .title:hover{
+    background-color: #ffffff;
+}
+
+#container #lxps .single{
     background-color: #f8f8f8;
 }
 
-#container p{
-    margin: 10px 0;
+#container #lxps [class*=col-]{
+    padding: 0;
 }
 
-#container .btn1{
+#container #lxps [class*=col-] p{
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+}
+
+#container #lxps .btn1{
     margin: 4px auto;
 }
 
