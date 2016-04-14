@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
-public class summaryedit extends AppCompatActivity {
+public class summaryedit extends AppCompatActivity implements View.OnClickListener {
     ProjectDB db;
     private ListView listview;
     private EditText editprojectname;
@@ -25,6 +26,7 @@ public class summaryedit extends AppCompatActivity {
     private EditText editteacheremail;
     private EditText editteacherphone;
     private Button summarybtnback;
+    private Button summarybtnsave;
     private Integer id;
     private String projectname;
     private String projecttype;
@@ -39,7 +41,8 @@ public class summaryedit extends AppCompatActivity {
     private String teachercollege;
     private String teacheremail;
     private String teacherphone;
-    Summary summary;
+
+    private Summary summary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,13 +95,94 @@ public class summaryedit extends AppCompatActivity {
 
 
         summarybtnback= (Button) findViewById(R.id.summarybtnback);
-        summarybtnback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        summarybtnsave= (Button) findViewById(R.id.summarybtnsave);
+        summarybtnback.setOnClickListener(this);
+        summarybtnsave.setOnClickListener(this);
 
+
+
+
+    }
+
+    public void testSave(View v) throws Exception{
+        editprojectname = (EditText) findViewById(R.id.summaryprojectname);
+        editprojecttype = (EditText) findViewById(R.id.summaryprojecttype);
+        editsubject = (EditText) findViewById(R.id.summarysubject);
+        editstarttime = (EditText) findViewById(R.id.summarystarttime);
+        editstudentname = (EditText) findViewById(R.id.summarystudentname);
+        editstudentcollege = (EditText) findViewById(R.id.summarystudentcollege);
+        editstudentnumber = (EditText) findViewById(R.id.summarystudentnumber);
+        editstudentemail = (EditText) findViewById(R.id.summarystudentemail);
+        editstudentphone = (EditText) findViewById(R.id.summarystudentphone);
+        editteachername = (EditText) findViewById(R.id.summaryteachername);
+        editteachercollege = (EditText) findViewById(R.id.summaryteachercollege);
+        editteacheremail = (EditText) findViewById(R.id.summaryteacheremail);
+        editteacherphone = (EditText) findViewById(R.id.summaryteacherphone);
+        String neweditprojectname=editprojectname.getText().toString();
+        String neweditprojecttype=editprojecttype.getText().toString();
+        String neweditsubject = editsubject.getText().toString();
+        String neweditstarttime=editstarttime.getText().toString();
+        String neweditstudentname=editstudentname.getText().toString();
+        String neweditstudentcollege = editstudentcollege.getText().toString();
+        String neweditstudentnumber=editstudentnumber.getText().toString();
+        String neweditstudentemail=editstudentemail.getText().toString();
+        String neweditstudentphone = editstudentphone.getText().toString();
+        String neweditteachername=editteachername.getText().toString();
+        String neweditteachercollege=editteachercollege.getText().toString();
+        String neweditteacheremail = editteacheremail.getText().toString();
+        String neweditteacherphone=editteacherphone.getText().toString();
+
+        if (neweditprojectname==null||neweditprojecttype==null||neweditsubject==null||neweditstarttime==null
+                ||neweditstudentname==null||neweditstudentcollege==null||neweditstudentnumber==null||neweditstudentemail==null
+                ||neweditstudentphone==null||neweditteachername==null||neweditteachercollege==null||neweditteacheremail==null
+                ||neweditteacherphone==null){
+            Toast.makeText(v.getContext(), "请输入正确信息,有信息为空", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else
+
+        {ProjectDB projectService=new ProjectDB(v.getContext());
+            Integer newid = summary.get_id();
+            summary.setProjectname(neweditprojectname);
+            summary.setProjecttype(neweditprojecttype);
+            summary.setSubject(neweditsubject);
+            summary.setStarttime(neweditstarttime);
+            summary.setStudentname(neweditstudentname);
+            summary.setSdudentcollege(neweditstudentcollege);
+            summary.setStudentnumber(neweditstudentnumber);
+            summary.setSdudentemail(neweditstudentemail);
+            summary.setStudentphone(neweditstudentphone);
+            summary.setTeachername(neweditteachername);
+            summary.setTeachercollege(neweditteachercollege);
+            summary.setTeacheremail(neweditteacheremail);
+            summary.setTeacherphone(neweditteacherphone);
+
+
+            Summary newsummary= new Summary(newid,neweditprojectname,neweditprojecttype,neweditsubject,neweditstarttime,
+                    neweditstudentname,neweditstudentcollege,neweditstudentnumber,neweditstudentemail,
+                    neweditstudentphone,neweditteachername,neweditteachercollege,neweditteacheremail,
+                    neweditteacherphone);
+//            projectService.save(newproject);
+//            projectService.delete(project.getId());
+            projectService.summaryupdate(newsummary);
+            Toast.makeText(v.getContext(), R.string.successful, Toast.LENGTH_SHORT).show();
+        }}
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.summarybtnback:
                 finish();
+                break;
+            case R.id.summarybtnsave:
+               try {
+                testSave(v);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        });
+                finish();
+                break;
+        }
     }
-    }
+}
 

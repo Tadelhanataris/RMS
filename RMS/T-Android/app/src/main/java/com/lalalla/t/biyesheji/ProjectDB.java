@@ -58,6 +58,11 @@ public class ProjectDB {
         db.execSQL("update project set date=?,tittle=?,content=? where _id=?",
                 new Object[]{project.getdate(), project.getTittle(), project.getContent(), project.getId()});
     }
+    public void summaryupdate(Summary summary){
+        SQLiteDatabase db=dbOpenHelper.getWritableDatabase();
+        db.execSQL("update summary set projectname=?,projecttype=?,subject=?,starttime=?,studentname=?,studentcollege=?,studentnumber=?,studentemail=?,studentphone=?,teachername=?,teachercollege=?,teacheremail=?,teacherphone=? where _id=?",
+                new Object[]{summary.getProjectname(), summary.getProjecttype(), summary.getSubject(), summary.getStarttime(), summary.getStudentname(), summary.getSdudentcollege(), summary.getStudentnumber(), summary.getSdudentemail(), summary.getStudentphone(), summary.getTeachername(), summary.getTeachercollege(), summary.getTeacheremail(), summary.getTeacherphone(), summary.get_id()});
+    }
 
     public Project find(Integer _id){
         SQLiteDatabase db=dbOpenHelper.getReadableDatabase();

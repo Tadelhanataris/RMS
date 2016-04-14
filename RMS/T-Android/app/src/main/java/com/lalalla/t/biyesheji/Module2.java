@@ -55,7 +55,12 @@ public class Module2 extends Activity {
             }
         });
     }
-
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        adapter.changeCursor(summary.getsummaryAllData());
+    }
     @Override
     protected void onStart() {
         super.onStart();
