@@ -241,6 +241,7 @@
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\stu.css" />
     <Content Include="Content\xmjd.css" />
+    <Content Include="Content\xsxxxq.css" />
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="Content\xxmsq.css" />

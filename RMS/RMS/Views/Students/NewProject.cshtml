@@ -2,9 +2,12 @@
     ViewBag.Title = "View";
     Layout = "~/Views/Students/_Layout.cshtml";
 }
+@section Head {
+    @Styles.Render("~/Content/newproject")
+}
 <div id="xxmsq">
-    <form>
-
+@using (Html.BeginForm("NewProject", "Students"))
+{
         <div class="row">
             <div class="col-md-12 col section">
                 <p>一、项目信息</p>
@@ -25,15 +28,15 @@
             <div class="col-md-6 col col1" style="height: 100%;padding: 0;text-align: center">
                 <div style="width: 100%;height: 100%">
                     <div class="row" style="height: 50%">
-                        <div class="col-md-12 col2" style="border-bottom-color: black;border-bottom-style: solid;border-bottom-width: 1px;height: 100%">
+                        <div class="col-md-12 col2" style="border-bottom:solid 1px black;height: 100%">
                             <input type="radio" name="xmlb" id="ybxm" class="xx" checked>一般项目
                         </div>
                     </div>
                     <div class="row" style="height: 50%">
-                        <div class="col-md-4 col2" style="border-right-color: black;border-right-style: solid;border-right-width: 1px;height: 100%">
+                        <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
                             <input type="radio" name="ybxmxz" id="znlxm" class="xx" checked>指南类项目
                         </div>
-                        <div class="col-md-4 col2" style="border-right-color: black;border-right-style: solid;border-right-width: 1px;height: 100%">
+                        <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
                             <input type="radio" name="ybxmxz" id="zxxm" class="xx">自选项目
                         </div>
                         <div class="col-md-4 col2" style="height: 100%">
@@ -381,7 +384,7 @@
             </div>
         </div>
 
-    </form>
+}
 
     <div style="margin: 20px auto;text-align: center">
         <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
