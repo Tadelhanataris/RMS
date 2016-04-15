@@ -54,22 +54,29 @@ namespace RMS.Models
         public string academy { get; set; }
     }
 
-    public class Member
+    public class Person
     {
         public int ID { get; set; }
         public string name { get; set; }
         public bool sex { get; set; }
-        public long sno { get; set; }
         public Academy academy { get; set; }
-        public string subject { get; set; }
         public string identity { get; set; }
         public string email { get; set; }
         public long phone { get; set; }
     }
+    public class Member : Person {
+        public long sno { get; set; }
+        public string subject { get; set; }
+        public string assignment { get; set; }
+    }
+    public class Leader : Person {
+        public long sno { get; set; }
+        public string subject { get; set; }
+    }
 
     public class Fund
     {
-        public enum m_type { tszl,sycl,dy,ys,cgzh}
+        public enum m_type { 图书资料费,实验材料费,调研费,印刷费,成果转化费}
         public int ID { get; set; }
         public m_type fundType { get; set; }
         public float money { get; set; }
@@ -78,12 +85,12 @@ namespace RMS.Models
 
     public class Project
     {
-        public enum p_type {znl,zxl,cyl,dxzz,yxzz }
+        public enum p_type {指南类,自选类,创业类,定向资助,延续资助 }
         public int ID { get; set; }
         public string projectName { get; set; }
         public p_type projectType { get; set; }
         public string projectSubject { get; set; }
-        public virtual Member leader { get; set; }
+        public virtual Leader leader { get; set; }
         public virtual Member[] members { get; set; }
         //todo 教师类
         //public virtual Teacher teacher { get; set; }

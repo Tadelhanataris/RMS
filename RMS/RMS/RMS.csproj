@@ -240,6 +240,7 @@
     <Content Include="Content\home.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\stu.css" />
+    <Content Include="Content\xmgl.css" />
     <Content Include="Content\xmjd.css" />
     <Content Include="Content\xsxxxq.css" />
     <Content Include="Content\xwlb.css" />
@@ -472,6 +473,7 @@
     <Content Include="Views\Students\_header.cshtml" />
     <Content Include="Views\Students\NewProject.cshtml" />
     <Content Include="Views\Students\Progress.cshtml" />
+    <Content Include="Views\Students\OverView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
