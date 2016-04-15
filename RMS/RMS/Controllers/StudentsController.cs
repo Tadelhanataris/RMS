@@ -15,10 +15,28 @@ namespace RMS.Controllers
         {
             return View();
         }
+
+        #region 新建项目
         public ActionResult NewProject()
         {
             return View();
         }
+
+        [HttpPost]
+        public JsonResult NewProject(FormCollection Fm)
+        {
+            return new JsonResult
+            {
+                Data = new
+                {
+                    message = "提交失败！"
+                }
+            };
+        }
+
+        #endregion
+
+        #region 项目进度
         public ActionResult Progress(string id="1")
         {
             //todo 通过cookie获得用户关联到项目
@@ -57,6 +75,12 @@ namespace RMS.Controllers
                         message = "提交失败！"
                     }
                 };
+        }
+        #endregion
+
+        public ActionResult OverView()
+        {
+            return View();
         }
     }
 }

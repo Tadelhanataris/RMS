@@ -1,0 +1,133 @@
+﻿@model RMS.Models.Project
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Students/_Layout.cshtml";
+}
+@section Head {
+    @Styles.Render("~/Content/progress")
+}
+<div id="xmgl">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon" id="xmmc">项目名称</span>
+                <label class="form-control" aria-describedby="xmmc">@Model.projectName</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="xmlb">项目类别</span>
+                <label class="form-control" aria-describedby="xmlb">@Enum.GetName(typeof(RMS.Models.Project.p_type),Model.projectType)</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="ssyjxk">所属一级学科</span>
+                <label class="form-control" aria-describedby="ssyjxk">@Model.projectSubject</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon" id="kssj">开始时间</span>
+                <label class="form-control" aria-describedby="ssyjxk">这里是开始时间//todo</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon" id="dqzt">当前状态</span>
+                <label class="form-control" aria-describedby="dqzt">这里是当前状态//todo</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="xmfzr">项目负责人</span>
+                <label class="form-control" aria-describedby="xmfzr">@Model.leader.name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="fzrxh">学号</span>
+                <label class="form-control" aria-describedby="fzrxh">@Model.leader.sno</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="fzryx">院系</span>
+                <label class="form-control" aria-describedby="fzryx">@Model.leader.academy</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="fzrzy">专业</span>
+                <label class="form-control" aria-describedby="fzrzy">@Model.leader.subject</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="dzyx">电子邮箱</span>
+                <label class="form-control" aria-describedby="dzyx">@Model.leader.email</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="lxdh">联系电话</span>
+                <label class="form-control" aria-describedby="lxdh">@Model.leader.phone</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="zdjsxm">指导教师</span>
+                <label class="form-control" aria-describedby="zdjsxm">指导教师姓名//todo</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="zdjsyx">指导教师院系</span>
+                <label class="form-control" aria-describedby="zdjsyx">这里是指导教师院系//todo</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="zdjsdzyx">电子邮箱</span>
+                <label class="form-control" aria-describedby="zdjsdzyx">ceshi@ceshi.com//todo</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="zdjslxdh">联系电话</span>
+                <label class="form-control" aria-describedby="zdjslxdh">13113111211//todo</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="btn-container">
+
+    <div class="btn-group">
+        <input type="button" class="btn btn-default" value="项目成员">
+        <input type="button" class="btn btn-default" value="进度总览">
+        <input type="button" class="btn btn-default" value="开题报告">
+        <input type="button" class="btn btn-default" value="中期报告">
+        <input type="button" class="btn btn-default" value="经费记录">
+        <input type="button" class="btn btn-default" value="结题报告">
+        <input type="button" class="btn btn-default" value="成果统计">
+    </div>
+
+</div>
