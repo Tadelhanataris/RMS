@@ -20,6 +20,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/notices").Include("~/Content/xwlb.css"));
             bundles.Add(new StyleBundle("~/Content/progress").Include("~/Content/xmjd.css"));
             bundles.Add(new StyleBundle("~/Content/newproject").Include("~/Content/xxmsq.css"));
+            bundles.Add(new StyleBundle("~/Content/noticescontent").Include("~/Content/xwtz.css", "~/Content/fileicon.css"));
             #endregion
 
 
@@ -42,7 +43,8 @@ namespace RMS
                       "~/Scripts/jquery.caroufredsel-6.0.4-packed.js",
                       "~/Scripts/indexslide.js"));
             bundles.Add(new ScriptBundle("~/bundles/login").Include("~/Scripts/login.js"));
-            bundles.Add(new StyleBundle("~/bundles/noticescontent").Include("~/Content/xwtz.css", "~/Content/fileicon.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/newproject").Include("~/Scripts/xxmsq.js"));
             #endregion
             //bundles.Add(new ScriptBundle("~/bundles/notices").Include("~/Scripts/login.js"));
         }

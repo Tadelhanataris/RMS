@@ -5,6 +5,7 @@
 }
 @section Head {
     @Styles.Render("~/Content/newproject")
+    @Scripts.Render("~/bundles/newproject")
 }
 <div id="xxmsq">
     @using (Html.BeginForm("NewProject", "Students"))
@@ -47,10 +48,10 @@
                 </div>
             </div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })定向资助项目
+                @Html.RadioButtonFor(x => x.projectType, 3, new { @class = "xx" })定向资助项目
             </div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })延续资助项目
+                @Html.RadioButtonFor(x => x.projectType, 4, new { @class = "xx" })延续资助项目
             </div>
         </div>
         <div class="row">
@@ -297,8 +298,7 @@
         <div class="row table-start">
             <div class="col-md-12 col col1 col-start">
                 <p class="p1">
-                    项目经费共计（
-                    <input type="text" class="form-control" style="width: 60px;display: inline-block" id="jfzj">）元
+                    项目经费共计（<span name="totalfund">0.00</span>）元
                 </p>
             </div>
         </div>
@@ -378,8 +378,8 @@
                 <p class="p1">合计</p>
             </div>
             <div class="col-md-3 col col1">
-                <input type="text" class="form-control" id="hj">
-            </div>
+                <p class="p1">￥<span name="totalfund">0.00</span></p>
+</div>
             <div class="col-md-6 col col1">
                 <p class="p1">&nbsp;</p>
             </div>
