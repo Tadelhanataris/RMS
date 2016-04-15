@@ -14,11 +14,11 @@ window.onload = function() {
             $('#tjxcy').attr("disabled","true");
     })
     $('[name^=fund]').change(function () {
-        $('[name=totalfund]').text(0);
-        $('[name$=money]').each(function () {
-            !isNaN(parseFloat($($('[name=totalfund]')[0]).text())) &&
+        $('[name=totalfund]').text((0).toFixed(2));
+        $('[name^=fund][name$=money]').each(function () {
+            !isNaN(parseFloat($('[name=totalfund]:first').text())) &&
             !isNaN(parseFloat($(this).val())) &&
-            $('[name=totalfund]').text((parseFloat($($('[name=totalfund]')[0]).text()) + parseFloat($(this).val())).toFixed(2));
+            $('[name=totalfund]').text((parseFloat($('[name=totalfund]:first').text()) + parseFloat($(this).val())).toFixed(2));
         })
     })
 };
