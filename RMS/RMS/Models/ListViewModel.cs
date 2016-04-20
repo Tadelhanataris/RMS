@@ -59,7 +59,7 @@ namespace RMS.Models
         public int ID { get; set; }
         public string name { get; set; }
         public bool sex { get; set; }
-        public Academy academy { get; set; }
+        public virtual Academy academy { get; set; }
         public string identity { get; set; }
         public string email { get; set; }
         public long phone { get; set; }
@@ -89,6 +89,7 @@ namespace RMS.Models
         public int ID { get; set; }
         public string projectName { get; set; }
         public p_type projectType { get; set; }
+        public string projectNo { get; set; }
         public string projectSubject { get; set; }
         public virtual Leader leader { get; set; }
         public virtual Member[] members { get; set; }
@@ -101,8 +102,8 @@ namespace RMS.Models
         public string special { get; set; }
         public string experience { get; set; }
         public virtual Fund[] fund { get; set; }
-
-
+        public virtual FundUse[] funduse { get; set; }
+        
 
 
         #region 以下部分未定
@@ -117,6 +118,12 @@ namespace RMS.Models
         #endregion
     }
 
+    public class FundUse
+    {
+        public DateTime time { get; set; }
+        public string title { get; set; }
+        public float money { get; set; }
+    }
 
     public class Project_Progress
     {
@@ -142,6 +149,7 @@ namespace RMS.Models
         public DbSet<Policy> Policy { get; set; }
         public DbSet<Table> Table { get; set; }
         public DbSet<Project_Progress> Project_progress { get; set; }
+        public DbSet<Project> Project { get; set; }
 
         public DbSet<Academy> Academy { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

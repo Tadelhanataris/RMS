@@ -13,8 +13,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的项目<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@*@Html.ActionLink()*@
-                            <a href="#">项目概览</a></li>
+                            <li>@Html.ActionLink("项目概览", "OverView", "Students")</li>
                             <li role="separator" class="divider"></li>
                             <li>@Html.ActionLink("项目进度","Progress","Students")</li>
                             <li role="separator" class="divider"></li>
@@ -24,7 +23,7 @@
                             <li role="separator" class="divider"></li>
                             <li><a href="#">结题报告</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">经费使用记录</a></li>
+                            <li>@Html.ActionLink("经费使用记录", "Fund", "Students")</li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">成果统计</a></li>
                         </ul>

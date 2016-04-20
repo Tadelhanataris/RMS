@@ -238,6 +238,7 @@
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
     <Content Include="Content\home.css" />
+    <Content Include="Content\jfsyjl.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\stu.css" />
     <Content Include="Content\xmgl.css" />
@@ -474,6 +475,7 @@
     <Content Include="Views\Students\NewProject.cshtml" />
     <Content Include="Views\Students\Progress.cshtml" />
     <Content Include="Views\Students\OverView.cshtml" />
+    <Content Include="Views\Students\Fund.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

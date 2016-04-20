@@ -36,7 +36,7 @@
                     </div>
                     <div class="row" style="height: 50%">
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
-                            @Html.RadioButtonFor(x => x.projectType, 0, new { @class = "xx",@checked="" })<label for="projectType" style="margin-bottom: inherit;font-weight: inherit;">指南类项目</label>
+                            @Html.RadioButtonFor(x => x.projectType, 0, new { @class = "xx", @checked = "" })<label for="projectType" style="margin-bottom: inherit;font-weight: inherit;">指南类项目</label>
                         </div>
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
                             @Html.RadioButtonFor(x => x.projectType, 1, new { @class = "xx" })自选项目
@@ -59,7 +59,7 @@
                 <p class="p1">项目所属一级学科</p>
             </div>
             <div class="col-md-8 col col1">
-                @Html.TextBoxFor(x => x.projectSubject, new { @class="form-control"})
+                @Html.TextBoxFor(x => x.projectSubject, new { @class = "form-control" })
             </div>
         </div>
         <div class="row" name="yxzzxmxq" style="display: none">
@@ -72,7 +72,7 @@
                 <p class="p1">项目名称</p>
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x=>x.passProject,new { @class="form-control"})
+                @Html.TextBoxFor(x => x.passProject, new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">项目级别</p>
@@ -143,13 +143,13 @@
                 <p class="p1">性别</p>
             </div>
             <div class="col-md-2 col col1">
-               @Html.DropDownListFor(x=> x.leader.sex,new List<SelectListItem>() { new SelectListItem (){ Text="男",Value="true"}, new SelectListItem() { Text="女",Value="false"} },new { @class = "form-control" })
+               @Html.DropDownListFor(x => x.leader.sex, new List<SelectListItem>() { new SelectListItem() { Text = "男", Value = "true" }, new SelectListItem() { Text = "女", Value = "false" } }, new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">学号</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.TextBoxFor(x=>x.leader.sno, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.leader.sno, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -157,13 +157,13 @@
                 <p class="p1" style="margin: -3px auto">所在院（系）</p>
             </div>
             <div class="col-md-4 col col1">
-                @Html.DropDownListFor(x => x.leader.academy, RMS.Models.DBHelper.instence.Academy.Select(x => new SelectListItem() { Text = x.academy, Value = x.ID.ToString() }),new { @class = "form-control" })
+                @Html.DropDownListFor(x => x.leader.academy, RMS.Models.DBHelper.instence.Academy.Select(x => new SelectListItem() { Text = x.academy, Value = x.ID.ToString() }), new { @class = "form-control" })
             </div>
             <div class="col-md-2 col col1">
                 <p class="p1">专业、班级</p>
             </div>
             <div class="col-md-4 col col1">
-                @Html.TextBoxFor(x=>x.leader.subject, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.leader.subject, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -224,7 +224,7 @@
                         <p>（一）立项依据（项目的背景、理论与实际意义、国内外现状分析）</p>
                     </div>
                     <div>
-                        @Html.TextAreaFor(x=>x.baseon,new {@class="form-control wbk" })
+                        @Html.TextAreaFor(x => x.baseon, new { @class = "form-control wbk" })
                     </div>
                 </div>
             </div>
@@ -318,8 +318,8 @@
                 <p class="p1" style="text-align: left">1．图书资料费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x=>x.fund[0].fundType,new {value="0" })
-                @Html.TextBoxFor(x=>x.fund[0].money,new { type = "number",@class="form-control" })
+                @Html.HiddenFor(x => x.fund[0].fundType, new { value = "0" })
+                @Html.TextBoxFor(x => x.fund[0].money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
                 @Html.TextBoxFor(x => x.fund[0].reason, new { @class = "form-control" })
@@ -385,14 +385,14 @@
             </div>
         </div>
 
-    }
+
 
     <div style="margin: 20px auto;text-align: center">
         <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
         <button type="reset" class="btn btn-danger" style="width: 80px;">重置</button>
         <button type="button" class="btn btn-primary" style="width: 80px;">打印</button>
     </div>
-
+    }
 </div>
 
 <script type="text/javascript">
