@@ -48,7 +48,7 @@ namespace RMS.Controllers
             }
             catch
             {
-                new log4net.Appender.FileAppender().
+                
                 return new JsonResult
                 {
                     Data = new
