@@ -25,15 +25,17 @@ namespace RMS.Controllers
         [HttpPost]
         public JsonResult NewProject(Project project)
         {
-            project.leader.academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["leader.academy"]));
-            if (project.members != null)
+            try
             {
-                int i = project.members.Count();
-                for (; i > 0; i--)
+                project.leader.academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["leader.academy"]));
+                if (project.members != null)
                 {
-                    project.members[i - 1].academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["members[" + (i - 1) + "].academy"]));
+                    int i = project.members.Count();
+                    for (; i > 0; i--)
+                    {
+                        project.members[i - 1].academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["members[" + (i - 1) + "].academy"]));
+                    }
                 }
-            }
                 DBHelper.instence.Project.Add(project);
                 DBHelper.instence.SaveChanges();
                 return new JsonResult
@@ -43,13 +45,18 @@ namespace RMS.Controllers
                         message = "提交成功！"
                     }
                 };
-            return new JsonResult
+            }
+            catch
             {
-                Data = new
+                new log4net.Appender.FileAppender().
+                return new JsonResult
                 {
-                    message = "提交失败！"
-                }
-            };
+                    Data = new
+                    {
+                        message = "提交失败！"
+                    }
+                };
+            }
         }
 
         #endregion

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace RMS.Models
 {
@@ -56,7 +57,6 @@ namespace RMS.Models
 
     public class Person
     {
-        public int ID { get; set; }
         public string name { get; set; }
         public bool sex { get; set; }
         public virtual Academy academy { get; set; }
@@ -65,12 +65,14 @@ namespace RMS.Models
         public long phone { get; set; }
     }
     public class Member : Person {
-        public long sno { get; set; }
+        [Key]
+        public int sno { get; set; }
         public string subject { get; set; }
         public string assignment { get; set; }
     }
     public class Leader : Person {
-        public long sno { get; set; }
+        [Key]
+        public int sno { get; set; }
         public string subject { get; set; }
     }
 
