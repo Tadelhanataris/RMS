@@ -238,6 +238,8 @@
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
     <Content Include="Content\home.css" />
+    <Content Include="Content\jfsyjl.css" />
+    <Content Include="Content\jtysbg.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\stu.css" />
     <Content Include="Content\xmgl.css" />
@@ -246,6 +248,7 @@
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="Content\xxmsq.css" />
+    <Content Include="Content\zqjcbg.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -474,6 +477,9 @@
     <Content Include="Views\Students\NewProject.cshtml" />
     <Content Include="Views\Students\Progress.cshtml" />
     <Content Include="Views\Students\OverView.cshtml" />
+    <Content Include="Views\Students\Fund.cshtml" />
+    <Content Include="Views\Students\Mid.cshtml" />
+    <Content Include="Views\Students\End.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

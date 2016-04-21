@@ -1,0 +1,113 @@
+﻿@model RMS.Models.Project
+@{
+    ViewBag.Title = "中期检查报告";
+    Layout = "~/Views/Students/_Layout.cshtml";
+}
+@section Head {
+    @Styles.Render("~/Content/stumid")
+}
+<div id="zqjcbg">
+    <div class="row">
+        <div class="col-md-12">
+            <p style="text-align: center;font-size: 20px;font-weight: bold">首都师范大学本科生科学研究与创业行动项目</p>
+            <p style="text-align: center;font-size: 17px;font-weight: bold">中期检查报告</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-2 col col-start">
+            <p class="p1">项目名称</p>
+        </div>
+        <div class="col-md-6 col">
+            <p class="p1">@Html.DisplayFor(x => x.projectName)</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">立项时间</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">2015.06</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col col-start">
+            <p class="p1">项目负责人</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">@Html.DisplayFor(x => x.leader.name)</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">所在院系</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">@Html.DisplayFor(x => x.leader.academy.academy)</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">专业、班级</p>
+        </div>
+        <div class="col-md-2 col">
+            <p class="p1">@Html.DisplayFor(x => x.leader.subject)</p>
+        </div>
+    </div>
+    @if (Model != null && Model.members != null)
+    {
+        foreach (var m in Model.members)
+        {
+            <div class="row">
+                <div class="col-md-2 col col-start">
+                    <p class="p1">成员1</p>
+                </div>
+                <div class="col-md-2 col">
+                    <p class="p1">@Html.DisplayFor(x => m.name)</p>
+                </div>
+                <div class="col-md-2 col">
+                    <p class="p1">所在院系</p>
+                </div>
+                <div class="col-md-2 col">
+                    <p class="p1">@Html.DisplayFor(x => m.academy.academy)</p>
+                </div>
+                <div class="col-md-2 col">
+                    <p class="p1">专业、班级</p>
+                </div>
+                <div class="col-md-2 col">
+                    <p class="p1">@Html.DisplayFor(x => m.subject)</p>
+                </div>
+            </div>
+        }
+    }
+    @using (Html.BeginForm("Mid", "Students"))
+    {
+        <div class="row">
+            <div class="col-md-2 col col-start">
+                <p class="p1">项目经费</p>
+            </div>
+            <div class="col-md-10 col input-group">
+                @Html.TextBoxFor(x => x.midreport.money, new { @class = "form-control", type = "number" })
+                <span class="input-group-addon">元</span>
+            </div>
+        </div>
+        <div class="row" style="height: 45px">
+            <div class="col-md-4 col col-start">
+                <p class="p1">项目计划执行情况（自评）</p>
+            </div>
+            <div class="col-md-8 col">
+                <div style="margin-top: 6px">
+                    @Html.RadioButtonFor(x => x.midreport.status, 0, new { @class = "xz" })<label for="midreport.status" style="margin-bottom: inherit;font-weight: inherit;">提前完成</label>
+                    @Html.RadioButtonFor(x => x.midreport.status, 1, new { @class = "xz" })<label for="midreport.status" style="margin-bottom: inherit;font-weight: inherit;">按时完成</label>
+                    @Html.RadioButtonFor(x => x.midreport.status, 2, new { @class = "xz" })<label for="midreport.status" style="margin-bottom: inherit;font-weight: inherit;">可能无法完成</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col-start">
+                <div>
+                    <p>研究项目的进展和经费使用情况：</p>
+                </div>
+                @Html.TextAreaFor(x => x.midreport.proceed, new { @class = "form-control wbk" })
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 20px">
+            <button class="btn btn-default" type="submit">提交</button>
+            <button class="btn btn-danger" type="reset">重置</button>
+            <button class="btn btn-primary" type="button">打印</button>
+        </div>
+    }
+</div>

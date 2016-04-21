@@ -23,15 +23,40 @@ namespace RMS.Controllers
         }
 
         [HttpPost]
-        public JsonResult NewProject(FormCollection Fm)
+        public JsonResult NewProject(Project project)
         {
-            return new JsonResult
+            try
             {
-                Data = new
+                project.leader.academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["leader.academy"]));
+                if (project.members != null)
                 {
-                    message = "提交失败！"
+                    int i = project.members.Count();
+                    for (; i > 0; i--)
+                    {
+                        project.members.ElementAt(i-1).academy = DBHelper.instence.Academy.Find(int.Parse(this.Request.Form["members[" + (i - 1) + "].academy"]));
+                    }
                 }
-            };
+                DBHelper.instence.Project.Add(project);
+                DBHelper.instence.SaveChanges();
+                return new JsonResult
+                {
+                    Data = new
+                    {
+                        message = "提交成功！"
+                    }
+                };
+            }
+            catch
+            {
+                
+                return new JsonResult
+                {
+                    Data = new
+                    {
+                        message = "提交失败！"
+                    }
+                };
+            }
         }
 
         #endregion
@@ -78,6 +103,27 @@ namespace RMS.Controllers
         }
         #endregion
 
+        #region 项目中期报告
+        public ActionResult Mid()
+        {
+                return View();
+        }
+        #endregion
+
+        #region 项目结题报告
+        public ActionResult End()
+        {
+            return View();
+        }
+        #endregion
+
+
+        #region 经费使用记录
+        public ActionResult Fund()
+        {
+            return View();
+        }
+        #endregion
         public ActionResult OverView()
         {
             return View();
