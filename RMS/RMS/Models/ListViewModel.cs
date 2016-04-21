@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RMS.Models
 {
-    public enum ProjectClass { 院级,校级,市级,国家级};
+    public enum ProjectClass { 院级, 校级, 市级, 国家级 };
     public class BannerImage
     {
         public int ID { get; set; }
@@ -17,7 +17,7 @@ namespace RMS.Models
 
     public class Notice
     {
-        public int ID { get; set; } 
+        public int ID { get; set; }
         public DateTime date { get; set; }
         public string title { get; set; }
         public string content { get; set; }
@@ -64,13 +64,15 @@ namespace RMS.Models
         public string email { get; set; }
         public long phone { get; set; }
     }
-    public class Member : Person {
+    public class Member : Person
+    {
         [Key]
         public int sno { get; set; }
         public string subject { get; set; }
         public string assignment { get; set; }
     }
-    public class Leader : Person {
+    public class Leader : Person
+    {
         [Key]
         public int sno { get; set; }
         public string subject { get; set; }
@@ -78,7 +80,7 @@ namespace RMS.Models
 
     public class Fund
     {
-        public enum m_type { 图书资料费,实验材料费,调研费,印刷费,成果转化费}
+        public enum m_type { 图书资料费, 实验材料费, 调研费, 印刷费, 成果转化费, 文献资料收集查询费, 交通费, 其他 }
         public int ID { get; set; }
         public m_type fundType { get; set; }
         public float money { get; set; }
@@ -87,14 +89,14 @@ namespace RMS.Models
 
     public class Project
     {
-        public enum p_type {指南类,自选类,创业类,定向资助,延续资助 }
+        public enum p_type { 指南类, 自选类, 创业类, 定向资助, 延续资助 }
         public int ID { get; set; }
         public string projectName { get; set; }
         public p_type projectType { get; set; }
         public string projectNo { get; set; }
         public string projectSubject { get; set; }
         public virtual Leader leader { get; set; }
-        public virtual Member[] members { get; set; }
+        public virtual IEnumerable<Member> members { get; set; }
         //todo 教师类
         //public virtual Teacher teacher { get; set; }
         public string baseon { get; set; }
@@ -103,9 +105,12 @@ namespace RMS.Models
         public string format { get; set; }
         public string special { get; set; }
         public string experience { get; set; }
-        public virtual Fund[] fund { get; set; }
-        public virtual FundUse[] funduse { get; set; }
-        
+        public virtual IEnumerable<Fund> fund { get; set; }
+        public virtual IEnumerable<FundUse> funduse { get; set; }
+        public virtual StartReport startreport { get; set; }
+        public virtual MidReport midreport { get; set; }
+        public virtual EndReport endreport { get; set; }
+
 
 
         #region 以下部分未定
@@ -120,8 +125,33 @@ namespace RMS.Models
         #endregion
     }
 
+    public class StartReport
+    {
+        public int ID { get; set; }
+    }
+
+    public class MidReport
+    {
+        public int ID { get; set; }
+        public enum Status { 提前完成, 按时完成, 可能无法完成 }
+        public double money { get; set; }
+        public Status status { get; set; }
+        public string proceed { get; set; }
+    }
+
+    public class EndReport
+    {
+        public int ID { get; set; }
+        public string summary { get; set; }
+        public string mainresult { get; set; }
+        public string resultformat { get; set; }
+        public IEnumerable<Fund> expectfund { get; set; }
+        public IEnumerable<Fund> actualfund { get; set; }
+    }
+
     public class FundUse
     {
+        public int ID { get; set; }
         public DateTime time { get; set; }
         public string title { get; set; }
         public float money { get; set; }
@@ -129,7 +159,7 @@ namespace RMS.Models
 
     public class Project_Progress
     {
-        
+
         public int ID { get; set; }
         public int sequence { get; set; }
         public string title { get; set; }
@@ -143,7 +173,7 @@ namespace RMS.Models
     public class DBHelper : DbContext
     {
         public static readonly DBHelper instence = new DBHelper();
-        private DBHelper() : base("name=DefaultConnection"){ }
+        private DBHelper() : base("name=DefaultConnection") { }
         public DbSet<File> Files { get; set; }
         public DbSet<BannerImage> Banners { get; set; }
         public DbSet<Notice> Notices { get; set; }
@@ -156,7 +186,7 @@ namespace RMS.Models
         public DbSet<Academy> Academy { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();  
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 }

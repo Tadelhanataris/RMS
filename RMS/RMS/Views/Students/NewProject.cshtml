@@ -1,6 +1,6 @@
 ﻿@model RMS.Models.Project
 @{
-    ViewBag.Title = "View";
+    ViewBag.Title = "新项目申请";
     Layout = "~/Views/Students/_Layout.cshtml";
 }
 @section Head {
@@ -36,23 +36,23 @@
                     </div>
                     <div class="row" style="height: 50%">
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
-                            @Html.RadioButtonFor(x => x.projectType, 0, new { @class = "xx", @checked = "" })<label for="projectType" style="margin-bottom: inherit;font-weight: inherit;">指南类项目</label>
+                            @Html.RadioButtonFor(x => x.projectType, 0, new { @class = "xx", @checked = "" })<label for="projectType" style="display:inline;margin-bottom: inherit;font-weight: inherit;">指南类项目</label>
                         </div>
                         <div class="col-md-4 col2" style="border-right:solid 1px black;height: 100%">
-                            @Html.RadioButtonFor(x => x.projectType, 1, new { @class = "xx" })自选项目
-                        </div>
+                            @Html.RadioButtonFor(x => x.projectType, 1, new { @class = "xx" })<label for="projectType" style="display:inline;margin-bottom: inherit;font-weight: inherit;">自选项目</label>
+</div>
                         <div class="col-md-4 col2" style="height: 100%">
-                            @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })创业项目
-                        </div>
+                            @Html.RadioButtonFor(x => x.projectType, 2, new { @class = "xx" })<label for="projectType" style="display:inline;margin-bottom: inherit;font-weight: inherit;">创业项目</label>
+</div>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                @Html.RadioButtonFor(x => x.projectType, 3, new { @class = "xx" })定向资助项目
-            </div>
+                @Html.RadioButtonFor(x => x.projectType, 3, new { @class = "xx" })<label for="projectType" style="display:inline;margin-bottom: inherit;font-weight: inherit;">定向资助项目</label>
+</div>
             <div class="col-md-2 col col1" style="height: 100%;text-align: center">
-                @Html.RadioButtonFor(x => x.projectType, 4, new { @class = "xx" })延续资助项目
-            </div>
+                @Html.RadioButtonFor(x => x.projectType, 4, new { @class = "xx" })<label for="projectType" style="display:inline;margin-bottom: inherit;font-weight: inherit;">延续资助项目</label>
+</div>
         </div>
         <div class="row">
             <div class="col-md-4 col col1 col-start">
@@ -318,11 +318,11 @@
                 <p class="p1" style="text-align: left">1．图书资料费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x => x.fund[0].fundType, new { value = "0" })
-                @Html.TextBoxFor(x => x.fund[0].money, new { type = "number", @class = "form-control" })
+                @Html.HiddenFor(x => x.fund.ElementAt(0).fundType, new { value = "0" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(0).money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x => x.fund[0].reason, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(0).reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -330,11 +330,11 @@
                 <p class="p1" style="text-align: left">2．实验材料费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x => x.fund[1].fundType, new { value = "1" })
-                @Html.TextBoxFor(x => x.fund[1].money, new { type = "number", @class = "form-control" })
+                @Html.HiddenFor(x => x.fund.ElementAt(1).fundType, new { value = "1" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(1).money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x => x.fund[1].reason, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(1).reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -342,11 +342,11 @@
                 <p class="p1" style="text-align: left">3．调研费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x => x.fund[2].fundType, new { value = "2" })
-                @Html.TextBoxFor(x => x.fund[2].money, new { type = "number", @class = "form-control" })
+                @Html.HiddenFor(x => x.fund.ElementAt(2).fundType, new { value = "2" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(2).money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x => x.fund[2].reason, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(2).reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -354,11 +354,11 @@
                 <p class="p1" style="text-align: left">4．印刷费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x => x.fund[3].fundType, new { value = "3" })
-                @Html.TextBoxFor(x => x.fund[3].money, new { type = "number", @class = "form-control" })
+                @Html.HiddenFor(x => x.fund.ElementAt(3).fundType, new { value = "3" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(3).money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x => x.fund[3].reason, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(3).reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -366,11 +366,11 @@
                 <p class="p1" style="text-align: left">5．成果转化费</p>
             </div>
             <div class="col-md-3 col col1">
-                @Html.HiddenFor(x => x.fund[4].fundType, new { value = "4" })
-                @Html.TextBoxFor(x => x.fund[4].money, new { type = "number", @class = "form-control" })
+                @Html.HiddenFor(x => x.fund.ElementAt(4).fundType, new { value = "4" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(4).money, new { type = "number", @class = "form-control" })
             </div>
             <div class="col-md-6 col col1">
-                @Html.TextBoxFor(x => x.fund[4].reason, new { @class = "form-control" })
+                @Html.TextBoxFor(x => x.fund.ElementAt(4).reason, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">

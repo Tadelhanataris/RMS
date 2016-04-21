@@ -1,0 +1,266 @@
+﻿@model RMS.Models.Project
+@{
+    ViewBag.Title = "结题报告";
+    Layout = "~/Views/Students/_Layout.cshtml";
+}
+@section Head {
+    @Styles.Render("~/Content/stuend")
+}
+<form>
+    <div id="jtysbg">
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>一、总结报告（要求字数在1000－2000字）</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1">
+                <div>
+                    <div class="title">
+                        <p class="p1">（一）项目研究计划要点、执行情况、主要进展：</p>
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(x => x.endreport.summary, new { @class = "form-control content1", style = "min-height: 300px", maxlength = "2000" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1">
+                <div>
+                    <div class="title">
+                        <p class="p1">（二）主要成果、创新特色：</p>
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(x => x.endreport.mainresult, new { @class = "form-control content1", style = "min-height: 300px" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col1 end1">
+                <div>
+                    <div class="title">
+                        <p class="p1">（三）成果形式</p>
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(x => x.endreport.resultformat, new { @class = "form-control content1", style = "min-height: 300px" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>二、经费使用情况</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col col2 end2" style="text-align: center">
+                <p class="p1">
+                    项目经费共计（<span name="actualtotalfund">0.00</span>）元
+                </p>
+            </div>
+        </div>
+        <div class="row" style="text-align: center">
+            <div class="col-md-4 col col2">
+                <p class="p2">预算支出科目</p>
+            </div>
+            <div class="col-md-4 col col2">
+                <p class="p2">预算支出金额（元）</p>
+            </div>
+            <div class="col-md-4 col col2 end2">
+                <p class="p2">实际支出金额（元）</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2" style="margin: 7px 5px">1．文献资料收集、查询费</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(0).fundType, new { value = "5" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(0).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(0).fundType, new { value = "5" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(0).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2">2．打印（复印）费</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(1).fundType, new { value = "3" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(1).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(1).fundType, new { value = "3" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(1).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2">3．实验材料费</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(2).fundType, new { value = "1" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(2).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(2).fundType, new { value = "1" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(2).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2">4．交通费</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(3).fundType, new { value = "6" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(3).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(3).fundType, new { value = "6" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(3).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2">5．图书、资料费</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(4).fundType, new { value = "0" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(4).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(4).fundType, new { value = "0" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(4).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col col2">
+                <p class="p2">6．其他</p>
+            </div>
+            <div class="col-md-4 col col2">
+                @Html.HiddenFor(x => x.endreport.expectfund.ElementAt(5).fundType, new { value = "7" })
+                @Html.TextBoxFor(x => x.endreport.expectfund.ElementAt(5).money, new { @class = "form-control" })
+            </div>
+            <div class="col-md-4 col col2 end2">
+                @Html.HiddenFor(x => x.endreport.actualfund.ElementAt(5).fundType, new { value = "7" })
+                @Html.TextBoxFor(x => x.endreport.actualfund.ElementAt(5).money, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row end1">
+            <div class="col-md-4 col col2">
+                <p class="p2" style="text-align: center">合计</p>
+            </div>
+            <div class="col-md-4 col col2">
+                <span name="expecttotalfund">0.00</span>
+            </div>
+            <div class="col-md-4 col col2 end2">
+                <span name="actualtotalfund">0.00</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col section">
+                <p>三、成员合作情况</p>
+            </div>
+        </div>
+        <div class="row table-start">
+            <div class="col-md-3 col col3">
+                <p class="p3">项目负责人</p>
+            </div>
+            <div class="col-md-3 col col3">
+                <p class="p3">实际的任务分工</p>
+            </div>
+            <div class="col-md-3 col col3">
+                <p class="p4">承担的任务占总任务的百分比</p>
+            </div>
+            <div class="col-md-3 col col3 end3">
+                <p class="p4">是否为项目开题后新加入人员</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="fzrxm">
+            </div>
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="fzrfg">
+            </div>
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="fzrzb">
+            </div>
+            <div class="col-md-3 col col3 end3 se">
+                <select id="fzrzt" class="form-control">
+                    <option value="true">是</option>
+                    <option value="false">否</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col3">
+                <p class="p3">成员</p>
+            </div>
+            <div class="col-md-3 col col3">
+                <p class="p3">实际的任务分工</p>
+            </div>
+            <div class="col-md-3 col col3">
+                <p class="p4">承担的任务占总任务的百分比</p>
+            </div>
+            <div class="col-md-3 col col3 end3">
+                <p class="p4">是否为项目开题后新加入人员</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="cy1xm">
+            </div>
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="cy1fg">
+            </div>
+            <div class="col-md-3 col col3">
+                <input type="text" class="form-control" id="cy1zb">
+            </div>
+            <div class="col-md-3 col col3 end3 se">
+                <select id="cy1zt" class="form-control">
+                    <option value="true">是</option>
+                    <option value="false">否</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="margin-top: 10px;text-align: center">
+                <button class="btn btn-default" type="button" id="tjxjl">添加一条新记录</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="btn-container" style="text-align: center">
+        <button type="submit" class="btn btn-default" style="width: 80px;">提交</button>
+        <button type="reset" class="btn btn-danger" style="width: 80px;">重置</button>
+        <button type="button" class="btn btn-primary" style="width: 80px;">打印</button>
+    </div>
+
+    <!--项目名称自动获取-->
+    <!--项目负责人自动获取-->
+    <!--所在院系自动获取-->
+    <!--负责人电话自动获取-->
+    <!--项目负责人信箱自动获取-->
+    <!--导师自动获取-->
+    <!--导师职称自动获取-->
+    <!--导师所在单位自动获取-->
+    <!--填表日期自动获取-->
+</form>
+<script type="text/javascript">
+    window.onload = function () {
+        $('[name^=fund]').change(function () {
+            $('[name=totalfund]').text((0).toFixed(2));
+            $('[name^=fund][name$=money]').each(function () {
+                !isNaN(parseFloat($('[name=totalfund]:first').text())) &&
+                !isNaN(parseFloat($(this).val())) &&
+                $('[name=totalfund]').text((parseFloat($('[name=totalfund]:first').text()) + parseFloat($(this).val())).toFixed(2));
+            })
+        });
+    }
+</script>
