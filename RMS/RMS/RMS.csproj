@@ -234,6 +234,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cglb.css" />
     <Content Include="Content\cxjlb.css" />
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
@@ -403,7 +404,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\indexslide.js" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.2.js" />
@@ -480,10 +480,11 @@
     <Content Include="Views\Students\Fund.cshtml" />
     <Content Include="Views\Students\Mid.cshtml" />
     <Content Include="Views\Students\End.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Gallery\ViewContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Gallery\" />
     <Folder Include="Views\Guide\" />
     <Folder Include="Views\Upload\" />
   </ItemGroup>

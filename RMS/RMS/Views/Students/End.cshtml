@@ -182,13 +182,14 @@
         </div>
         <div class="row">
             <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="fzrxm">
+                @Html.TextBoxFor(x => x.leader.name, new { @class = "form-control" })
             </div>
             <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="fzrfg">
+                @Html.TextBoxFor(x => x.leader.assignment, new { @class = "form-control" })
             </div>
-            <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="fzrzb">
+            <div class="col-md-3 col col3 input-group">
+                @Html.TextBoxFor(x => x.leader.assignmentratio, new { @class = "form-control", type = "number", max = "100", min = "0" })
+                <span class="input-group-addon">元</span>
             </div>
             <div class="col-md-3 col col3 end3 se">
                 <select id="fzrzt" class="form-control">
@@ -211,23 +212,29 @@
                 <p class="p4">是否为项目开题后新加入人员</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="cy1xm">
-            </div>
-            <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="cy1fg">
-            </div>
-            <div class="col-md-3 col col3">
-                <input type="text" class="form-control" id="cy1zb">
-            </div>
-            <div class="col-md-3 col col3 end3 se">
-                <select id="cy1zt" class="form-control">
-                    <option value="true">是</option>
-                    <option value="false">否</option>
-                </select>
-            </div>
-        </div>
+        @if (Model != null && Model.members != null)
+        {
+            foreach (var m in Model.members)
+            {
+                <div class="row">
+                    <div class="col-md-3 col col3">
+                        @Html.TextBoxFor(x => m.name, new { @class = "form-control" })
+                    </div>
+                    <div class="col-md-3 col col3">
+                        @Html.TextBoxFor(x => m.assignment, new { @class = "form-control" })
+                    </div>
+                    <div class="col-md-3 col col3">
+                        @Html.TextBoxFor(x => m.assignmentratio, new { @class = "form-control", type = "number", min = "0", max = "100" })
+                    </div>
+                    <div class="col-md-3 col col3 end3 se">
+                        <select id="cy1zt" class="form-control">
+                            <option value="true">是</option>
+                            <option value="false">否</option>
+                        </select>
+                    </div>
+                </div>
+            }
+        }
         <div class="row">
             <div class="col-md-12" style="margin-top: 10px;text-align: center">
                 <button class="btn btn-default" type="button" id="tjxjl">添加一条新记录</button>

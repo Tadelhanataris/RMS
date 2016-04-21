@@ -42,6 +42,20 @@ namespace RMS.Models
         public virtual List<Attachment> attachment { get; set; }
     }
 
+    public class Gallery
+    {
+        public int ID { get; set; }
+        public virtual Project project { get; set; }
+        public virtual IEnumerable<Result> result { get; set; }
+        public class Result
+        {
+            public int ID { get; set; }
+            public string title { get; set; }
+            public string content { get; set; }
+            public File pic { get; set; }
+        }
+    }
+
     public class Table
     {
         public int ID { get; set; }
@@ -70,12 +84,17 @@ namespace RMS.Models
         public int sno { get; set; }
         public string subject { get; set; }
         public string assignment { get; set; }
+        public int assignmentratio { get; set; }
+        public bool afterinto { get; set; }
     }
     public class Leader : Person
     {
         [Key]
         public int sno { get; set; }
         public string subject { get; set; }
+        public string assignment { get; set; }
+        public int assignmentratio { get; set; }
+        public bool afterinto { get; set; }
     }
 
     public class Fund
