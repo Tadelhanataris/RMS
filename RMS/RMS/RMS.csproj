@@ -480,6 +480,7 @@
     <Content Include="Views\Students\Fund.cshtml" />
     <Content Include="Views\Students\Mid.cshtml" />
     <Content Include="Views\Students\End.cshtml" />
+    <Content Include="Views\Students\Start.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
