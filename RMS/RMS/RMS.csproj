@@ -199,6 +199,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ClubController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
@@ -491,6 +492,10 @@
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Gallery\ViewContent.cshtml" />
     <Content Include="Views\Students\Start.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\_footer.cshtml" />
+    <Content Include="Views\Admin\_header.cshtml" />
+    <Content Include="Views\Admin\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
