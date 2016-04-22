@@ -34,6 +34,16 @@ namespace RMS.Models
             new FileStream(filePath, FileMode.Create).Write(buffer, 0, buffer.Length);
         }
 
+        public static File AddFile(Stream fs, string FileName, out string md5)
+        {
+            byte[] buffer = new byte[fs.Length];
+            fs.Read(buffer, 0, buffer.Length);
+            var MD5 = MD5Helper.GetHash(fs);
+            md5 = MD5;
+            if (DBHelper.instence.Files.Find(MD5) != null)
+                return DBHelper.instence.Files.Find(MD5);
+            return new File(buffer, FileName, MD5);
+        }
         public static File AddFile(Stream fs, string FileName)
         {
             byte[] buffer = new byte[fs.Length];
@@ -44,6 +54,20 @@ namespace RMS.Models
             return new File(buffer, FileName, MD5);
         }
 
+        public static File AddFile(string filepath,out string md5)
+        {
+            if (filepath.StartsWith("/") || filepath.StartsWith("\\"))
+                filepath = System.AppDomain.CurrentDomain.BaseDirectory + filepath;
+            var fs = new FileStream(filepath, FileMode.Open, FileAccess.Read);
+            byte[] buffer = new byte[fs.Length];
+            fs.Read(buffer, 0, buffer.Length);
+            var MD5 = MD5Helper.GetHash(fs);
+            var fileName = Path.GetFileName(filepath);
+            md5 = MD5;
+            if (DBHelper.instence.Files.Find(MD5) != null)
+                return DBHelper.instence.Files.Find(MD5);
+            return new File(buffer, fileName, MD5);
+        }
         public static File AddFile(string filepath)
         {
             if (filepath.StartsWith("/") || filepath.StartsWith("\\"))

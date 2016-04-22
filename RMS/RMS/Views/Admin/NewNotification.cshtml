@@ -1,0 +1,102 @@
+﻿@model RMS.Models.Project
+@{
+    ViewBag.Title = "新项目申请";
+    Layout = "~/Views/Admin/_Layout.cshtml";
+}
+@section Head {
+    @Styles.Render("~/Content/newnotification")
+    @Scripts.Render("~/bundles/newnotification")
+}
+
+<div id="fbtz" class="container" style="width:840px;">
+
+    @using (Html.BeginForm("NewNotification", "Admin"))
+    {
+        <div style="margin: 20px auto">
+            <div class="input-group">
+                <span class="input-group-addon" id="notification-type">请选择通知类型</span>
+                <select name="type" class="form-control" aria-describedby="notification-type">
+                    <option value="0">通知公告</option>
+                    <option value="1">焦点新闻</option>
+                    <option value="2">政策文件</option>
+                    <option value="3">项目指南</option>
+                    <option value="4">文件表格</option>
+                </select>
+            </div>
+        </div>
+        <div style="margin:20px auto">
+            <input name="title" type="text" class="form-control" placeholder="请输入标题" id="notification-title" autofocus>
+        </div>
+        <div id="wysihtml5-editor-toolbar" style="display: none;">
+            <header>
+                <ul class="commands">
+                    <li data-wysihtml5-command="bold" title="加粗 (CTRL + B)" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="italic" title="倾斜 (CTRL + I)" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="insertUnorderedList" title="插入项目符号" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="insertOrderedList" title="插入编号" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="createLink" title="插入超链接" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="insertImage" title="插入图片" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" title="标题1" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" title="标题2" class="command" href="javascript:;" unselectable="on"></li>
+                    <li data-wysihtml5-command-group="foreColor" class="fore-color" title="字体颜色">
+                        <ul>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="silver" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="gray" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="maroon" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="purple" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="olive" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="navy" href="javascript:;" unselectable="on"></li>
+                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue" href="javascript:;" unselectable="on"></li>
+                        </ul>
+                    </li>
+                    <li data-wysihtml5-command="insertSpeech" title="Insert speech" class="command" href="javascript:;" unselectable="on" style="display: none;"></li>
+                    <li data-wysihtml5-action="change_view" title="Show HTML" class="action" href="javascript:;" unselectable="on" style="display: none;"></li>
+                </ul>
+            </header>
+
+            <div data-wysihtml5-dialog="insertImage" style="display: none;">
+                <label>
+                    Image:
+                    <input data-wysihtml5-dialog-field="src" value="">
+                </label>
+                <a data-wysihtml5-dialog-action="save">确认</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">取消</a>
+            </div>
+
+        </div>
+        <div>
+            <textarea name="content" id="content" class="form-control" placeholder="在此输入正文" style="width: 100%;height: 400px;" form="form"></textarea>
+        </div>
+
+        <div class="input-group" style="margin:10px auto;">
+            <span class="input-group-addon" id="upload">附件</span>
+            <input name="upload" id="upload" type="file" class="form-control" aria-describedby="upload" onpropertychange="filechange">
+            <span class="input-group-addon" id="md5"></span>
+        </div>
+
+        <div style="text-align:right;">
+            <input type="submit" class="btn btn-default">
+            <input type="reset" class="btn btn-danger">
+        </div>
+
+    }
+</div>
+
+
+<script>
+    var editor = new wysihtml5.Editor("content", { // id of textarea element
+        toolbar: "wysihtml5-editor-toolbar", // id of toolbar element
+        stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/editor.css"],
+        parserRules: wysihtml5ParserRules // defined in parser rules set
+    });
+    window.onload = function () {
+        $('form').submit(function () {
+            $.post($(this).action, $(this).serialize() + "&content=" + editor.getValue(), function (response) {
+                alert(response.message);
+            });
+            return false;
+        });
+    }
+
+</script>

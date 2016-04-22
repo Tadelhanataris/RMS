@@ -15,6 +15,19 @@ namespace RMS.Models
         public virtual File src { get; set; }
     }
 
+    public class Notification
+    {
+        public int ID { get; set; }
+        public enum n_type { 通知公告 , 焦点新闻 , 政策文件 , 项目指南 , 文件表格 }
+        public n_type type { get; set; }
+        public virtual Notice notice { get; set; }
+        public virtual News news { get; set; }
+        public virtual Policy policy { get; set; }
+        public virtual Table table { get; set; }
+        public virtual Gallery gallery { get; set; }
+        //public virtual Guide guide { get; set; } //todo
+    }
+
     public class Notice
     {
         public int ID { get; set; }
@@ -246,6 +259,7 @@ namespace RMS.Models
         public DbSet<Table> Table { get; set; }
         public DbSet<Project_Progress> Project_progress { get; set; }
         public DbSet<Project> Project { get; set; }
+        public DbSet<Notification> Notification { get; set; }
 
         public DbSet<Academy> Academy { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
