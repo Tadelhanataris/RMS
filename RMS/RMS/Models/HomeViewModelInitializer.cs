@@ -85,17 +85,22 @@ namespace RMS.Models
 "体育教学研究部",
 "图书馆",
 "上海合作组织大学"};
+            var p = new List<Project>() { new Project() { projectName="阿斯顿撒旦",projectSubject="啊实打实的",baseon="啊实打实的"} }
+
+
+
             acd.ToList().ForEach(x => context.Academy.AddOrUpdate(new Academy { academy = x }));
             banner.ForEach(s => { context.Banners.AddOrUpdate(s); });
             notice.ForEach(n => { context.Notices.AddOrUpdate(n); });
             news.ForEach(n => { context.News.AddOrUpdate(n); });
             policy.ForEach(n => { context.Policy.AddOrUpdate(n); });
+            p.ForEach(n => { context.Project.AddOrUpdate(n); });
             var table = new List<Table>
             {
                 new Table {title="党建1",file=File.AddFile(@"D:\neccs.jpg") },
             };
-            
-            table.ForEach(n => { context.Table.AddOrUpdate(n);});
+
+            table.ForEach(n => { context.Table.AddOrUpdate(n); });
             context.SaveChangesAsync();
         }
     }

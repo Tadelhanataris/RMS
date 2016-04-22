@@ -137,7 +137,7 @@ namespace RMS.Models
         public ProjectClass passProjectClass { get; set; }
         public string passLeaderName { get; set; }
         public long passLeaderPhone { get; set; }
-        public long paaLeaderSno { get; set; }
+        public long passLeaderSno { get; set; }
         public string passTeacherName { get; set; }
         public long passTeacherPhone { get; set; }
         public string passTeacherTitle { get; set; }

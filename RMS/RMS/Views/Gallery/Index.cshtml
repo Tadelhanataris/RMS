@@ -17,7 +17,7 @@
         <ul>
             @foreach (Gallery li in context)
             {
-                <li>@li.project.projectName</li>
+                <li>@Html.ActionLink(li.project.projectName, "ViewContent", new { id=li.project.ID})</li>
             }
         </ul>
     </div>
