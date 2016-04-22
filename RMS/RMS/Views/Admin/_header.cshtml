@@ -1,0 +1,56 @@
+﻿<div id="nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand">首都师范大学大学生创新创业训练计划</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("首页","Index","Admin")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("新增学生","AddStudent","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("新增教师","AddTeacher","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("新增管理员","AddAdmin","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("新增创新俱乐部成员","AddClub","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("学生列表","Students","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("教师列表","Teachers","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("管理员列表","Admins","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("创新俱乐部成员列表","Clubs","Admin")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("教师发布项目审核","TeacherProject","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("学生申请项目审核","StudentProject","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("项目列表","ProjectList","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("进度管理","ProjectProgress","Admin")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("数据备份","Backup","Admin")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("教师发布项目审核","NewNotification","Admin")<a href="#">发布新通知</a></li>
+                    <li>@Html.ActionLink("教师发布项目审核","Tables","Admin")<a href="#">表格管理</a></li>
+                    <li>@Html.ActionLink("教师发布项目审核","MyInfo","Admin")<a href="#">我的信息</a></li>
+                    <li style="float: right"><a href="#">登出</a></li>
+                    <li style="float: right"><label style="padding-top: 15px">当前用户</label></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>
