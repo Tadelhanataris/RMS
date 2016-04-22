@@ -27,6 +27,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/stuend").Include("~/Content/jtysbg.css"));
             bundles.Add(new StyleBundle("~/Content/stustart").Include("~/Content/ckxmsqs.css"));
             bundles.Add(new StyleBundle("~/Content/stuoverview").Include("~/Content/xmgl.css"));
+            bundles.Add(new StyleBundle("~/Content/admin").Include("~/Content/admin.css"));
             #endregion
 
 
