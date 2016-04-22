@@ -1,0 +1,36 @@
+﻿@using RMS.Models
+
+@{
+    Guide context = (Guide)ViewData["context"];
+    ViewBag.Title = context.title;
+}
+
+@section Head {
+    @Styles.Render("~/Content/noticescontent")
+}
+
+<div class="article">
+    <div class="title">
+        <h2>@context.title</h2>
+    </div>
+    <div class="date">
+        <label id="date-label">@context.date.ToString("yyyy-MM-dd")</label>
+    </div>
+    <div class="content">
+        <p>
+            @context.content
+        </p>
+    </div>
+    @if (context.attachment.Count != 0)
+    {
+        <div id="file" style="margin-top:50px;">
+            <p>附件</p>
+            <ul>
+                @foreach (Attachment file in context.attachment)
+                {
+                    <li><a href="@file.href"><div class="file-icon" data-type="@file.filetype"></div><div>@file.filename<span>(@file.filesize)</span></div></a></li>
+                }
+            </ul>
+        </div>
+    }
+</div>

@@ -42,6 +42,15 @@ namespace RMS.Models
         public virtual List<Attachment> attachment { get; set; }
     }
 
+    public class Guide
+    {
+        public int ID { get; set; }
+        public DateTime date { get; set; }
+        public string title { get; set; }
+        public string content { get; set; }
+        public virtual List<Attachment> attachment { get; set; }
+    }
+
     public class Gallery
     {
         public int ID { get; set; }
@@ -198,6 +207,7 @@ namespace RMS.Models
         public DbSet<Notice> Notices { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Policy> Policy { get; set; }
+        public DbSet<Guide> Guide { get; set; }
         public DbSet<Table> Table { get; set; }
         public DbSet<Project_Progress> Project_progress { get; set; }
         public DbSet<Project> Project { get; set; }

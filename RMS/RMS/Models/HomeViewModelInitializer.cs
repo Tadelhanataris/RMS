@@ -43,6 +43,18 @@ namespace RMS.Models
                 new Policy { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
                 new Policy { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N"}
             };
+            var guide = new List<Guide>
+            {
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N" },
+                new Guide { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123N"}
+            };
             var news = new List<News>
             {
                 new News { date=DateTime.Today,title="纪念“三八”国际妇女节106周年 暨首都妇女先进典型表彰大会在我校隆重召开",content="123W" },
@@ -94,6 +106,7 @@ namespace RMS.Models
             notice.ForEach(n => { context.Notices.AddOrUpdate(n); });
             news.ForEach(n => { context.News.AddOrUpdate(n); });
             policy.ForEach(n => { context.Policy.AddOrUpdate(n); });
+            guide.ForEach(n => { context.Guide.AddOrUpdate(n); });
             p.ForEach(n => { context.Project.AddOrUpdate(n); });
             var table = new List<Table>
             {

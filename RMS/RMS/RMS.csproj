@@ -495,10 +495,11 @@
     <Content Include="Views\Admin\_footer.cshtml" />
     <Content Include="Views\Admin\_header.cshtml" />
     <Content Include="Views\Admin\_Layout.cshtml" />
+    <Content Include="Views\Guide\Index.cshtml" />
+    <Content Include="Views\Guide\ViewContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Guide\" />
     <Folder Include="Views\Upload\" />
   </ItemGroup>
   <ItemGroup>
