@@ -103,6 +103,13 @@ namespace RMS.Controllers
         }
         #endregion
 
+        #region 项目申请书
+        public ActionResult Start()
+        {
+            return View();
+        }
+        #endregion
+
         #region 项目中期报告
         public ActionResult Mid()
         {

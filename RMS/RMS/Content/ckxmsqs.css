@@ -1,0 +1,67 @@
+#container #xmsqs{
+    width: 550px;
+    margin: 20px auto;
+}
+
+#container #xmsqs .row{
+    width: 100%;
+    margin: 0px;
+}
+
+#container #xmsqs .col{
+    padding: 5px;
+}
+
+#container #xmsqs .section{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#container #xmsqs .table-start{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+#container #xmsqs .col1{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top: hidden;
+    border-left: hidden;
+}
+
+#container #xmsqs .col-start{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+#container #xmsqs .p1{
+    text-align: center;
+    margin: 7px auto;
+}
+
+#container #xmsqs .col2{
+    padding: 0;
+}
+
+#container #xmsqs .xx{
+    margin: 7px auto;
+}
+
+#container #xmsqs .sub-section{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+#container #xmsqs .wbk{
+    height: 300px;
+    resize: none;
+}
+
+#container #xmsqs label{
+    margin: 0;
+}
