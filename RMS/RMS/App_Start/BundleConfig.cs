@@ -28,6 +28,10 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/stustart").Include("~/Content/ckxmsqs.css"));
             bundles.Add(new StyleBundle("~/Content/stuoverview").Include("~/Content/xmgl.css"));
             bundles.Add(new StyleBundle("~/Content/admin").Include("~/Content/admin.css"));
+            bundles.Add(new StyleBundle("~/Content/adminaddstu").Include("~/Content/xzxs.css"));
+            bundles.Add(new StyleBundle("~/Content/adminaddteacher").Include("~/Content/xzjs.css"));
+            bundles.Add(new StyleBundle("~/Content/adminaddadmin").Include("~/Content/xzgly.css"));
+            bundles.Add(new StyleBundle("~/Content/adminaddclub").Include("~/Content/xzcxjlb.css"));
             #endregion
 
 

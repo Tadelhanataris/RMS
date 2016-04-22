@@ -87,6 +87,33 @@ namespace RMS.Models
         public string email { get; set; }
         public long phone { get; set; }
     }
+    public class Club :Person
+    {
+        public int cno { get; set; }
+        public string pwd { get; set; }
+        public int grade { get; set; }
+        public string subject { get; set; }
+        //照片
+    }
+    public class Admin : Person
+    {
+        [Key]
+        public int ano { get; set; }
+        public string pwd { get; set; }
+    }
+    public class Teacher :Person
+    {
+        [Key]
+        public int tno { get; set; }
+        public string pwd { get; set; }
+        public int tage { get; set; }
+        public string finaldegree { get; set; }
+        public string subject { get; set; }
+        public string direction { get; set; }
+        public string title { get; set; }
+        public string duty { get; set; }
+        public string tel { get; set; }
+    }
     public class Member : Person
     {
         [Key]
@@ -104,6 +131,14 @@ namespace RMS.Models
         public string assignment { get; set; }
         public int assignmentratio { get; set; }
         public bool afterinto { get; set; }
+    }
+    public class Stu :Person
+    {
+        [Key]
+        public int sno { get; set; }
+        public string pwd { get; set; }
+        public int grade { get; set; }
+        public string subject { get; set; }
     }
 
     public class Fund

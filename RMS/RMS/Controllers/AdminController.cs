@@ -13,5 +13,25 @@ namespace RMS.Controllers
         {
             return View();
         }
+
+        public ActionResult AddStu()
+        {
+            return View();
+        }
+
+        public ActionResult AddTeacher()
+        {
+            return View();
+        }
+
+        public ActionResult AddAdmin()
+        {
+            return View();
+        }
+
+        public ActionResult AddClub()
+        {
+            return View();
+        }
     }
 }

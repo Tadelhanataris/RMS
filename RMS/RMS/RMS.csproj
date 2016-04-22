@@ -252,6 +252,10 @@
     <Content Include="Content\xwlb.css" />
     <Content Include="Content\xwtz.css" />
     <Content Include="Content\xxmsq.css" />
+    <Content Include="Content\xzcxjlb.css" />
+    <Content Include="Content\xzgly.css" />
+    <Content Include="Content\xzjs.css" />
+    <Content Include="Content\xzxs.css" />
     <Content Include="Content\zqjcbg.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -497,6 +501,10 @@
     <Content Include="Views\Admin\_Layout.cshtml" />
     <Content Include="Views\Guide\Index.cshtml" />
     <Content Include="Views\Guide\ViewContent.cshtml" />
+    <Content Include="Views\Admin\AddStu.cshtml" />
+    <Content Include="Views\Admin\AddTeacher.cshtml" />
+    <Content Include="Views\Admin\AddAdmin.cshtml" />
+    <Content Include="Views\Admin\AddClub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
