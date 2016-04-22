@@ -28,6 +28,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/stustart").Include("~/Content/ckxmsqs.css"));
             bundles.Add(new StyleBundle("~/Content/stuoverview").Include("~/Content/xmgl.css"));
             bundles.Add(new StyleBundle("~/Content/admin").Include("~/Content/admin.css"));
+            bundles.Add(new StyleBundle("~/Content/newnotification").Include("~/Content/rte-css.css", "~/Content/reset-min.css"));
             #endregion
 
 
@@ -52,6 +53,7 @@ namespace RMS
             bundles.Add(new ScriptBundle("~/bundles/login").Include("~/Scripts/login.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/newproject").Include("~/Scripts/xxmsq.js"));
+            bundles.Add(new ScriptBundle("~/bundles/newnotification").Include("~/Scripts/wysihtml5-0.4.0pre.min.js", "~/Scripts/advanced.js"));
             #endregion
             //bundles.Add(new ScriptBundle("~/bundles/notices").Include("~/Scripts/login.js"));
         }

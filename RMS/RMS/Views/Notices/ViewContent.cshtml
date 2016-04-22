@@ -18,7 +18,7 @@
             @context.content
         </p>
     </div>
-    @if (context.attachment.Count != 0)
+    @if (context.attachment!=null&&context.attachment.Count != 0)
     {
         <div id="file" style="margin-top:50px;">
             <p>附件</p>
