@@ -1,0 +1,377 @@
+﻿@model RMS.Models.Project
+
+@{
+    ViewBag.Title = "项目申请书";
+    Layout = "~/Views/Students/_Layout.cshtml";
+}
+
+@section Head {
+    @Styles.Render("~/Content/stustart")
+    }
+
+<div id="xmsqs">
+
+    <div class="row">
+        <div class="col-md-12 col section">
+            <p>一、项目信息</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-2 col col1 col-start">
+            <p class="p1">项目名称</p>
+        </div>
+        <div class="col-md-10 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.projectName)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1">项目类别及属性</p>
+        </div>
+        <div class="col-md-9 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.projectType)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1">项目所属一级学科</p>
+        </div>
+        <div class="col-md-9 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.projectSubject)</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col section">
+            <p>二、项目申请人情况</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col sub-section">
+            <p>项目负责人</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-2 col col1 col-start">
+            <p class="p1">姓名</p>
+        </div>
+        <div class="col-md-2 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.name)</label>
+        </div>
+        <div class="col-md-1 col col1">
+            <p class="p1">性别</p>
+        </div>
+        <div class="col-md-2 col col1">
+            @*<label class="form-control"></label>   // todo *@
+            <label class="form-control">男</label>
+        </div>
+        <div class="col-md-2 col col1">
+            <p class="p1">学号</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.sno)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1">所在院（系）</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.academy)</label>
+        </div>
+        <div class="col-md-2 col col1">
+            <p class="p1">专业、班级</p>
+        </div>
+        <div class="col-md-4 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.subject)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col col1 col-start">
+            <p class="p1">身份证号</p>
+        </div>
+        <div class="col-md-10 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.identity)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col col1 col-start">
+            <p class="p1">电子邮箱</p>
+        </div>
+        <div class="col-md-4 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.email)</label>
+        </div>
+        <div class="col-md-3 col col1">
+            <p class="p1">联系电话及手机</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.leader.academy)</label>
+        </div>
+    </div>
+
+    @if (Model != null && Model.members != null)
+    {
+        int i = 1;
+        foreach (var mem in Model.members)
+        {
+            <div class="row">
+                <div class="col-md-12 col sub-section">
+                    <p>成员 @i</p>
+                </div>
+            </div>
+            <div class="row table-start">
+                <div class="col-md-2 col col1 col-start">
+                    <p class="p1">姓名</p>
+                </div>
+                <div class="col-md-2 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.name)</label>
+                </div>
+                <div class="col-md-1 col col1">
+                    <p class="p1">性别</p>
+                </div>
+                <div class="col-md-2 col col1">
+                    @*todo*@
+                    <label class="form-control">男</label>
+                </div>
+                <div class="col-md-2 col col1">
+                    <p class="p1">学号</p>
+                </div>
+                <div class="col-md-3 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.sno)</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col col1 col-start">
+                    <p class="p1">所在院（系）</p>
+                </div>
+                <div class="col-md-3 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.academy)</label>
+                </div>
+                <div class="col-md-2 col col1">
+                    <p class="p1">专业、班级</p>
+                </div>
+                <div class="col-md-4 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.subject)</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col col1 col-start">
+                    <p class="p1">分工</p>
+                </div>
+                <div class="col-md-10 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.assignment)</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col col1 col-start">
+                    <p class="p1">电子邮箱</p>
+                </div>
+                <div class="col-md-4 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.email)</label>
+                </div>
+                <div class="col-md-2 col col1 col-start">
+                    <p class="p1">手机</p>
+                </div>
+                <div class="col-md-4 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.phone)</label>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="col-md-2 col col1">
+                    <p class="p1">身份证号</p>
+                </div>
+                <div class="col-md-10 col col1">
+                    <label class="form-control">@Html.DisplayFor(x => mem.identity)</label>
+                </div>
+            </div>
+            @(i++)
+        }
+    }
+
+    <div class="row">
+        <div class="col-md-12 col sub-section">
+            <p>指导教师</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-6 col col1 col-start">
+            <label class="form-control">指导教师所在院系</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">指导教师姓名</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col section">
+            <p>三、申请人对研究项目简要说明</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（一）立项依据（项目的背景、理论与实际意义、国内外现状分析）</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.baseon)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（二）研究目标、内容、拟解决的关键问题（包括实验方案的设计、技术路线等）</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.purpose)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（三）研究的进度安排</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.schedule)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（四）成果形式（延续类项目必须明确具体的成果形式，如期刊论文、专著、专利以及参加国内外学术会议等形式）</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.format)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（五）项目创新特色概述（50字以内）</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.special)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col col1 col-start">
+            <div>
+                <div>
+                    <p>（六）申请人参加科研的经历</p>
+                </div>
+                <div>
+                    <p>@Html.DisplayFor(x => x.experience)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col section">
+            <p>四、申请资助金额和经费预算</p>
+        </div>
+    </div>
+    <div class="row table-start">
+        <div class="col-md-12 col col1 col-start">
+            <p class="p1">项目经费共计（10000）元</p>
+            @* todo  jisuan *@
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1">预算支出科目</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <p class="p1">支出金额（元）</p>
+        </div>
+        <div class="col-md-6 col col1">
+            <p class="p1">预算根据及理由</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1" style="text-align: left">1．图书资料费</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.图书资料费).money)</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.图书资料费).reason)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1" style="text-align: left">2．实验材料费</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.实验材料费).money)</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.实验材料费).reason)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1" style="text-align: left">3．调研费</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.调研费).money)</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.调研费).reason)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1" style="text-align: left">4．印刷费</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.印刷费).money)</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.印刷费).reason)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1" style="text-align: left">5．成果转化费</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.成果转化费).money)</label>
+        </div>
+        <div class="col-md-6 col col1">
+            <label class="form-control">@Html.DisplayFor(x => x.fund.First(y => y.fundType == RMS.Models.Fund.m_type.成果转化费).reason)</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col col1 col-start">
+            <p class="p1">合计</p>
+        </div>
+        <div class="col-md-3 col col1">
+            <p class="p1">10000</p>
+        </div>
+        <div class="col-md-6 col col1">
+            <p class="p1">&nbsp;</p>
+        </div>
+    </div>
+
+    <div style="margin: 20px auto;text-align: center">
+        <button type="button" class="btn btn-default" style="width: 80px;">编辑</button>
+        <button type="button" class="btn btn-primary" style="width: 80px;">打印</button>
+    </div>
+
+</div>
