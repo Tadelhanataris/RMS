@@ -85,7 +85,7 @@ namespace RMS.Models
 "体育教学研究部",
 "图书馆",
 "上海合作组织大学"};
-            var p = new List<Project>() { new Project() { projectName="阿斯顿撒旦",projectSubject="啊实打实的",baseon="啊实打实的"} }
+            var p = new List<Project>() { new Project() { projectName = "阿斯顿撒旦", projectSubject = "啊实打实的", baseon = "啊实打实的" } };
 
 
 
