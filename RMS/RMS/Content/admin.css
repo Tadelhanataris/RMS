@@ -1,13 +1,27 @@
-#nav{
-    height: 50px;
-}
-
 .navbar-brand{
     font-family: 微软雅黑;
 }
 
-.nav{
-    width: 75%;
+#nav{
+    height: 55px;
+    overflow: hidden;
+}
+
+body > #container {
+    width: 100%;
+    min-height: calc(100vh - 175px);
+}
+
+#nav #navbar-collapse {
+    display: flex !important;
+}
+
+#nav ul{
+    flex:1;
+}
+
+#nav li a:hover {
+    font-weight: bolder;
 }
 
 .pagefoot{
