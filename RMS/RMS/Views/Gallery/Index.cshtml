@@ -1,0 +1,25 @@
+﻿@using RMS.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@{
+
+    IPagedList<RMS.Models.Gallery> context = (IPagedList<RMS.Models.Gallery>)ViewData["context"];
+    ViewBag.Title = "成果展示";
+}
+@section Head {
+    @Styles.Render("~/Content/notices")
+}
+<div class="news-list">
+    <div class="col-title">
+        <h2>@ViewBag.Title</h2>
+    </div>
+    <div class="col-list">
+        <ul>
+            @foreach (Gallery li in context)
+            {
+                <li>@Html.ActionLink(li.project.projectName, "ViewContent", new { id=li.project.ID})</li>
+            }
+        </ul>
+    </div>
+    @Html.PagedListPager(context, id => Url.Action("Index", new { id }))
+</div>

@@ -18,7 +18,7 @@
             <p class="p1">项目名称</p>
         </div>
         <div class="col-md-6 col">
-            <p class="p1">@Html.DisplayFor(x => x.projectName)</p>
+            <label class="form-control">@Html.DisplayFor(x => x.projectName)</label>
         </div>
         <div class="col-md-2 col">
             <p class="p1">立项时间</p>
@@ -32,19 +32,19 @@
             <p class="p1">项目负责人</p>
         </div>
         <div class="col-md-2 col">
-            <p class="p1">@Html.DisplayFor(x => x.leader.name)</p>
+            <label class="form-control">@Html.DisplayFor(x => x.leader.name)</label>
         </div>
         <div class="col-md-2 col">
             <p class="p1">所在院系</p>
         </div>
         <div class="col-md-2 col">
-            <p class="p1">@Html.DisplayFor(x => x.leader.academy.academy)</p>
+            <label class="form-control">@Html.DisplayFor(x => x.leader.academy.academy)</label>
         </div>
         <div class="col-md-2 col">
             <p class="p1">专业、班级</p>
         </div>
         <div class="col-md-2 col">
-            <p class="p1">@Html.DisplayFor(x => x.leader.subject)</p>
+            <label class="form-control">@Html.DisplayFor(x => x.leader.subject)</label>
         </div>
     </div>
     @if (Model != null && Model.members != null)
@@ -56,19 +56,19 @@
                     <p class="p1">成员1</p>
                 </div>
                 <div class="col-md-2 col">
-                    <p class="p1">@Html.DisplayFor(x => m.name)</p>
+                    <label class="form-control">@Html.DisplayFor(x => m.name)</label>
                 </div>
                 <div class="col-md-2 col">
                     <p class="p1">所在院系</p>
                 </div>
                 <div class="col-md-2 col">
-                    <p class="p1">@Html.DisplayFor(x => m.academy.academy)</p>
+                    <label class="form-control">@Html.DisplayFor(x => m.academy.academy)</label>
                 </div>
                 <div class="col-md-2 col">
                     <p class="p1">专业、班级</p>
                 </div>
                 <div class="col-md-2 col">
-                    <p class="p1">@Html.DisplayFor(x => m.subject)</p>
+                    <label class="form-control">@Html.DisplayFor(x => m.subject)</label>
                 </div>
             </div>
         }

@@ -234,6 +234,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cglb.css" />
+    <Content Include="Content\ckxmsqs.css" />
     <Content Include="Content\cxjlb.css" />
     <Content Include="Content\fileicon.css" />
     <Content Include="Content\header.css" />
@@ -259,12 +261,18 @@
     <Content Include="Han-D\cglb.html" />
     <Content Include="Han-D\cgtj.html" />
     <Content Include="Han-D\cjcx.html" />
+    <Content Include="Han-D\ckjtbg.html" />
+    <Content Include="Han-D\ckxmsqs.html" />
+    <Content Include="Han-D\ckzqbg.html" />
     <Content Include="Han-D\css\admin.css" />
     <Content Include="Han-D\css\bgxz.css" />
     <Content Include="Han-D\css\bootstrap.css" />
     <Content Include="Han-D\css\cglb.css" />
     <Content Include="Han-D\css\cgtj.css" />
     <Content Include="Han-D\css\cjcx.css" />
+    <Content Include="Han-D\css\ckjtbg.css" />
+    <Content Include="Han-D\css\ckxmsqs.css" />
+    <Content Include="Han-D\css\ckzqbg.css" />
     <Content Include="Han-D\css\cxjlb.css" />
     <Content Include="Han-D\css\cxjlbcylb.css" />
     <Content Include="Han-D\css\cxjlbxq.css" />
@@ -318,7 +326,11 @@
     <Content Include="Han-D\fbxmps.html" />
     <Content Include="Han-D\fbxmpsxq.html" />
     <Content Include="Han-D\fbxxm.html" />
+    <Content Include="Han-D\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Han-D\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Han-D\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Han-D\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Han-D\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Han-D\glylb.html" />
     <Content Include="Han-D\glyxxxq.html" />
     <Content Include="Han-D\headerfooter.html" />
@@ -359,6 +371,7 @@
     <Content Include="Han-D\signup.html" />
     <Content Include="Han-D\stu.html" />
     <Content Include="Han-D\teacher.html" />
+    <Content Include="Han-D\test.html" />
     <Content Include="Han-D\txlxyj.html" />
     <Content Include="Han-D\wdxxxs.html" />
     <Content Include="Han-D\xmcylb.html" />
@@ -395,15 +408,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Han-D\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Han-D\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Han-D\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Han-D\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Log\log4net.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\indexslide.js" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.2.js" />
@@ -480,10 +488,12 @@
     <Content Include="Views\Students\Fund.cshtml" />
     <Content Include="Views\Students\Mid.cshtml" />
     <Content Include="Views\Students\End.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Gallery\ViewContent.cshtml" />
+    <Content Include="Views\Students\Start.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Gallery\" />
     <Folder Include="Views\Guide\" />
     <Folder Include="Views\Upload\" />
   </ItemGroup>

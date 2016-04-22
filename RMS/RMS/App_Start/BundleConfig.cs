@@ -16,6 +16,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/home").Include("~/Content/home.css"));//首页的css
             bundles.Add(new StyleBundle("~/Content/table").Include("~/Content/bgxz.css", "~/Content/fileicon.css"));
             bundles.Add(new StyleBundle("~/Content/club").Include("~/Content/cxjlb.css"));
+            bundles.Add(new StyleBundle("~/Content/gallery").Include("~/Content/cglb.css"));
             bundles.Add(new StyleBundle("~/Content/stu").Include("~/Content/stu.css"));//学生页面的header footer的css
             bundles.Add(new StyleBundle("~/Content/notices").Include("~/Content/xwlb.css"));
             bundles.Add(new StyleBundle("~/Content/progress").Include("~/Content/xmjd.css"));
@@ -24,6 +25,7 @@ namespace RMS
             bundles.Add(new StyleBundle("~/Content/noticescontent").Include("~/Content/xwtz.css", "~/Content/fileicon.css"));
             bundles.Add(new StyleBundle("~/Content/stumid").Include("~/Content/zqjcbg.css"));
             bundles.Add(new StyleBundle("~/Content/stuend").Include("~/Content/jtysbg.css"));
+            bundles.Add(new StyleBundle("~/Content/stustart").Include("~/Content/ckxmsqs.css"));
             #endregion
 
 

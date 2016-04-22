@@ -43,3 +43,6 @@
     height: 300px;
     resize: none;
 }
+#container label{
+    margin: 0;
+}

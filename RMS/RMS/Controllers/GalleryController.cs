@@ -13,5 +13,10 @@ namespace RMS.Controllers
         {
             return View();
         }
+
+        public ActionResult ViewContent()
+        {
+            return View();
+        }
     }
 }
