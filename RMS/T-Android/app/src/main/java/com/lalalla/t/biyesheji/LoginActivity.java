@@ -19,28 +19,25 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.text.Editable;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ScrollView;
-import android.widget.Scroller;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import static android.Manifest.permission.INTERNET;
 import static android.Manifest.permission.READ_CONTACTS;
 
 /**
@@ -72,8 +69,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mLoginFormView;
     private ImageView imageview;
     private ProjectDB projectDB;
+    private Button btn1;
+    private Editable account;
+    private Editable password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final Connection connection = new Connection();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
@@ -98,22 +99,45 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                Map<String,String> map = new HashMap<String, String>();
+                map.put("url","http://202.204.212.38/account.php");
+                map.put("username", String.valueOf(account));
+                map.put("password", String.valueOf(password));
+                connection.httpPOST(map);
+
                 attemptLogin();
-
-
-
                 try {
                     personsave(view);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                startActivity(new Intent(LoginActivity.this, Userinformation.class));
+               startActivity(new Intent(LoginActivity.this, Userinformation.class));
             }
         });
 
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+        account = mEmailView.getText();
+        password = mPasswordView.getText();
+        //-----------------------------------------------------
+
+        btn1 = (Button) findViewById(R.id.button1);
+        btn1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Map<String,String> map = new HashMap<String, String>();
+                map.put("url","http://202.204.212.38/account.php");
+                map.put("username", String.valueOf(account));
+                map.put("password", String.valueOf(password));
+                connection.httpPOST(map);
+
+            }
+        });
+
+      //-------------------------------------------
     }
 
     public void personsave(View v) throws Exception{
@@ -242,7 +266,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        return password.length() >= 6;
     }
 
     /**

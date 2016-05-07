@@ -30,20 +30,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="姓名:"
+        android:text="姓名:测试姓名"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     <TextView
         android:id="@+id/userbarnumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:text="学号:"
+        android:text="学号:1121000217"
          />
     <TextView
         android:id="@+id/userbaremail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:text="首师大邮箱:" />
+        android:text="首师大邮箱:1121000217@cnu.edu.com" />
     </LinearLayout>
 </LinearLayout>
